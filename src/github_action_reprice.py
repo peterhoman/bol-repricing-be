@@ -22,8 +22,12 @@ if __name__ == "__main__":
     engine = RepricingEngine(CSV_URL)
 
     if not engine.products:
-        print("\n[ERROR] No products loaded from CSV")
-        sys.exit(1)
+        # Fresh-start situation (BE project): no daily CSV uploaded yet. Keep
+        # going anyway - regenerating the XML from the fresh B-Living feed
+        # keeps stock/prices current in Channable, and tracked EANs (frozen/
+        # master_tracked/big_gap, all loaded from GitHub) are still processed
+        # by the union in run_single_iteration_stateless, so nothing reverts.
+        print("\n[WARN] No products in CSV - continuing with feed refresh + tracked EANs only")
 
     if not engine.bliving_klantprijzen:
         print("\n[ERROR] No klantprijzen loaded from B-Living feed")
