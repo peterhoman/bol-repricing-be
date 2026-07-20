@@ -2,9 +2,8 @@ name: Bol.com BE Repricing (Dreamhouse&Garden)
 
 on:
   schedule:
-    # PLACEHOLDER: copied 1-op-1 from the original NL project. Once Peter
-    # configures the Channable import slots for THIS (BE) project, rebuild
-    # this list to match those slots (+~5 min buffer each), like the original.
+    # Peter configured this project's Channable import slots identical to the
+    # NL project's (confirmed 20 July), so this schedule matches exactly.
     # Matches Channable's 24 daily import slots (07:45-21:15 Amsterdam time,
     # skipping the night when nobody buys anyway), each run ~5 min after its
     # matching Channable slot so fresh prices are ready before the NEXT slot.
