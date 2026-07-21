@@ -840,6 +840,15 @@ class RepricingEngine:
             if (i + 1) % 50 == 0:
                 print(f"   {i+1}/{len(candidates)} checked...")
 
+        # Newly-won EANs must be merged into frozen BEFORE the XML is
+        # generated: the match loop deliberately skips winners (they go to
+        # newly_won, not adjustments), so without this merge the XML would
+        # contain the fresh FULL klantprijs for exactly the articles that
+        # just won - reverting their winning price at Channable's next
+        # import. (Found live on 21 July: 92 BE winners were briefly
+        # published at full price this way.)
+        frozen.update(newly_won)
+
         # Frozen EANs still need to be included so the XML holds their price too
         for ean, kp in frozen.items():
             adjustments[ean] = kp
@@ -851,7 +860,6 @@ class RepricingEngine:
         self.upload_to_github(xml_path, "repricing_current.xml")
 
         if newly_won:
-            frozen.update(newly_won)
             self.upload_json_to_github(frozen, "frozen.json")
             self.remove_eans_from_csv(set(newly_won))
 
