@@ -94,12 +94,23 @@ def main():
 
     session = requests.Session()
 
-    print(f"\n[1/2] Checking {len(engine.products)} active (not yet frozen) articles for NEW wins "
+    # Check CSV ∪ master_tracked ∪ big_gap, not just the CSV: an EAN that won
+    # the buybox WITHOUT being frozen (e.g. a same-day freeze that got wiped,
+    # or a win between CSV exports) drops out of the next morning's CSV and
+    # would otherwise be invisible here forever - while the cloud automation
+    # keeps reducing it via master_tracked (found 21 July: NL winners wiped
+    # by the auto-unfreeze bug were never re-frozen because of this).
+    master_tracked = set(engine.load_master_tracked())
+    to_check = sorted((set(engine.products.keys()) | master_tracked | set(big_gap.keys()))
+                      - set(frozen.keys()))
+    to_check = [e for e in to_check if e in engine.bliving_klantprijzen]
+
+    print(f"\n[1/2] Checking {len(to_check)} active (not yet frozen) articles for NEW wins "
           f"(and big price gaps)...")
     new_wins = {}
     big_gap_added = {}
     big_gap_cleared = []
-    for i, ean in enumerate(engine.products):
+    for i, ean in enumerate(to_check):
         if ean in frozen:
             continue
         result = engine.check_buybox(ean, session)
@@ -121,7 +132,7 @@ def main():
                     big_gap_cleared.append(ean)
         time.sleep(0.3)
         if (i + 1) % 50 == 0:
-            print(f"   {i+1}/{len(engine.products)} checked...")
+            print(f"   {i+1}/{len(to_check)} checked...")
 
     print(f"   -> {len(new_wins)} new winner(s) found")
     print(f"   -> {len(big_gap_added)} article(s) newly flagged for EUR10 steps "
