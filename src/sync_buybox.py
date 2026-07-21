@@ -156,6 +156,12 @@ def main():
     upload_json(frozen, "frozen.json",
                 f"Sync: +{len(new_wins)} new winners, -{len(lost_buybox)} lost buybox")
 
+    # New winners must also leave the CSV immediately: the CSV predates these
+    # wins, and the cloud auto-unfreeze would otherwise read "frozen but still
+    # in today's CSV" as a lost buybox and wipe the freeze within one run
+    # (this erased all 89 day-one winners on 20 July).
+    engine.remove_eans_from_csv(set(new_wins))
+
     # A newly-won EAN no longer needs big-gap tracking - it's frozen now
     won_and_was_big_gap = [e for e in new_wins if e in big_gap]
     if won_and_was_big_gap:
