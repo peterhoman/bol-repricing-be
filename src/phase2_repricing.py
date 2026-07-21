@@ -469,6 +469,81 @@ class RepricingEngine:
 
         return issues
 
+    def remove_eans_from_csv(self, eans) -> bool:
+        """
+        Remove newly-frozen (buybox-won) EANs from bolcom_productinformatie.csv
+        on GitHub.
+
+        Why: the cloud run's auto-unfreeze treats "frozen EAN present in the
+        no-buybox CSV" as proof the buybox was lost again. That signal is only
+        valid when the CSV is FRESHER than the freeze - but same-day freezes
+        (match_prices/sync_buybox run AFTER the morning CSV export) leave the
+        EAN in a CSV that predates the win. On 20 July this wiped all 89
+        day-one winners 14 seconds after they were frozen. Removing the EAN
+        from the CSV at freeze time keeps the overlap signal truthful.
+        """
+        if not eans:
+            return True
+        eans = set(eans)
+
+        github_token = os.getenv("GITHUB_TOKEN")
+        github_repo = os.getenv("GITHUB_REPO")
+        if not github_token or not github_repo:
+            print("   Error: GITHUB_TOKEN or GITHUB_REPO not set in .env")
+            return False
+
+        api_url = f"https://api.github.com/repos/{github_repo}/contents/bolcom_productinformatie.csv"
+        headers = {
+            "Authorization": f"Bearer {github_token}",
+            "Accept": "application/vnd.github+json"
+        }
+
+        try:
+            raw = requests.get(self.csv_path, timeout=30).text
+            lines = raw.rstrip("\n").split("\n")
+
+            header_cols = next(csv.reader([lines[0]], delimiter=';'))
+            try:
+                ean_idx = [c.strip().strip('"') for c in header_cols].index("EAN")
+            except ValueError:
+                print("   [WARN] No EAN column found in CSV header - not removing anything")
+                return False
+
+            kept = [lines[0]]
+            removed = 0
+            for line in lines[1:]:
+                try:
+                    row = next(csv.reader([line], delimiter=';'))
+                except StopIteration:
+                    kept.append(line)
+                    continue
+                if len(row) > ean_idx and row[ean_idx].strip() in eans:
+                    removed += 1
+                else:
+                    kept.append(line)
+
+            if not removed:
+                return True
+
+            content_b64 = base64.b64encode("\n".join(kept).encode("utf-8")).decode("utf-8")
+            sha = None
+            get_r = requests.get(api_url, headers=headers, timeout=15)
+            if get_r.status_code == 200:
+                sha = get_r.json().get("sha")
+            payload = {
+                "message": f"Remove {removed} newly-frozen EAN(s) from CSV (buybox won - prevents same-day auto-unfreeze)",
+                "content": content_b64
+            }
+            if sha:
+                payload["sha"] = sha
+            r = requests.put(api_url, headers=headers, json=payload, timeout=30)
+            ok = r.status_code in (200, 201)
+            print(f"   Removed {removed} frozen EAN(s) from CSV on GitHub: {'ok' if ok else r.status_code}")
+            return ok
+        except Exception as e:
+            print(f"   Error removing EANs from CSV: {e}")
+            return False
+
     def load_frozen_eans(self) -> dict:
         """
         Fetch frozen.json from GitHub: {ean: klantprijs} for EANs that have
@@ -778,6 +853,7 @@ class RepricingEngine:
         if newly_won:
             frozen.update(newly_won)
             self.upload_json_to_github(frozen, "frozen.json")
+            self.remove_eans_from_csv(set(newly_won))
 
         self.upload_json_to_github(big_gap, "big_gap.json")
 
