@@ -31,28 +31,59 @@ class RepricingEngine:
         self.load_products()
         self.load_bliving_feed()
 
+    def _get_with_retries(self, url: str, timeout: int = 30, retries: int = 3, backoff: int = 10):
+        """
+        GET a URL with a few retries on connection failures (timeouts,
+        DNS hiccups, etc.) before giving up. Ported from the NL project
+        after a couple of confusing "Repricing failed" emails that were
+        actually just the B-Living SUPPLIER server briefly timing out, not
+        a real problem with the code - retrying a couple of times with a
+        short pause turns most of those transient blips into a silent
+        success instead of a failed GitHub Actions run.
+        """
+        last_exception = None
+        for attempt in range(1, retries + 1):
+            try:
+                return requests.get(url, timeout=timeout)
+            except requests.exceptions.RequestException as e:
+                last_exception = e
+                if attempt < retries:
+                    print(f"   Attempt {attempt}/{retries} failed ({e}), retrying in {backoff}s...")
+                    time.sleep(backoff)
+        raise last_exception
+
     def load_products(self):
         """Load products from CSV (330 without buybox) via GitHub."""
         print(f"\n[LOAD] Reading CSV from GitHub...")
 
         try:
             # Download from GitHub
-            response = requests.get(self.csv_path, timeout=30)
+            response = self._get_with_retries(self.csv_path)
             if response.status_code != 200:
                 print(f"   Error: {response.status_code}")
                 return False
 
-            # Parse CSV from response
+            # Parse CSV from response - auto-detect the delimiter (Peter
+            # sometimes uploads a manual backup CSV built from a spreadsheet
+            # export, which typically uses commas, unlike Bol.com's own
+            # semicolon-delimited export) so both work without him having to
+            # get the exact format right.
+            sample = response.text[:2000]
+            try:
+                delimiter = csv.Sniffer().sniff(sample, delimiters=';,').delimiter
+            except csv.Error:
+                delimiter = ';'
+
             lines = response.text.split('\n')
-            reader = csv.DictReader(lines, delimiter=';')
+            reader = csv.DictReader(lines, delimiter=delimiter)
 
             for row in reader:
                 try:
-                    ean = row.get('EAN', '').strip()
+                    ean = (row.get('EAN') or row.get('ean') or '').strip()
                     if not ean:
                         continue
 
-                    product_name = row.get('Productnaam', '')[:50]
+                    product_name = (row.get('Productnaam') or row.get('productnaam') or '')[:50]
 
                     self.products[ean] = {
                         'ean': ean,
@@ -79,7 +110,7 @@ class RepricingEngine:
         feed_url = "https://www.b-living.eu/feeds/product-feed-15003253-bbed70ea1f95308232732fe3b662e36f2fab51359cce3fc9ff7e33cac2ef9b07.xml"
 
         try:
-            response = requests.get(feed_url, timeout=30)
+            response = self._get_with_retries(feed_url)
             if response.status_code != 200:
                 print(f"   Error: {response.status_code}")
                 return False
