@@ -797,6 +797,7 @@ class RepricingEngine:
         frozen = self.load_frozen_eans()
         big_gap = self.load_big_gap()
         master_tracked = set(self.load_master_tracked())
+        last_published = self.load_last_published_klantprijzen()
 
         candidates = (set(self.products.keys()) | big_gap.keys() | master_tracked) - set(frozen.keys())
         candidates = {ean for ean in candidates if ean in self.bliving_klantprijzen}
@@ -813,6 +814,13 @@ class RepricingEngine:
             result = self.check_buybox(ean, session)
             if not result.get("found"):
                 failed += 1
+                # Hold the last published (reduced) klantprijs instead of
+                # dropping the EAN from `adjustments` - a dropped EAN gets
+                # regenerated at the fresh FULL klantprijs, silently
+                # reverting all progress. (Hit BE on 22 July: 60 rate-limited
+                # checks -> 60 articles briefly published at full price.)
+                if ean in last_published:
+                    adjustments[ean] = last_published[ean]
                 time.sleep(0.3)
                 continue
 
