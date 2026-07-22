@@ -39,6 +39,13 @@ on:
 permissions:
   contents: write
 
+# Nooit twee runs tegelijk: een handmatige trigger (bijv. vanuit sync/probe)
+# kan anders botsen met een geplande run - beide uploaden dan hetzelfde
+# bestand en de verliezer faalt met een 409-conflict (gezien op 22 juli).
+concurrency:
+  group: reprice
+  cancel-in-progress: false
+
 jobs:
   reprice:
     runs-on: ubuntu-latest
