@@ -156,12 +156,20 @@ class RepricingEngine:
             return round((klantprijs * 2.6) + 8.5, 2)
 
     def calculate_minimum_price(self, klantprijs: float) -> float:
-        """Calculate minimum price (klantprijs × 2.1 + 8.5).
+        """Calculate minimum price: (klantprijs +1 onder EUR10) × 2.2 + 8.5.
 
         Higher multiplier than the NL account (1.9): cross-border shipping to
         Belgium costs more and BE customers return more often.
+
+        The <10 branch MUST mirror the normal-price formula's +1 rule -
+        without it the floor dives way too deep for cheap articles (found 23
+        July: EAN 3700837161345, klantprijs 4.07, sold at EUR17.05 while the
+        intended floor was EUR19.65). Multiplier 2.2 confirmed by Peter on
+        23 July (supersedes the 2.1 from the original 19 July setup brief).
         """
-        return round((klantprijs * 2.1) + 8.5, 2)
+        if klantprijs < 10:
+            return round(((klantprijs + 1) * 2.2) + 8.5, 2)
+        return round((klantprijs * 2.2) + 8.5, 2)
 
     def calculate_klantprijs_for_target_price(self, target_price: float) -> float:
         """
