@@ -807,6 +807,7 @@ class RepricingEngine:
         newly_won = {}
         at_minimum = 0
         failed = 0
+        failed_eans = {}
 
         print(f"\n[MATCH] Checking {len(candidates)} active EAN(s) for immediate price-matching...")
 
@@ -814,6 +815,7 @@ class RepricingEngine:
             result = self.check_buybox(ean, session)
             if not result.get("found"):
                 failed += 1
+                failed_eans[ean] = result.get("error", "?")
                 # Hold the last published (reduced) klantprijs instead of
                 # dropping the EAN from `adjustments` - a dropped EAN gets
                 # regenerated at the fresh FULL klantprijs, silently
@@ -875,6 +877,13 @@ class RepricingEngine:
 
         from datetime import date
         self.upload_json_to_github({"date": date.today().isoformat()}, "state.json")
+
+        # Persist which EANs failed their check (with error) so recurring
+        # failures are visible across days - ~60/day since 22 July, suspicion:
+        # a fixed group of delisted articles rather than rate limiting.
+        if failed_eans:
+            self.upload_json_to_github({"date": date.today().isoformat(),
+                                        "failed": failed_eans}, "failed_checks.json")
 
         print(f"\n[MATCH] Matched (undercut competitor): {len(adjustments) - len(frozen)}")
         print(f"[MATCH] Already winning (frozen now): {len(newly_won)}")
