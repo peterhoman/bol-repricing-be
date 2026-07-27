@@ -184,15 +184,32 @@ class RepricingEngine:
         (not from a "reduction relative to the original price" - that was
         a bug, since it ignored all previous iterations and always reset
         back to "original price - 0.50").
+
+        Rounds the klantprijs UP to the cent, never down (fix 27 July, found
+        by the NL project). klantprijs is published with 2 decimals, and
+        Channable multiplies it by 2.6 - so rounding the klantprijs DOWN by
+        up to half a cent lowered the resulting selling price by up to 1.3
+        cents. When the caller was clamping to the minimum price, that landed
+        the article ONE CENT BELOW the floor - on 28.5% of the catalogue, and
+        it repeated every run because each run redid the same arithmetic
+        (85 articles were live one cent under on 27 July). Rounding up
+        guarantees the selling price is never below the requested target.
+        The cost is at most ~1.3 cents extra when undercutting a competitor,
+        which is harmless - erring upward is always the safe direction here.
         """
+        import math
+
+        def _ceil_cent(value: float) -> float:
+            return math.ceil(round(max(value, 0) * 100, 6)) / 100
+
         # Try the >= 10 branch first (most products fall here)
         candidate = (target_price - 8.5) / 2.6
         if candidate >= 10:
-            return round(max(candidate, 0), 2)
+            return _ceil_cent(candidate)
 
         # Otherwise use the < 10 branch
         candidate_low = ((target_price - 8.5) / 2.6) - 1
-        return round(max(candidate_low, 0), 2)
+        return _ceil_cent(candidate_low)
 
     def generate_reprice_xml(self, output_path: str, adjustments: dict) -> bool:
         """
@@ -426,7 +443,11 @@ class RepricingEngine:
                 continue
             floor = self.calculate_minimum_price(self.bliving_klantprijzen[ean])
             held_price = self.calculate_normal_price(held_kp)
-            if held_price < floor - 0.01:
+            # 0.005 tolerance, not 0.01: since calculate_klantprijs_for_target_price
+            # rounds UP, a correctly-clamped price is never below the floor, so a
+            # full cent under is a real violation that must be caught (a 0.01
+            # tolerance silently swallowed exactly that case until 27 July).
+            if held_price < floor - 0.005:
                 new_kp = self.calculate_klantprijs_for_target_price(floor)
                 frozen[ean] = new_kp
                 lifted.append((ean, round(held_price, 2), round(floor, 2)))
@@ -548,7 +569,7 @@ class RepricingEngine:
                 continue
             floor = self.calculate_minimum_price(self.bliving_klantprijzen[ean])
             price = self.calculate_normal_price(kp)
-            if price < floor - 0.01:
+            if price < floor - 0.005:
                 below_floor.append(f"{ean} (EUR{price:.2f} < floor EUR{floor:.2f})")
         if below_floor:
             issues.append(f"BELOW FLOOR: {len(below_floor)} EAN(s) are published under the "
