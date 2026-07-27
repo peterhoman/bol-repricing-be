@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-27T10:49:34.159172",
+  "checked_at": "2026-07-27T10:54:55.843805",
   "issues_found": 1,
   "issues": [
     "BELOW FLOOR: 3 EAN(s) are published under the current minimum price - Peter's hard rule is never to sell below it, so these need lifting: ['8716522075090 (EUR14.87 < floor EUR14.88)', '8716522094657 (EUR37.33 < floor EUR37.34)', '8716522094688 (EUR37.33 < floor EUR37.34)']"
