@@ -398,6 +398,45 @@ class RepricingEngine:
             pass
         return set()
 
+    def clamp_frozen_to_floor(self, frozen: dict) -> list:
+        """
+        Lift any frozen (buybox-won) EAN whose held price has dropped below
+        the CURRENT minimum price back up to that floor. Modifies `frozen`
+        in place and returns a list of (ean, old_price, new_price) tuples.
+
+        Why this exists (found 27 July): a frozen EAN is held at its winning
+        klantprijs indefinitely - never reduced, never reset, and (until now)
+        never re-checked against the floor. Every other code path recomputes
+        the floor from the FRESH B-Living klantprijs each run and clamps to
+        it, so a supplier price increase self-corrects there within one run.
+        Frozen EANs had no such clamp: if B-Living raises the purchase price
+        of an article we froze last week, we keep selling at the old price,
+        potentially for months, below Peter's margin floor - silently, since
+        nothing recomputes it. (Checked live on 27 July: no frozen EAN was
+        below its floor at that moment, so this is a guard against a real
+        gap, not a repair of known damage.)
+
+        Deliberately one-directional: only ever lifts UP to the floor, never
+        down. A frozen article priced comfortably above its floor is a
+        winner earning margin - leave it exactly where it is.
+        """
+        lifted = []
+        for ean, held_kp in list(frozen.items()):
+            if ean not in self.bliving_klantprijzen:
+                continue
+            floor = self.calculate_minimum_price(self.bliving_klantprijzen[ean])
+            held_price = self.calculate_normal_price(held_kp)
+            if held_price < floor - 0.01:
+                new_kp = self.calculate_klantprijs_for_target_price(floor)
+                frozen[ean] = new_kp
+                lifted.append((ean, round(held_price, 2), round(floor, 2)))
+        if lifted:
+            print(f"\n[FLOOR] Lifted {len(lifted)} frozen EAN(s) back up to the current "
+                  f"minimum price (B-Living purchase price went up since they were frozen):")
+            for ean, old_p, new_p in lifted:
+                print(f"   {ean}: EUR{old_p:.2f} -> EUR{new_p:.2f}")
+        return lifted
+
     def load_state(self) -> dict:
         """Fetch state.json from GitHub (tracks the date of the last repricing run)."""
         url = "https://raw.githubusercontent.com/peterhoman/bol-repricing-be/main/state.json"
@@ -467,6 +506,8 @@ class RepricingEngine:
              (master_tracked/frozen/big_gap) - that exact pattern is what a
              silent tracking-loss bug looks like (the bug that hit EAN
              8716522107326 on 19 July).
+          3. No EAN may be published BELOW the current minimum price
+             (added 27 July, see the check itself for why).
 
         Returns a list of human-readable issue strings (empty if all clear).
         Also uploads the report to audit_report.json on GitHub so Peter or a
@@ -492,6 +533,27 @@ class RepricingEngine:
                            f"reduced price but aren't in master_tracked/frozen/big_gap - "
                            f"this is the exact silent-tracking-loss pattern found on 19 July: "
                            f"{sorted(untracked_reductions)}")
+
+        # Check 3 (27 July): nothing may be published below the CURRENT floor.
+        # Every reduction path clamps to the floor itself, but two paths
+        # republish a previously-stored price without recomputing it (frozen
+        # winners, and the last-published price held after a failed check).
+        # If B-Living raises a purchase price, that stored value can end up
+        # under the new floor. clamp_frozen_to_floor() actively fixes the
+        # frozen case; this check is the safety net that catches ANY path,
+        # including ones added later, and leaves a trace in audit_report.json.
+        below_floor = []
+        for ean, kp in adjustments.items():
+            if ean not in self.bliving_klantprijzen:
+                continue
+            floor = self.calculate_minimum_price(self.bliving_klantprijzen[ean])
+            price = self.calculate_normal_price(kp)
+            if price < floor - 0.01:
+                below_floor.append(f"{ean} (EUR{price:.2f} < floor EUR{floor:.2f})")
+        if below_floor:
+            issues.append(f"BELOW FLOOR: {len(below_floor)} EAN(s) are published under the "
+                           f"current minimum price - Peter's hard rule is never to sell below "
+                           f"it, so these need lifting: {sorted(below_floor)}")
 
         from datetime import datetime as _dt
         report = {
@@ -702,6 +764,12 @@ class RepricingEngine:
                   f"in today's CSV (lost buybox again): {sorted(lost_via_csv)}")
             self.upload_json_to_github(frozen, "frozen.json")
 
+        # Frozen prices are held indefinitely, so they're the one place a
+        # B-Living purchase-price increase can silently push us under the
+        # margin floor. Re-clamp them every run (see clamp_frozen_to_floor).
+        if self.clamp_frozen_to_floor(frozen):
+            self.upload_json_to_github(frozen, "frozen.json")
+
         # Grow master_tracked with today's CSV + anything just auto-unfrozen.
         # This list only ever grows (until an EAN is CONFIRMED won via
         # frozen.json) - an EAN dropping out of a single day's CSV is not
@@ -853,6 +921,11 @@ class RepricingEngine:
         master_tracked = set(self.load_master_tracked())
         last_published = self.load_last_published_klantprijzen()
 
+        # Same floor guard as the cloud run: the morning fast-start republishes
+        # every frozen price too, so it must not carry a now-below-floor price
+        # into the feed either.
+        frozen_lifted = self.clamp_frozen_to_floor(frozen)
+
         candidates = (set(self.products.keys()) | big_gap.keys() | master_tracked) - set(frozen.keys())
         candidates = {ean for ean in candidates if ean in self.bliving_klantprijzen}
 
@@ -934,8 +1007,9 @@ class RepricingEngine:
         self.generate_reprice_xml(xml_path, adjustments)
         self.upload_to_github(xml_path, "repricing_current.xml")
 
-        if newly_won:
+        if newly_won or frozen_lifted:
             self.upload_json_to_github(frozen, "frozen.json")
+        if newly_won:
             self.remove_eans_from_csv(set(newly_won))
 
         self.upload_json_to_github(big_gap, "big_gap.json")
