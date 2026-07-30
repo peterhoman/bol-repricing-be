@@ -458,6 +458,55 @@ class RepricingEngine:
                 print(f"   {ean}: EUR{old_p:.2f} -> EUR{new_p:.2f}")
         return lifted
 
+    def clamp_frozen_to_normal_price(self, frozen: dict) -> list:
+        """
+        Mirror image of clamp_frozen_to_floor: lower any frozen EAN whose held
+        price has risen ABOVE that article's own current full price. Modifies
+        `frozen` in place and returns a list of (ean, old_price, new_price).
+
+        Why (built 29 July, ported from the NL project which measured it live):
+        a frozen EAN keeps its winning klantprijs forever and is never
+        re-evaluated. If B-Living LOWERS the purchase price afterwards, that
+        held price becomes more expensive than what we'd ask for the very same
+        article if it came in fresh today. That is not extra margin - it's a
+        leftover of an old cost price, and it invites losing the buybox and
+        starting the whole freeze/unfreeze cycle over again. NL found 10 of
+        155 frozen articles like this, averaging EUR2.66 too expensive, and
+        those articles flipped buybox status 3x more often than the rest.
+
+        Measured in BE on 29 July: 0 of 88 frozen articles, and 0 across all
+        25 historical frozen.json snapshots. BE freezes at the COMPETITOR's
+        price, which is virtually always below our own full price, so this
+        needs a supplier price drop to trigger at all. Kept as a guard - the
+        same reason clamp_frozen_to_floor exists despite also measuring 0.
+
+        Sets the fresh klantprijs DIRECTLY rather than going through
+        calculate_klantprijs_for_target_price(full_price): the fresh
+        klantprijs is by definition the value that produces the full price,
+        so this is exact and idempotent. Routing it through the inverse
+        function would round a cent UP (correctly, see that function), leaving
+        the article a cent above its full price again - and it would then
+        "correct" itself every single run, forever.
+        """
+        lowered = []
+        for ean, held_kp in list(frozen.items()):
+            fresh_kp = self.bliving_klantprijzen.get(ean)
+            if fresh_kp is None:
+                continue
+            normal_price = self.calculate_normal_price(fresh_kp)
+            held_price = self.calculate_normal_price(held_kp)
+            # 0.005 margin, same reasoning as the floor clamp: a full cent
+            # would let exactly-one-cent-too-expensive slip through unseen.
+            if held_price > normal_price + 0.005:
+                frozen[ean] = fresh_kp
+                lowered.append((ean, round(held_price, 2), round(normal_price, 2)))
+        if lowered:
+            print(f"\n[NORMAL] Lowered {len(lowered)} frozen EAN(s) back to their own full "
+                  f"price (B-Living purchase price dropped since they were frozen):")
+            for ean, old_p, new_p in lowered:
+                print(f"   {ean}: EUR{old_p:.2f} -> EUR{new_p:.2f}")
+        return lowered
+
     def load_state(self) -> dict:
         """Fetch state.json from GitHub (tracks the date of the last repricing run)."""
         url = "https://raw.githubusercontent.com/peterhoman/bol-repricing-be/main/state.json"
@@ -786,9 +835,13 @@ class RepricingEngine:
             self.upload_json_to_github(frozen, "frozen.json")
 
         # Frozen prices are held indefinitely, so they're the one place a
-        # B-Living purchase-price increase can silently push us under the
-        # margin floor. Re-clamp them every run (see clamp_frozen_to_floor).
-        if self.clamp_frozen_to_floor(frozen):
+        # B-Living purchase-price change can silently drift out of range -
+        # under the margin floor if the cost went up, above the article's own
+        # full price if it went down. Re-clamp both directions every run; the
+        # two together keep a frozen price inside [floor, full price].
+        frozen_changed = self.clamp_frozen_to_floor(frozen)
+        frozen_changed += self.clamp_frozen_to_normal_price(frozen)
+        if frozen_changed:
             self.upload_json_to_github(frozen, "frozen.json")
 
         # Grow master_tracked with today's CSV + anything just auto-unfrozen.
@@ -946,6 +999,7 @@ class RepricingEngine:
         # every frozen price too, so it must not carry a now-below-floor price
         # into the feed either.
         frozen_lifted = self.clamp_frozen_to_floor(frozen)
+        frozen_lifted += self.clamp_frozen_to_normal_price(frozen)
 
         candidates = (set(self.products.keys()) | big_gap.keys() | master_tracked) - set(frozen.keys())
         candidates = {ean for ean in candidates if ean in self.bliving_klantprijzen}
