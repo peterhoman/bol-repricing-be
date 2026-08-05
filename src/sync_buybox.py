@@ -19,6 +19,7 @@ Usage:
 """
 import os
 import sys
+import csv
 import json
 import time
 import base64
@@ -67,12 +68,32 @@ def add_eans_to_csv(eans):
     api_url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/bolcom_productinformatie.csv"
     raw = requests.get(CSV_URL, timeout=30).text
     lines = raw.rstrip("\n").split("\n")
-    num_cols = len(lines[0].split(";"))
+
+    # Locate the columns BY HEADER NAME, never by fixed position. Bol.com's own
+    # export is ~225 columns wide, but when their download fails (most mornings)
+    # Peter pastes just the Productnaam + EAN columns into a 2-column CSV. The
+    # old code wrote the EAN to row[2], which doesn't exist in that file - so
+    # this function crashed exactly when it mattered: re-adding an article that
+    # had just lost its buybox. Reading by name works for both formats.
+    header_cols = [c.strip().strip('"') for c in next(csv.reader([lines[0]], delimiter=';'))]
+    num_cols = len(header_cols)
+    try:
+        ean_idx = header_cols.index("EAN")
+    except ValueError:
+        print("   [WARN] No EAN column in CSV header - not re-adding anything")
+        return False
+    naam_idx = header_cols.index("Productnaam") if "Productnaam" in header_cols else None
+    # The wide bol.com export also carries an "Interne referentie" column that
+    # normally repeats the EAN; fill it when present, skip it when it isn't.
+    ref_idx = header_cols.index("Interne referentie") if "Interne referentie" in header_cols else None
+
     for ean in eans:
         row = [""] * num_cols
-        row[0] = f"Hersteld na koopblok-verlies {ean}"
-        row[1] = ean
-        row[2] = ean
+        row[ean_idx] = ean
+        if naam_idx is not None:
+            row[naam_idx] = f"Hersteld na koopblok-verlies {ean}"
+        if ref_idx is not None:
+            row[ref_idx] = ean
         lines.append(";".join(row))
     new_content = "\n".join(lines)
     content_b64 = base64.b64encode(new_content.encode("utf-8")).decode("utf-8")
