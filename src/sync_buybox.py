@@ -145,7 +145,20 @@ def main():
                 our_price = engine.calculate_normal_price(our_klantprijs)
                 gap = round(our_price - competitor_price, 2)
 
-                if gap >= 10 and not engine.is_excluded_from_big_steps(ean):
+                # Only flag a gap we can actually close. If the competitor sits
+                # at or below our minimum price, EUR10 steps get us to the floor
+                # and no further - which the normal route reaches anyway - so
+                # flagging it just produces the same list every sync: the
+                # morning fast-start clamps the article to the floor and pops it
+                # from big_gap, the next sync re-adds it. Measured in BE on
+                # 12 August: ALL 17 flagged EANs were unreachable, e.g. the four
+                # St. Maxime sofas at floor EUR124.44 vs a competitor at
+                # EUR51.99. No money was ever lost (the floor held) - it was
+                # reporting noise suggesting action where none is possible.
+                floor = engine.calculate_minimum_price(engine.bliving_klantprijzen[ean])
+                reachable = competitor_price - floor > 0.005
+
+                if gap >= 10 and reachable and not engine.is_excluded_from_big_steps(ean):
                     big_gap_added[ean] = int(gap // 10)
                 elif ean in big_gap:
                     # Gap has closed (or item no longer qualifies) - remove
