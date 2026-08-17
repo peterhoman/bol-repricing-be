@@ -8,5 +8,15 @@
     "summary": [
       "selftest - scheduler reached the script"
     ]
+  },
+  {
+    "task": "morning",
+    "started": "2026-08-17T15:57:01",
+    "duration_s": 5,
+    "exit_code": 1,
+    "result": "FAILED",
+    "summary": [
+      "[ERROR] No products loaded from CSV"
+    ]
   }
 ]
