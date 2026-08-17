@@ -12,13 +12,35 @@ import os
 import sys
 from pathlib import Path
 
+import requests
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from phase2_repricing import RepricingEngine
 
 CSV_URL = "https://raw.githubusercontent.com/peterhoman/bol-repricing-be/main/bolcom_productinformatie.csv"
+RAW_BASE = "https://raw.githubusercontent.com/peterhoman/bol-repricing-be/main/"
 
 if __name__ == "__main__":
+    # Preflight (added 17 Aug): raw.githubusercontent.com rate-limited us with
+    # 429s that day (Channable got them too). Every load_* helper in the engine
+    # silently returns {}/[] on a non-200, so a run during such an outage would
+    # see "no frozen articles, no tracking, fresh day" and publish a feed with
+    # every price back at full - wiping all frozen winners in one upload. If we
+    # cannot read the critical state, the only safe move is to not run at all:
+    # a skipped run keeps yesterday's feed, which is always better than a
+    # destroyed one. The run after the outage picks up normally.
+    for critical in ("frozen.json", "state.json", "master_tracked.json"):
+        try:
+            r = requests.get(RAW_BASE + critical, timeout=30)
+            status = r.status_code
+        except Exception as exc:
+            status = str(exc)
+        if status != 200:
+            print(f"[ABORT] Cannot read {critical} (status {status}) - "
+                  f"refusing to reprice with incomplete state. Feed stays as-is.")
+            sys.exit(1)
+
     engine = RepricingEngine(CSV_URL)
 
     if not engine.products:
