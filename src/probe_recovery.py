@@ -7,8 +7,13 @@ Problem: once an article wins the buybox at a reduced price, the main tool
 holds it there forever - even if the competitor later raises their price or
 goes out of stock, we'd never know and never claim back that margin.
 
-This script tests recovery in two phases, run separately (because Channable
-only re-imports our feed once per hour, so we can't verify instantly):
+This script tests recovery in two phases, run separately, because our price
+change has to travel before it can be verified: Channable re-imports our feed
+on its own schedule (roughly every 30 minutes between 07:45 and 21:15
+Amsterdam time, with gaps after 14:00, 16:00, 17:30 and 19:30), and only THEN
+pushes it to bol.com, which takes its own time to show it. Half an hour is
+therefore the floor, not the answer - the real delay has never been measured.
+(Corrected 17 August: this used to claim "once per hour", which was wrong.)
 
   python src/probe_recovery.py candidates [n]
       Show the n best candidates (default 15) without changing anything.
@@ -59,6 +64,20 @@ GITHUB_REPO = os.getenv("GITHUB_REPO")
 MIN_GAIN = 10.0        # euro of recoverable selling price, below this it isn't worth the risk
 COOLDOWN_DAYS = 14     # don't retry a reverted EAN before the competitor has had time to move
 DEFAULT_BATCH = 15
+
+# Channable's last import of the day is around 21:15 Amsterdam. Start a probe
+# after that and the higher price is never imported, never verifiable, and the
+# articles sit at full price all night with nobody to revert them. 20:30 leaves
+# room for one more import plus the check.
+LATEST_START_HOUR = 20
+LATEST_START_MINUTE = 30
+
+# A check that runs before Channable has imported AND pushed the new price
+# measures the OLD price, so it reads "still ours" for articles we would in
+# fact have lost - the worst possible error, because it keeps a price that
+# doesn't win. 30 minutes is the absolute floor (one import slot); the real
+# delay includes Channable -> bol.com and has never been measured.
+MIN_WAIT_MINUTES = 30
 
 
 def github_headers():
@@ -155,7 +174,26 @@ def phase_candidates(limit):
     return picks
 
 
+def too_late_to_start():
+    """
+    True if there isn't enough of the Channable import schedule left today.
+    Starting a probe now would leave articles at full price all night with no
+    import to make them verifiable and nobody to revert them.
+    """
+    now = datetime.now()
+    cutoff = now.replace(hour=LATEST_START_HOUR, minute=LATEST_START_MINUTE,
+                         second=0, microsecond=0)
+    return now > cutoff
+
+
 def phase_start(eans):
+    if too_late_to_start():
+        print(f"\n[GEWEIGERD] Het is na {LATEST_START_HOUR}:{LATEST_START_MINUTE:02d}. "
+              f"Channable importeert vanavond niet meer genoeg keer,")
+        print("dus deze artikelen zouden de hele nacht op volle prijs staan zonder dat")
+        print("iemand kan controleren of ze het koopblok houden. Start morgen opnieuw.")
+        return
+
     engine = RepricingEngine(CSV_URL)
     frozen = fetch_json("frozen.json", {})
     probe_backup = fetch_json("frozen_probe_backup.json", {})
@@ -185,6 +223,10 @@ def phase_start(eans):
 
     upload_json(frozen, "frozen.json", f"Probe recovery: test {updated} EAN(s) at full price")
     upload_json(probe_backup, "frozen_probe_backup.json", f"Backup before probing {updated} EAN(s)")
+    # Separate file, NOT a key inside frozen_probe_backup.json - phase_check
+    # iterates that dict as {ean: price} and would treat a timestamp key as an EAN.
+    upload_json({"started_at": datetime.now().isoformat()}, "probe_started.json",
+                f"Probe start timestamp for {updated} EAN(s)")
     trigger_workflow()
 
     print(f"\n[STARTED] {updated} EAN(s) set to full normal price and pushed.")
@@ -197,6 +239,21 @@ def phase_check():
     if not probe_backup:
         print("[DONE] No probes currently in progress")
         return
+
+    started = fetch_json("probe_started.json", {}).get("started_at")
+    if started:
+        try:
+            minutes = (datetime.now() - datetime.fromisoformat(started)).total_seconds() / 60
+            print(f"[TIMING] Probe started {minutes:.0f} minutes ago")
+            if minutes < MIN_WAIT_MINUTES:
+                print(f"\n[STOP] Te vroeg. Channable heeft de probe-prijs waarschijnlijk nog")
+                print(f"niet geimporteerd, dus bol.com toont nog de OUDE prijs. Een check nu")
+                print(f"leest 'koopblok nog van ons' voor artikelen die we in werkelijkheid")
+                print(f"kwijt zijn - en houdt dus een prijs vast die niet wint.")
+                print(f"Wacht minstens {MIN_WAIT_MINUTES} minuten na de start en probeer opnieuw.")
+                return
+        except ValueError:
+            pass
 
     engine = RepricingEngine(CSV_URL)
     frozen = fetch_json("frozen.json", {})
