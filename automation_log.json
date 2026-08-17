@@ -18,5 +18,15 @@
     "summary": [
       "[ERROR] No products loaded from CSV"
     ]
+  },
+  {
+    "task": "morning",
+    "started": "2026-08-17T15:58:52",
+    "duration_s": 5,
+    "exit_code": 1,
+    "result": "FAILED",
+    "summary": [
+      "[ERROR] No products loaded from CSV"
+    ]
   }
 ]
