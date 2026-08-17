@@ -235,6 +235,19 @@ def phase_check():
 
     print(f"\n[DONE] Kept higher price: {len(kept)} | Reverted to safe price: {len(reverted)}")
 
+    # Reverted articles are back at their safe price in OUR feed, but Channable
+    # hasn't imported that yet - for the next ~90 minutes bol.com still shows
+    # the probe's full price. A sync run in that window checks live status,
+    # sees the stale high price, concludes "buybox lost" and unfreezes them for
+    # nothing. NL measured this on 17 August: 11 of their 15 "lost buybox"
+    # articles were their own probe reverts from five minutes earlier. BE saw
+    # 0 of 3 the same day, so it doesn't always bite - but it scales with the
+    # number of reverts, so a bigger round makes it likely.
+    if reverted:
+        print(f"\n[LET OP] Draai de komende ~90 minuten GEEN sync_buybox.py.")
+        print(f"Channable heeft de {len(reverted)} teruggezette prijzen nog niet geimporteerd,")
+        print(f"dus een sync ziet die artikelen als 'koopblok kwijt' en ontdooit ze onnodig.")
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
