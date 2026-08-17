@@ -10,6 +10,15 @@ goes out of stock, we'd never know and never claim back that margin.
 This script tests recovery in two phases, run separately (because Channable
 only re-imports our feed once per hour, so we can't verify instantly):
 
+  python src/probe_recovery.py candidates [n]
+      Show the n best candidates (default 15) without changing anything.
+
+  python src/probe_recovery.py auto [n]
+      Pick the n best candidates automatically and start probing them.
+      Selection: frozen EANs sorted by recoverable margin (full price at the
+      CURRENT purchase price minus the price we're frozen at), keeping only
+      those worth at least MIN_GAIN and not probed in the last COOLDOWN_DAYS.
+
   python src/probe_recovery.py start <ean> [<ean> ...]
       Temporarily sets the given frozen EAN(s) to their full NORMAL price
       (no discount) and pushes it live. Backs up the old (safe) price first.
@@ -31,7 +40,7 @@ import json
 import requests
 import base64
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from phase2_repricing import RepricingEngine
@@ -41,6 +50,15 @@ load_dotenv()
 
 CSV_URL = "https://raw.githubusercontent.com/peterhoman/bol-repricing-be/main/bolcom_productinformatie.csv"
 GITHUB_REPO = os.getenv("GITHUB_REPO")
+
+# Candidate selection (see instructie-NL-margeherstel-probe.md for the numbers
+# behind these). Round 1 on 21 July probed the 15 biggest gaps and kept 9;
+# round 2 on 22 July probed the next 15 and kept only 1. So the margin is in
+# the head of the distribution, not the tail - hence a minimum gain rather
+# than "probe everything that's below full price".
+MIN_GAIN = 10.0        # euro of recoverable selling price, below this it isn't worth the risk
+COOLDOWN_DAYS = 14     # don't retry a reverted EAN before the competitor has had time to move
+DEFAULT_BATCH = 15
 
 
 def github_headers():
@@ -75,6 +93,66 @@ def trigger_workflow():
     api_url = f"https://api.github.com/repos/{GITHUB_REPO}/actions/workflows/reprice.yml/dispatches"
     r = requests.post(api_url, headers=headers, json={"ref": "main"}, timeout=30)
     return r.status_code == 204
+
+
+def select_candidates(engine, limit):
+    """
+    Rank frozen EANs by how much selling price we could reclaim, and return
+    the best `limit` of them as (ean, current_price, full_price, gain) tuples.
+
+    Excluded automatically:
+      - EANs no longer in the B-Living feed (no current purchase price)
+      - EANs already at (or above) their full price - nothing to recover.
+        This also silently excludes winners from earlier rounds: a KEPT probe
+        left the article AT its full price, so its gain is 0 from then on.
+      - EANs probed within COOLDOWN_DAYS. Without this a reverted article
+        looks like a top candidate again the very next day (its safe price was
+        restored), so every round would re-probe the same losers.
+    """
+    frozen = fetch_json("frozen.json", {})
+    history = fetch_json("probe_history.json", {})
+    today = date.today()
+
+    candidates = []
+    skipped_cooldown = 0
+    for ean, frozen_klantprijs in frozen.items():
+        fresh_klantprijs = engine.bliving_klantprijzen.get(ean)
+        if fresh_klantprijs is None:
+            continue
+
+        last = history.get(ean)
+        if last:
+            try:
+                if (today - date.fromisoformat(last)).days < COOLDOWN_DAYS:
+                    skipped_cooldown += 1
+                    continue
+            except ValueError:
+                pass
+
+        current_price = engine.calculate_normal_price(frozen_klantprijs)
+        full_price = engine.calculate_normal_price(fresh_klantprijs)
+        gain = round(full_price - current_price, 2)
+        if gain >= MIN_GAIN:
+            candidates.append((ean, round(current_price, 2), round(full_price, 2), gain))
+
+    candidates.sort(key=lambda c: -c[3])
+    if skipped_cooldown:
+        print(f"   ({skipped_cooldown} EAN(s) skipped - probed within the last {COOLDOWN_DAYS} days)")
+    return candidates[:limit]
+
+
+def phase_candidates(limit):
+    engine = RepricingEngine(CSV_URL)
+    picks = select_candidates(engine, limit)
+    if not picks:
+        print(f"\n[DONE] No candidates with at least EUR{MIN_GAIN:.2f} to recover")
+        return []
+    total = sum(c[3] for c in picks)
+    print(f"\n[CANDIDATES] Top {len(picks)} by recoverable margin "
+          f"(EUR{total:.2f} in total):")
+    for ean, now, full, gain in picks:
+        print(f"   {ean}  EUR{now:8.2f} -> EUR{full:8.2f}   +EUR{gain:6.2f}")
+    return picks
 
 
 def phase_start(eans):
@@ -140,6 +218,16 @@ def phase_check():
         import time
         time.sleep(0.3)
 
+    # Record every probed EAN (kept AND reverted) so select_candidates() can
+    # honour the cooldown. Without this, a reverted article is restored to its
+    # safe price and immediately looks like a top candidate again tomorrow.
+    history = fetch_json("probe_history.json", {})
+    today = date.today().isoformat()
+    for ean in probe_backup:
+        history[ean] = today
+    upload_json(history, "probe_history.json",
+                f"Probe history: {len(probe_backup)} EAN(s) probed on {today}")
+
     upload_json(frozen, "frozen.json", f"Probe recovery result: kept {len(kept)}, reverted {len(reverted)}")
     upload_json({}, "frozen_probe_backup.json", "Clear probe backup - probe cycle complete")
     if reverted:
@@ -154,7 +242,21 @@ if __name__ == "__main__":
         sys.exit(1)
 
     command = sys.argv[1]
-    if command == "start":
+    if command == "candidates":
+        phase_candidates(int(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_BATCH)
+    elif command == "auto":
+        limit = int(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_BATCH
+        engine = RepricingEngine(CSV_URL)
+        picks = select_candidates(engine, limit)
+        if not picks:
+            print(f"\n[DONE] No candidates with at least EUR{MIN_GAIN:.2f} to recover")
+            sys.exit(0)
+        total = sum(c[3] for c in picks)
+        print(f"\n[AUTO] Probing {len(picks)} EAN(s), EUR{total:.2f} of margin at stake:")
+        for ean, now, full, gain in picks:
+            print(f"   {ean}  EUR{now:8.2f} -> EUR{full:8.2f}   +EUR{gain:6.2f}")
+        phase_start([c[0] for c in picks])
+    elif command == "start":
         eans = sys.argv[2:]
         if not eans:
             print("Usage: python src/probe_recovery.py start <ean> [<ean> ...]")
