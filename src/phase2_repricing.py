@@ -31,6 +31,29 @@ class RepricingEngine:
         self.load_products()
         self.load_bliving_feed()
 
+    @staticmethod
+    def _fresh_headers(url: str) -> dict:
+        """
+        Headers for a GET. For api.github.com URLs this adds the token (when
+        available) and asks for the raw file body, so callers can swap a
+        raw.githubusercontent.com URL for a Contents-API URL and still receive
+        plain file content - but ALWAYS FRESH instead of CDN-cached.
+
+        Why (18 Aug): the same-day-unfreeze guard broke because
+        add_eans_to_csv() read the CSV via the raw URL seconds after
+        remove_eans_from_csv() had rewritten it via the API. The raw CDN
+        still served the pre-removal version, so the re-add resurrected the
+        just-removed winners and the next cloud run unfroze all 18 of them.
+        Any read that can race an API write must go through the API.
+        """
+        if "api.github.com" not in url:
+            return {}
+        headers = {"Accept": "application/vnd.github.raw"}
+        token = os.getenv("GITHUB_TOKEN")
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
+        return headers
+
     def _get_with_retries(self, url: str, timeout: int = 30, retries: int = 3, backoff: int = 10):
         """
         GET a URL with a few retries on connection failures (timeouts,
@@ -44,7 +67,7 @@ class RepricingEngine:
         last_exception = None
         for attempt in range(1, retries + 1):
             try:
-                return requests.get(url, timeout=timeout)
+                return requests.get(url, timeout=timeout, headers=self._fresh_headers(url))
             except requests.exceptions.RequestException as e:
                 last_exception = e
                 if attempt < retries:
@@ -672,7 +695,9 @@ class RepricingEngine:
         }
 
         try:
-            raw = requests.get(self.csv_path, timeout=30).text
+            # _get_with_retries adds the API-raw headers when csv_path is a
+            # Contents-API URL (fix 18/8) - fresh content, never the stale CDN.
+            raw = self._get_with_retries(self.csv_path).text
             lines = raw.rstrip("\n").split("\n")
 
             header_cols = next(csv.reader([lines[0]], delimiter=';'))
