@@ -21,7 +21,9 @@ from phase2_repricing import RepricingEngine
 from dotenv import load_dotenv
 load_dotenv()
 
-CSV_URL = "https://raw.githubusercontent.com/peterhoman/bol-repricing-be/main/bolcom_productinformatie.csv"
+# CSV via de Contents-API, niet raw (fix 18/8): raw cachet minuten en
+# racet daardoor met onze eigen API-schrijfacties - zie _fresh_headers().
+CSV_URL = "https://api.github.com/repos/peterhoman/bol-repricing-be/contents/bolcom_productinformatie.csv"
 
 if __name__ == "__main__":
     engine = RepricingEngine(CSV_URL)
