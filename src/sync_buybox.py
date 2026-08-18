@@ -31,7 +31,9 @@ from phase2_repricing import RepricingEngine
 
 load_dotenv()
 
-CSV_URL = "https://raw.githubusercontent.com/peterhoman/bol-repricing-be/main/bolcom_productinformatie.csv"
+# CSV via de Contents-API, niet raw (fix 18/8): raw cachet minuten en
+# racet daardoor met onze eigen API-schrijfacties - zie _fresh_headers().
+CSV_URL = "https://api.github.com/repos/peterhoman/bol-repricing-be/contents/bolcom_productinformatie.csv"
 GITHUB_REPO = os.getenv("GITHUB_REPO")
 
 
@@ -66,7 +68,14 @@ def add_eans_to_csv(eans):
         return
     headers = github_headers()
     api_url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/bolcom_productinformatie.csv"
-    raw = requests.get(CSV_URL, timeout=30).text
+    # Read via the Contents API with the raw media type: ALWAYS the current
+    # version. On 18 Aug this function read the raw CDN URL seconds after
+    # remove_eans_from_csv() had rewritten the CSV via the API; the CDN still
+    # served the pre-removal version, so this function rebuilt the CSV from
+    # stale content and silently resurrected the 18 just-removed winners -
+    # which the next cloud run then unfroze, wiping the whole sync result.
+    raw = requests.get(api_url, timeout=30,
+                       headers={**github_headers(), "Accept": "application/vnd.github.raw"}).text
     lines = raw.rstrip("\n").split("\n")
 
     # Locate the columns BY HEADER NAME, never by fixed position. Bol.com's own
