@@ -18,7 +18,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from phase2_repricing import RepricingEngine
 
-CSV_URL = "https://raw.githubusercontent.com/peterhoman/bol-repricing-be/main/bolcom_productinformatie.csv"
+# CSV via de Contents-API, niet raw (fix 18/8): raw cachet minuten en
+# racet daardoor met onze eigen API-schrijfacties - zie _fresh_headers().
+CSV_URL = "https://api.github.com/repos/peterhoman/bol-repricing-be/contents/bolcom_productinformatie.csv"
 RAW_BASE = "https://raw.githubusercontent.com/peterhoman/bol-repricing-be/main/"
 
 if __name__ == "__main__":
