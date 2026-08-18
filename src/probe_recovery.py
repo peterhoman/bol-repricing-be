@@ -53,7 +53,9 @@ from phase2_repricing import RepricingEngine
 from dotenv import load_dotenv
 load_dotenv()
 
-CSV_URL = "https://raw.githubusercontent.com/peterhoman/bol-repricing-be/main/bolcom_productinformatie.csv"
+# CSV via de Contents-API, niet raw (fix 18/8): raw cachet minuten en
+# racet daardoor met onze eigen API-schrijfacties - zie _fresh_headers().
+CSV_URL = "https://api.github.com/repos/peterhoman/bol-repricing-be/contents/bolcom_productinformatie.csv"
 GITHUB_REPO = os.getenv("GITHUB_REPO")
 
 # Candidate selection (see instructie-NL-margeherstel-probe.md for the numbers
