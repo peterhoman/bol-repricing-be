@@ -157,5 +157,29 @@
       "[PROBE] 8717774820117: 95.62 -> 99.6 (price 257.11 -> 267.46)",
       "[PROBE] 8716522079302: 21.42 -> 25.31 (price 64.19 -> 74.31)"
     ]
+  },
+  {
+    "task": "probe_check",
+    "started": "2026-08-19T12:15:02",
+    "duration_s": 30,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[KEPT] 8716522089578: still has buybox at the higher price - margin recovered!",
+      "[KEPT] 8716522091397: still has buybox at the higher price - margin recovered!",
+      "[KEPT] 8716522091403: still has buybox at the higher price - margin recovered!",
+      "[KEPT] 8716522070477: still has buybox at the higher price - margin recovered!",
+      "[KEPT] 8716522051384: still has buybox at the higher price - margin recovered!",
+      "[KEPT] 8716522051377: still has buybox at the higher price - margin recovered!",
+      "[KEPT] 8716522086256: still has buybox at the higher price - margin recovered!",
+      "[KEPT] 8716522103755: still has buybox at the higher price - margin recovered!",
+      "[REVERTED] 4004947363262: lost buybox - restored to safe price 23.19",
+      "[KEPT] 8716522100945: still has buybox at the higher price - margin recovered!",
+      "[KEPT] 8717774820148: still has buybox at the higher price - margin recovered!",
+      "[REVERTED] 8717774820117: lost buybox - restored to safe price 95.62",
+      "[KEPT] 8716522079302: still has buybox at the higher price - margin recovered!",
+      "[DONE] Kept higher price: 11 | Reverted to safe price: 2",
+      "[LET OP] Draai de komende ~90 minuten GEEN sync_buybox.py."
+    ]
   }
 ]
