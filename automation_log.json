@@ -207,5 +207,15 @@
       "[MATCH] Check failed: 33",
       "[MATCH] No-competitor (exempt from daily reset): 38"
     ]
+  },
+  {
+    "task": "probe_check",
+    "started": "2026-08-20T12:15:02",
+    "duration_s": 2,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] No probes currently in progress"
+    ]
   }
 ]
