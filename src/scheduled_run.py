@@ -86,6 +86,58 @@ def push_log_entry(entry):
         return False
 
 
+def normalize_dated_csv():
+    """
+    Before the morning run: if Peter's upload landed under a DATED name
+    (bol.com's download is called e.g. 20260820_bolcom_productinformatie.csv,
+    seen 20 Aug), copy its content to the canonical name and remove the dated
+    file. Without this the morning run silently reprices yesterday's list -
+    the worst kind of failure, because nothing errors.
+
+    Only acts when the dated file is the most recent of the two, so re-running
+    never overwrites a newer canonical upload with an older dated one.
+
+    Returns log lines (prefixed [CSV]) so run() can prepend them to the
+    captured output - prints from this wrapper itself never reach the log,
+    only the subprocess output does.
+    """
+    import re
+    headers = github_headers()
+    base_api = f"https://api.github.com/repos/{GITHUB_REPO}/contents"
+    try:
+        listing = requests.get(base_api + "/", headers=headers, timeout=20).json()
+        dated = [f["name"] for f in listing if isinstance(f, dict) and
+                 re.fullmatch(r"\d{8}_bolcom_productinformatie\.csv", f.get("name", ""))]
+        if not dated:
+            return []
+        dated.sort()
+        name = dated[-1]
+
+        def last_commit_date(path):
+            r = requests.get(f"https://api.github.com/repos/{GITHUB_REPO}/commits",
+                             headers=headers, params={"path": path, "per_page": 1}, timeout=20)
+            return r.json()[0]["commit"]["author"]["date"]
+
+        if last_commit_date(name) < last_commit_date("bolcom_productinformatie.csv"):
+            return [f"[CSV] Dated file {name} is older than the canonical CSV - left alone"]
+
+        src = requests.get(f"{base_api}/{name}", headers=headers, timeout=20).json()
+        dst = requests.get(f"{base_api}/bolcom_productinformatie.csv", headers=headers, timeout=20).json()
+        put = requests.put(f"{base_api}/bolcom_productinformatie.csv", headers=headers,
+                           json={"message": f"Dagexport overgenomen uit {name}",
+                                 "content": src["content"], "sha": dst["sha"]}, timeout=30)
+        if put.status_code in (200, 201):
+            requests.delete(f"{base_api}/{name}", headers=headers,
+                            json={"message": f"Remove dated duplicate {name} (copied to canonical name)",
+                                  "sha": src["sha"]}, timeout=30)
+            return [f"[CSV] Upload onder gedateerde naam {name} overgezet naar bolcom_productinformatie.csv"]
+        return [f"[CSV] Overzetten van {name} mislukt: status {put.status_code}"]
+    except Exception as exc:
+        # Never block the morning run over this - worst case it runs with
+        # yesterday's list, which the log makes visible anyway.
+        return [f"[CSV] normalize_dated_csv failed: {exc}"]
+
+
 def run(task_name):
     if task_name == "selftest":
         entry = {
@@ -107,6 +159,8 @@ def run(task_name):
         print(f"Unknown task: {task_name}. Choose from: {', '.join(TASKS)}, selftest")
         return 2
 
+    csv_notes = normalize_dated_csv() if task_name == "morning" else []
+
     script, args = TASKS[task_name]
     started = datetime.now()
     cmd = [sys.executable, str(BASE / "src" / script)] + args
@@ -116,6 +170,8 @@ def run(task_name):
                               text=True, encoding="utf-8", errors="replace",
                               timeout=45 * 60)
         output = (proc.stdout or "") + (proc.stderr or "")
+        if csv_notes:
+            output = "\n".join(csv_notes) + "\n" + output
         exit_code = proc.returncode
     except subprocess.TimeoutExpired:
         output = "TIMEOUT: script ran longer than 45 minutes and was killed"
@@ -130,7 +186,7 @@ def run(task_name):
     # style result lines - so a fresh session can read the outcome without the
     # progress noise.
     interesting = [ln.strip() for ln in output.splitlines()
-                   if ln.strip().startswith(("[MATCH]", "[DONE]", "[PROBE]", "[KEPT]",
+                   if ln.strip().startswith(("[CSV]", "[MATCH]", "[DONE]", "[PROBE]", "[KEPT]",
                                              "[REVERTED]", "[AUTO]", "[ERROR]", "[STOP]",
                                              "[GEWEIGERD]", "[LET OP]", "[AUDIT]",
                                              "[FLOOR]", "[WARN]", "TIMEOUT", "CRASH"))]
