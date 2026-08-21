@@ -166,9 +166,15 @@ def run(task_name):
     cmd = [sys.executable, str(BASE / "src" / script)] + args
 
     try:
+        # CREATE_NO_WINDOW: the child must not open a console either. The
+        # scheduler launches this wrapper via pythonw.exe (no window), but a
+        # plain subprocess would still pop up a black window - which is exactly
+        # what got closed on 20 Aug at 10:45, killing probe_start after 3 s
+        # (exit 3221225786 = STATUS_CONTROL_C_EXIT, console closed).
+        flags = getattr(subprocess, "CREATE_NO_WINDOW", 0)
         proc = subprocess.run(cmd, cwd=str(BASE), capture_output=True,
                               text=True, encoding="utf-8", errors="replace",
-                              timeout=45 * 60)
+                              timeout=45 * 60, creationflags=flags)
         output = (proc.stdout or "") + (proc.stderr or "")
         if csv_notes:
             output = "\n".join(csv_notes) + "\n" + output
