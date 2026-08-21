@@ -228,5 +228,15 @@
       "[DONE] Frozen total now: 142 (+9 new, -0 unfrozen)",
       "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
     ]
+  },
+  {
+    "task": "selftest",
+    "started": "2026-08-21T07:50:38",
+    "duration_s": 0,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "selftest - scheduler reached the script"
+    ]
   }
 ]
