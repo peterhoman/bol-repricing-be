@@ -253,5 +253,16 @@
       "[MATCH] Check failed: 34",
       "[MATCH] No-competitor (exempt from daily reset): 39"
     ]
+  },
+  {
+    "task": "probe_start",
+    "started": "2026-08-21T10:45:00",
+    "duration_s": 16,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[AUTO] Probing 1 EAN(s), EUR13.94 of margin at stake:",
+      "[PROBE] 8717266396977: 29.5 -> 34.86 (price 85.20 -> 99.14)"
+    ]
   }
 ]
