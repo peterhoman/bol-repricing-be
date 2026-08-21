@@ -275,5 +275,16 @@
       "[KEPT] 8717266396977: still has buybox at the higher price - margin recovered!",
       "[DONE] Kept higher price: 1 | Reverted to safe price: 0"
     ]
+  },
+  {
+    "task": "sync",
+    "started": "2026-08-21T14:15:01",
+    "duration_s": 447,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] Frozen total now: 145 (+3 new, -0 unfrozen)",
+      "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
+    ]
   }
 ]
