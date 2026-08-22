@@ -301,5 +301,15 @@
       "[MATCH] Check failed: 33",
       "[MATCH] No-competitor (exempt from daily reset): 38"
     ]
+  },
+  {
+    "task": "probe_start",
+    "started": "2026-08-22T10:45:01",
+    "duration_s": 4,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] No candidates with at least EUR10.00 to recover"
+    ]
   }
 ]
