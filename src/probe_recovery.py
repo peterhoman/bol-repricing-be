@@ -64,7 +64,9 @@ GITHUB_REPO = os.getenv("GITHUB_REPO")
 # the head of the distribution, not the tail - hence a minimum gain rather
 # than "probe everything that's below full price".
 MIN_GAIN = 10.0        # euro of recoverable selling price, below this it isn't worth the risk
-COOLDOWN_DAYS = 14     # don't retry a reverted EAN before the competitor has had time to move
+COOLDOWN_DAYS = 7      # only applies while the frozen price is UNCHANGED since the probe
+                       # (was 14 until 24 Aug; lowered because the price-change rule
+                       #  below already filters out the repeat-the-same-loser case)
 DEFAULT_BATCH = 15
 
 # Channable's last import of the day is around 21:15 Amsterdam. Start a probe
@@ -126,9 +128,18 @@ def select_candidates(engine, limit):
       - EANs already at (or above) their full price - nothing to recover.
         This also silently excludes winners from earlier rounds: a KEPT probe
         left the article AT its full price, so its gain is 0 from then on.
-      - EANs probed within COOLDOWN_DAYS. Without this a reverted article
-        looks like a top candidate again the very next day (its safe price was
-        restored), so every round would re-probe the same losers.
+      - EANs probed within COOLDOWN_DAYS *whose frozen price has not changed
+        since that probe*. The cooldown exists for one case only: a reverted
+        article gets its safe price back and would otherwise look like a top
+        candidate again the very next day. But an article whose frozen price
+        DID change has been through a full cycle since (unfrozen via the daily
+        export, ground down to the competitor, won and re-frozen at a new
+        level) - that is a genuinely new situation, not a repeat, so it may be
+        probed again immediately.
+
+        Measured 24 Aug, which is why this rule exists: a flat 14-day cooldown
+        was holding back 33 articles worth EUR1037, and 14 of those (EUR474)
+        had already been through such a cycle.
     """
     frozen = fetch_json("frozen.json", {})
     history = fetch_json("probe_history.json", {})
@@ -141,14 +152,27 @@ def select_candidates(engine, limit):
         if fresh_klantprijs is None:
             continue
 
-        last = history.get(ean)
+        entry = history.get(ean)
+        # History used to be {ean: "YYYY-MM-DD"}; it is now
+        # {ean: {"date": ..., "klantprijs": <price right after the probe>}}.
+        # Old string entries are still honoured, but without a stored price we
+        # cannot tell whether the article moved since, so those fall back to
+        # the plain date rule.
+        if isinstance(entry, dict):
+            last, probed_klantprijs = entry.get("date"), entry.get("klantprijs")
+        else:
+            last, probed_klantprijs = entry, None
+
         if last:
             try:
-                if (today - date.fromisoformat(last)).days < COOLDOWN_DAYS:
-                    skipped_cooldown += 1
-                    continue
+                within_cooldown = (today - date.fromisoformat(last)).days < COOLDOWN_DAYS
             except ValueError:
-                pass
+                within_cooldown = False
+            unchanged = (probed_klantprijs is None
+                         or abs(frozen_klantprijs - probed_klantprijs) < 0.005)
+            if within_cooldown and unchanged:
+                skipped_cooldown += 1
+                continue
 
         current_price = engine.calculate_normal_price(frozen_klantprijs)
         full_price = engine.calculate_normal_price(fresh_klantprijs)
@@ -283,7 +307,12 @@ def phase_check():
     history = fetch_json("probe_history.json", {})
     today = date.today().isoformat()
     for ean in probe_backup:
-        history[ean] = today
+        # Store the price the article ENDS this probe on (full price when kept,
+        # the restored safe price when reverted). select_candidates() compares
+        # it with the current frozen price: if they differ, the article has
+        # been through a new win/loss cycle since and is a fresh candidate,
+        # cooldown or not.
+        history[ean] = {"date": today, "klantprijs": frozen.get(ean)}
     upload_json(history, "probe_history.json",
                 f"Probe history: {len(probe_backup)} EAN(s) probed on {today}")
 
