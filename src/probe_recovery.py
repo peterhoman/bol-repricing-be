@@ -64,9 +64,8 @@ GITHUB_REPO = os.getenv("GITHUB_REPO")
 # the head of the distribution, not the tail - hence a minimum gain rather
 # than "probe everything that's below full price".
 MIN_GAIN = 10.0        # euro of recoverable selling price, below this it isn't worth the risk
-COOLDOWN_DAYS = 7      # only applies while the frozen price is UNCHANGED since the probe
-                       # (was 14 until 24 Aug; lowered because the price-change rule
-                       #  below already filters out the repeat-the-same-loser case)
+COOLDOWN_DAYS = 14     # back to 14 after the 24 Aug experiment (7 days + a price-change
+                       # exemption) produced a 0-out-of-15 round; see select_candidates()
 DEFAULT_BATCH = 15
 
 # Channable's last import of the day is around 21:15 Amsterdam. Start a probe
@@ -128,18 +127,20 @@ def select_candidates(engine, limit):
       - EANs already at (or above) their full price - nothing to recover.
         This also silently excludes winners from earlier rounds: a KEPT probe
         left the article AT its full price, so its gain is 0 from then on.
-      - EANs probed within COOLDOWN_DAYS *whose frozen price has not changed
-        since that probe*. The cooldown exists for one case only: a reverted
-        article gets its safe price back and would otherwise look like a top
-        candidate again the very next day. But an article whose frozen price
-        DID change has been through a full cycle since (unfrozen via the daily
-        export, ground down to the competitor, won and re-frozen at a new
-        level) - that is a genuinely new situation, not a repeat, so it may be
-        probed again immediately.
+      - EANs probed within COOLDOWN_DAYS. Flat rule, no exceptions.
 
-        Measured 24 Aug, which is why this rule exists: a flat 14-day cooldown
-        was holding back 33 articles worth EUR1037, and 14 of those (EUR474)
-        had already been through such a cycle.
+        On 24 Aug this was briefly relaxed: articles whose frozen price had
+        CHANGED since their probe were let through early, on the theory that a
+        changed price meant a new cycle and therefore a fresh situation. That
+        theory was wrong and the experiment is on record: of the 15 articles it
+        released, 10 were repeat probes and ALL 15 lost the buybox (0 kept,
+        EUR768 of "unlocked" margin recovered nothing).
+
+        The reason is the opposite of the theory: a frozen price that changed
+        recently means a competitor actively undercut us and we re-won at a
+        LOWER level. That competitor is by definition still around, so raising
+        to full price fails. A price that has NOT moved is the better sign -
+        it suggests nobody is pushing on that article.
     """
     frozen = fetch_json("frozen.json", {})
     history = fetch_json("probe_history.json", {})
@@ -168,9 +169,7 @@ def select_candidates(engine, limit):
                 within_cooldown = (today - date.fromisoformat(last)).days < COOLDOWN_DAYS
             except ValueError:
                 within_cooldown = False
-            unchanged = (probed_klantprijs is None
-                         or abs(frozen_klantprijs - probed_klantprijs) < 0.005)
-            if within_cooldown and unchanged:
+            if within_cooldown:
                 skipped_cooldown += 1
                 continue
 
