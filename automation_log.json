@@ -501,5 +501,20 @@
       "[DONE] Frozen total now: 145 (+16 new, -0 unfrozen)",
       "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
     ]
+  },
+  {
+    "task": "morning",
+    "started": "2026-08-26T09:00:03",
+    "duration_s": 290,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[MATCH] Checking 230 active EAN(s) for immediate price-matching...",
+      "[MATCH] Matched (undercut competitor): 225",
+      "[MATCH] Already winning (frozen now): 5",
+      "[MATCH] Hit minimum price floor: 182",
+      "[MATCH] Check failed: 34",
+      "[MATCH] No-competitor (exempt from daily reset): 39"
+    ]
   }
 ]
