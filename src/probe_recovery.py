@@ -24,6 +24,10 @@ therefore the floor, not the answer - the real delay has never been measured.
       CURRENT purchase price minus the price we're frozen at), keeping only
       those worth at least MIN_GAIN and not probed in the last COOLDOWN_DAYS.
 
+  python src/probe_recovery.py step [n]
+      Raise n frozen articles by one small step (EUR0.50) instead of jumping to
+      the full price. This is the daily mode since 1 September - see STEP_EUR.
+
   python src/probe_recovery.py start <ean> [<ean> ...]
       Temporarily sets the given frozen EAN(s) to their full NORMAL price
       (no discount) and pushes it live. Backs up the old (safe) price first.
@@ -82,6 +86,21 @@ LATEST_START_MINUTE = 30
 # delay includes Channable -> bol.com and has never been measured.
 MIN_WAIT_MINUTES = 30
 
+# Step mode (1 Sept). The classic probe jumps straight to the full price and
+# asks "can we have all of it back?" - all or nothing. That worked in August
+# (15/15, 11/13) but stopped working entirely from 24 Aug (0/15, 0/13), and
+# Peter's screenshots showed why: competitors are back on the expensive items,
+# sitting just above or just below us. At EUR255 vs a competitor at EUR254.95
+# we keep the buybox on our 8.9 seller rating; at the full EUR299.83 we lose
+# it. The ceiling is somewhere in between and the jump can never find it.
+#
+# Step mode raises the SELLING price by STEP_EUR per day instead, capped at the
+# full price. Same check/revert machinery: keep it if we still hold the buybox,
+# put it back the moment we don't. Slower, but it finds each article's own
+# ceiling instead of guessing, and a failure costs one step instead of the
+# whole gap.
+STEP_EUR = 0.50
+
 
 def github_headers():
     token = os.getenv("GITHUB_TOKEN")
@@ -117,7 +136,7 @@ def trigger_workflow():
     return r.status_code == 204
 
 
-def select_candidates(engine, limit):
+def select_candidates(engine, limit, min_gain=None):
     """
     Rank frozen EANs by how much selling price we could reclaim, and return
     the best `limit` of them as (ean, current_price, full_price, gain) tuples.
@@ -176,7 +195,7 @@ def select_candidates(engine, limit):
         current_price = engine.calculate_normal_price(frozen_klantprijs)
         full_price = engine.calculate_normal_price(fresh_klantprijs)
         gain = round(full_price - current_price, 2)
-        if gain >= MIN_GAIN:
+        if gain >= (MIN_GAIN if min_gain is None else min_gain):
             candidates.append((ean, round(current_price, 2), round(full_price, 2), gain))
 
     candidates.sort(key=lambda c: -c[3])
@@ -259,6 +278,64 @@ def phase_start(eans):
     print("  python src/probe_recovery.py check")
 
 
+def phase_step(limit):
+    """
+    Raise the selling price of `limit` frozen articles by one STEP_EUR, never
+    above their full price. Uses the same backup file and the same check phase
+    as the classic probe, so a lost buybox is reverted automatically.
+
+    Candidates need only STEP_EUR of headroom (not MIN_GAIN): an article sitting
+    EUR2 under its full price is worth stepping too - that is EUR2 of margin we
+    are currently giving away for nothing.
+    """
+    if too_late_to_start():
+        print(f"\n[GEWEIGERD] Het is na {LATEST_START_HOUR}:{LATEST_START_MINUTE:02d}. "
+              f"Channable importeert vanavond niet meer genoeg keer.")
+        return
+
+    engine = RepricingEngine(CSV_URL)
+    frozen = fetch_json("frozen.json", {})
+    probe_backup = fetch_json("frozen_probe_backup.json", {})
+    if probe_backup:
+        print(f"[STOP] Er staat nog een ronde open ({len(probe_backup)} EAN(s)) - "
+              f"draai eerst 'check'.")
+        return
+
+    picks = select_candidates(engine, limit, min_gain=STEP_EUR)
+    if not picks:
+        print(f"\n[DONE] No candidates with at least EUR{STEP_EUR:.2f} of headroom")
+        return
+
+    updated = 0
+    for ean, current_price, full_price, gain in picks:
+        target = min(current_price + STEP_EUR, full_price)
+        new_klantprijs = engine.calculate_klantprijs_for_target_price(target)
+        # calculate_klantprijs_for_target_price rounds UP, so a step that lands
+        # exactly on the full price can overshoot it by a cent; clamp back.
+        if engine.calculate_normal_price(new_klantprijs) > full_price + 0.005:
+            new_klantprijs = engine.bliving_klantprijzen[ean]
+        if abs(new_klantprijs - frozen[ean]) < 0.005:
+            continue
+        probe_backup[ean] = frozen[ean]
+        frozen[ean] = new_klantprijs
+        updated += 1
+        print(f"[PROBE] {ean}: {current_price:.2f} -> "
+              f"{engine.calculate_normal_price(new_klantprijs):.2f} "
+              f"(plafond {full_price:.2f})")
+
+    if not updated:
+        print("\n[DONE] Nothing to step")
+        return
+
+    upload_json(frozen, "frozen.json", f"Step up {updated} EAN(s) by EUR{STEP_EUR:.2f}")
+    upload_json(probe_backup, "frozen_probe_backup.json", f"Backup before stepping {updated} EAN(s)")
+    upload_json({"started_at": datetime.now().isoformat()}, "probe_started.json",
+                f"Step start timestamp for {updated} EAN(s)")
+    trigger_workflow()
+    print(f"\n[AUTO] Stepped {updated} EAN(s) up by EUR{STEP_EUR:.2f}. "
+          f"Check in ~90 minutes.")
+
+
 def phase_check():
     probe_backup = fetch_json("frozen_probe_backup.json", {})
     if not probe_backup:
@@ -305,12 +382,11 @@ def phase_check():
     # safe price and immediately looks like a top candidate again tomorrow.
     history = fetch_json("probe_history.json", {})
     today = date.today().isoformat()
-    for ean in probe_backup:
-        # Store the price the article ENDS this probe on (full price when kept,
-        # the restored safe price when reverted). select_candidates() compares
-        # it with the current frozen price: if they differ, the article has
-        # been through a new win/loss cycle since and is a fresh candidate,
-        # cooldown or not.
+    # Only REVERTED articles go into the cooldown. A kept article either ended
+    # at its full price (classic probe, gain now 0, excluded anyway) or still
+    # has headroom (step mode) and should be allowed to step again tomorrow -
+    # that is the whole point of stepping.
+    for ean in reverted:
         history[ean] = {"date": today, "klantprijs": frozen.get(ean)}
     upload_json(history, "probe_history.json",
                 f"Probe history: {len(probe_backup)} EAN(s) probed on {today}")
@@ -356,6 +432,8 @@ if __name__ == "__main__":
         for ean, now, full, gain in picks:
             print(f"   {ean}  EUR{now:8.2f} -> EUR{full:8.2f}   +EUR{gain:6.2f}")
         phase_start([c[0] for c in picks])
+    elif command == "step":
+        phase_step(int(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_BATCH)
     elif command == "start":
         eans = sys.argv[2:]
         if not eans:
