@@ -43,7 +43,10 @@ MAX_ENTRIES = 60
 # itself so the schedule never has to be re-registered when a command changes.
 TASKS = {
     "morning":     ("match_prices.py", []),
-    "probe_start": ("probe_recovery.py", ["auto", "15"]),
+    # Step mode since 1 Sept: raise EUR0.50/day instead of jumping to the full
+    # price. The jump worked in August but has failed completely since 24 Aug
+    # (0/15, 0/13) now that competitors are back on the expensive items.
+    "probe_start": ("probe_recovery.py", ["step", "15"]),
     "probe_check": ("probe_recovery.py", ["check"]),
     "sync":        ("sync_buybox.py", []),
 }
