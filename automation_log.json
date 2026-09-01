@@ -1,15 +1,5 @@
 [
   {
-    "task": "selftest",
-    "started": "2026-08-17T15:50:00",
-    "duration_s": 0,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "selftest - scheduler reached the script"
-    ]
-  },
-  {
     "task": "morning",
     "started": "2026-08-17T15:57:01",
     "duration_s": 5,
@@ -803,6 +793,21 @@
     "summary": [
       "[DONE] Frozen total now: 128 (+0 new, -0 unfrozen)",
       "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
+    ]
+  },
+  {
+    "task": "morning",
+    "started": "2026-09-01T09:00:02",
+    "duration_s": 312,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[MATCH] Checking 243 active EAN(s) for immediate price-matching...",
+      "[MATCH] Matched (undercut competitor): 242",
+      "[MATCH] Already winning (frozen now): 1",
+      "[MATCH] Hit minimum price floor: 186",
+      "[MATCH] Check failed: 37",
+      "[MATCH] No-competitor (exempt from daily reset): 42"
     ]
   }
 ]
