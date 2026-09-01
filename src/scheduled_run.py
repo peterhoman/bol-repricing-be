@@ -43,10 +43,13 @@ MAX_ENTRIES = 60
 # itself so the schedule never has to be re-registered when a command changes.
 TASKS = {
     "morning":     ("match_prices.py", []),
-    # Step mode since 1 Sept: raise EUR0.50/day instead of jumping to the full
-    # price. The jump worked in August but has failed completely since 24 Aug
-    # (0/15, 0/13) now that competitors are back on the expensive items.
-    "probe_start": ("probe_recovery.py", ["step", "15"]),
+    # Optimize mode since 1 Sept: read every competitor's price from the
+    # price-overview page and move each frozen article to just under its
+    # cheapest rival. Replaces both the old probe (jump to full price, 90-min
+    # wait, revert on failure) and the brief step experiment - we can now SEE
+    # the competitor instead of guessing, so probe_check has nothing left to
+    # do on these and simply reports "no probes in progress".
+    "probe_start": ("probe_recovery.py", ["optimize", "40"]),
     "probe_check": ("probe_recovery.py", ["check"]),
     "sync":        ("sync_buybox.py", []),
 }
