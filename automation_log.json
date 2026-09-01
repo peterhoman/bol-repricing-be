@@ -1,16 +1,6 @@
 [
   {
     "task": "morning",
-    "started": "2026-08-17T15:57:01",
-    "duration_s": 5,
-    "exit_code": 1,
-    "result": "FAILED",
-    "summary": [
-      "[ERROR] No products loaded from CSV"
-    ]
-  },
-  {
-    "task": "morning",
     "started": "2026-08-17T15:58:52",
     "duration_s": 5,
     "exit_code": 1,
@@ -808,6 +798,16 @@
       "[MATCH] Hit minimum price floor: 186",
       "[MATCH] Check failed: 37",
       "[MATCH] No-competitor (exempt from daily reset): 42"
+    ]
+  },
+  {
+    "task": "probe_start",
+    "started": "2026-09-01T10:45:02",
+    "duration_s": 46,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] Verhoogd: 1 artikelen (+EUR5.02 per verkoopcyclus) | ongemoeid: 36 | check mislukt: 3"
     ]
   }
 ]
