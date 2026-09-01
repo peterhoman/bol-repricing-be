@@ -811,6 +811,79 @@ class RepricingEngine:
         except Exception as e:
             return {"found": False, "error": str(e)}
 
+    def check_all_offers(self, ean: str, session, seller_name: str = "Dreamhouse&Garden") -> dict:
+        """
+        Read EVERY seller's price for one EAN from bol.com's price-overview
+        page, including the ones sitting behind us while WE hold the buybox.
+
+        Why this exists (1 Sept): check_buybox() reads the product page, which
+        only ever shows the winning offer - our own, when we are winning. That
+        blind spot is what made margin recovery a guessing game: probes jumped
+        to the full price and either survived or did not, with no way to tell
+        how much headroom there actually was. Peter pointed out the "Bij N
+        partners verkrijgbaar" link; it leads to /be/nl/prijsoverzicht/<slug>/
+        <id>/ which lists all sellers AND is plain server-rendered HTML, so
+        no browser is needed after all.
+
+        Each offer block carries a screen-reader sentence with the exact
+        amount ("De prijs van dit product is 174 euro en 95 cent. Verkocht
+        door Izziet."), which is far more stable to parse than the visual
+        price markup.
+
+        Returns {'found': bool, 'offers': [{'seller','price'}, ...],
+                 'ours': float|None, 'best_other': float|None,
+                 'best_other_seller': str|None}
+        """
+        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+        try:
+            search = session.get(f"https://www.bol.com/be/nl/s/?searchtext={ean}",
+                                 headers=headers, timeout=15)
+            if search.status_code != 200:
+                return {"found": False, "error": f"search status {search.status_code}"}
+            urls = re.findall(r'"(/be/nl/p/[^"]+)"', search.text)
+            if not urls:
+                return {"found": False, "error": "no product url in search results"}
+
+            m = re.search(r"/p/([^/]+)/(\d+)", urls[0])
+            if not m:
+                return {"found": False, "error": "cannot parse product url"}
+            slug, pid = m.group(1), m.group(2)
+
+            page = session.get(
+                f"https://www.bol.com/be/nl/prijsoverzicht/{slug}/{pid}/"
+                f"?sort=price&sortOrder=asc", headers=headers, timeout=20)
+            if page.status_code != 200:
+                return {"found": False, "error": f"overview status {page.status_code}"}
+
+            offers = []
+            for block in page.text.split('data-testid="offer-compare-item"')[1:]:
+                seg = block[:6000]
+                # The sentence can carry extra clauses between price and
+                # seller on discounted items ("De adviesprijs is ... Je
+                # bespaart 3%."), so match the two parts separately and only
+                # inside this one offer block.
+                prijs = re.search(r"De prijs van dit product is (\d+) euro(?: en (\d+) cent)?", seg)
+                verkoper = re.search(r"Verkocht door ([^.<|]{2,60})", seg)
+                said = prijs and verkoper
+                if not said:
+                    continue
+                euro, cent, seller = prijs.group(1), prijs.group(2) or "0", verkoper.group(1)
+                offers.append({"seller": seller.replace("&amp;", "&").strip(),
+                               "price": round(int(euro) + int(cent) / 100, 2)})
+
+            if not offers:
+                return {"found": False, "error": "no offers parsed from overview page"}
+
+            ours = next((o["price"] for o in offers
+                         if o["seller"].lower() == seller_name.lower()), None)
+            others = [o for o in offers if o["seller"].lower() != seller_name.lower()]
+            best = min(others, key=lambda o: o["price"]) if others else None
+            return {"found": True, "offers": offers, "ours": ours,
+                    "best_other": best["price"] if best else None,
+                    "best_other_seller": best["seller"] if best else None}
+        except Exception as e:
+            return {"found": False, "error": str(e)}
+
     def run_single_iteration_stateless(self, check_buybox_live: bool = True) -> tuple:
         """
         Stateless version of run_iteration, meant to be triggered by an external
