@@ -108,6 +108,14 @@ MIN_WAIT_MINUTES = 30
 # whole gap.
 STEP_EUR = 0.50
 
+# How far under the cheapest competitor we sit when moving a frozen price up.
+# 0.02 is a guess, not a measurement (Peter flagged this on 1 Sept): bol.com
+# may need a wider gap before it hands over the buybox, and going 10/20/25
+# cents lower can flip it much sooner. Raise this if the articles raised on
+# 1 Sept turn up in the daily export - see logs/optimize-2026-09-01.txt for
+# the exact list to check against.
+UNDERCUT_EUR = 0.02
+
 
 def github_headers():
     token = os.getenv("GITHUB_TOKEN")
@@ -343,8 +351,8 @@ def phase_optimize(limit):
             # 0/13 in late August. Walk up in EUR5 steps instead: same
             # destination within a few days, one step of exposure if wrong.
             target = min(current + 5.00, full)
-        elif best_other > current + 0.02:
-            target = min(best_other - 0.02, full)
+        elif best_other > current + UNDERCUT_EUR:
+            target = min(best_other - UNDERCUT_EUR, full)
         else:
             left_alone += 1
             continue
