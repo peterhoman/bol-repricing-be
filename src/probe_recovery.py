@@ -24,6 +24,12 @@ therefore the floor, not the answer - the real delay has never been measured.
       CURRENT purchase price minus the price we're frozen at), keeping only
       those worth at least MIN_GAIN and not probed in the last COOLDOWN_DAYS.
 
+  python src/probe_recovery.py optimize [n]
+      Read every competitor's price for the n frozen articles with the most
+      headroom and move each to just under its cheapest rival (or to the full
+      price when it has none). No probe, no waiting - this is the daily mode
+      since 1 September.
+
   python src/probe_recovery.py step [n]
       Raise n frozen articles by one small step (EUR0.50) instead of jumping to
       the full price. This is the daily mode since 1 September - see STEP_EUR.
@@ -278,6 +284,100 @@ def phase_start(eans):
     print("  python src/probe_recovery.py check")
 
 
+def phase_optimize(limit):
+    """
+    Set every frozen article to the best price it can hold, using the ACTUAL
+    competitor prices from the price-overview page.
+
+    This replaces guessing. Until 1 Sept we could not see who sat behind us
+    while we held the buybox, so margin recovery meant probing: raise the
+    price, wait 90 minutes, check, revert on failure. Now check_all_offers()
+    reads every seller's price directly, so we can compute the right price in
+    one pass - no probe, no wait, no revert.
+
+    Per article:
+      - no other seller at all      -> go to the full price, nobody can take it
+      - cheapest other ABOVE us     -> move up to just under them (-EUR0.02)
+      - cheapest other BELOW us     -> leave it alone. We hold the buybox on
+                                       rating/delivery despite being dearer
+                                       (measured: EUR255.03 vs EUR254.95 and we
+                                       still win). Raising risks that; lowering
+                                       gives away margin for a buybox we
+                                       already have.
+    Always clamped to [floor, full price].
+    """
+    engine = RepricingEngine(CSV_URL)
+    frozen = fetch_json("frozen.json", {})
+    session = requests.Session()
+
+    todo = [e for e in frozen if e in engine.bliving_klantprijzen]
+    # Work through the list in a stable order, most headroom first, so a
+    # capped run always spends its requests where the money is.
+    todo.sort(key=lambda e: -(engine.calculate_normal_price(engine.bliving_klantprijzen[e])
+                              - engine.calculate_normal_price(frozen[e])))
+    todo = todo[:limit]
+
+    raised = []
+    left_alone = 0
+    failed = 0
+    print(f"\n[OPTIMIZE] Reading live offers for {len(todo)} frozen article(s)...")
+
+    for i, ean in enumerate(todo):
+        result = engine.check_all_offers(ean, session)
+        time.sleep(0.3)
+        if not result.get("found"):
+            failed += 1
+            continue
+
+        current = engine.calculate_normal_price(frozen[ean])
+        fresh_kp = engine.bliving_klantprijzen[ean]
+        full = engine.calculate_normal_price(fresh_kp)
+        floor = engine.calculate_minimum_price(fresh_kp)
+        best_other = result.get("best_other")
+
+        if best_other is None:
+            # Nobody else listed - but that is also what a page we failed to
+            # parse properly looks like, and jumping straight to the full
+            # price is exactly the all-or-nothing move that lost 0/15 and
+            # 0/13 in late August. Walk up in EUR5 steps instead: same
+            # destination within a few days, one step of exposure if wrong.
+            target = min(current + 5.00, full)
+        elif best_other > current + 0.02:
+            target = min(best_other - 0.02, full)
+        else:
+            left_alone += 1
+            continue
+
+        target = max(min(target, full), floor)
+        if target <= current + 0.01:
+            left_alone += 1
+            continue
+
+        new_kp = engine.calculate_klantprijs_for_target_price(target)
+        if engine.calculate_normal_price(new_kp) > full + 0.005:
+            new_kp = fresh_kp
+        frozen[ean] = new_kp
+        gain = round(engine.calculate_normal_price(new_kp) - current, 2)
+        raised.append((ean, current, engine.calculate_normal_price(new_kp), gain,
+                       result.get("best_other_seller")))
+        print(f"[UP] {ean}: EUR{current:.2f} -> EUR{engine.calculate_normal_price(new_kp):.2f} "
+              f"(+EUR{gain:.2f}) - concurrent "
+              f"{result.get('best_other_seller') or 'geen'} op "
+              f"EUR{best_other if best_other else 0:.2f}")
+
+        if (i + 1) % 25 == 0:
+            print(f"   {i+1}/{len(todo)} bekeken...")
+
+    if raised:
+        upload_json(frozen, "frozen.json",
+                    f"Optimize: raised {len(raised)} frozen price(s) to just under the competitor")
+        trigger_workflow()
+
+    total = round(sum(r[3] for r in raised), 2)
+    print(f"\n[DONE] Verhoogd: {len(raised)} artikelen (+EUR{total:.2f} per verkoopcyclus) | "
+          f"ongemoeid: {left_alone} | check mislukt: {failed}")
+
+
 def phase_step(limit):
     """
     Raise the selling price of `limit` frozen articles by one STEP_EUR, never
@@ -432,6 +532,8 @@ if __name__ == "__main__":
         for ean, now, full, gain in picks:
             print(f"   {ean}  EUR{now:8.2f} -> EUR{full:8.2f}   +EUR{gain:6.2f}")
         phase_start([c[0] for c in picks])
+    elif command == "optimize":
+        phase_optimize(int(sys.argv[2]) if len(sys.argv) > 2 else 40)
     elif command == "step":
         phase_step(int(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_BATCH)
     elif command == "start":
