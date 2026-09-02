@@ -12547,7 +12547,7 @@
       <klantprijs>5.25</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/1/2/12a6203-57re-0-bb77bb16d8de8282835cb0a1c828ba53ef8d699cc77ed41468155a5f3cc6eef7_129.JPG</image>
+      	<image>https://www.b-living.eu/media/catalog/product/1/2/12a6203-57re-0-bdc6080ff12dbbcf909e47561287610664062c70b95b8f1ec37eecdd868b2f9d_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/1/2/12a6203-57re-3-294d10e56c3fd22a29b0d823ead4a0993dbbabe6cb72579885ccbe6e4d4e9edf.jpg</gallery_image>
 		<afmeting>0x0x0cm</afmeting>
 		<gewicht>0.400000</gewicht>
@@ -14984,31 +14984,6 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
-		<sku>13683</sku>
-		<titel>Basket Weave Zelfklevende Folie Mini rol zilver 45cmx2mtr</titel>
-      <voorraad>9</voorraad>
-      	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Plakfolies &gt; AD minirol</category_path>
-      <maincategory>Tafelzeilen &amp; Folies</maincategory>
-		<subcategory>Plakfolies</subcategory>
-		<subsubcategory>AD minirol</subsubcategory>
-      	<ean>8718483136834</ean>
-      	<merk>2Lif</merk>
-		<verpakt_per>1</verpakt_per>
-		<prijs>5.30</prijs>
-      <klantprijs>4.40</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/1/3/13683-0-3f8d9c5d5db219d82f9317e018143748645a78c4ff1100eb32def7437f85904c_1.jpg</image>
-		<afmeting>48x8x8cm</afmeting>
-		<gewicht>0.316667</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Afnemen met een vochtige doek</wasvoorschriften>
-      	<materiaal>PVC</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Zilver</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
 		<sku>13690</sku>
 		<titel>Linen Zelfklevende Folie Grote Rol beige 45cmx15mtr</titel>
       <voorraad>75</voorraad>
@@ -16341,7 +16316,7 @@
       <klantprijs>10.50</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/1/5/15a6619-259nvbe-0-54053443172d85eb2fa1ae78cbd20e61529750f82e2885b7be68663f552c5c6f_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/1/5/15a6619-259nvbe-0-df7b7d3a6315fb1ad6d1820cd16e4550f314c92e38826db7101df2c04e9042af_130.JPG</image>
 		<afmeting>0x0x0cm</afmeting>
 		<gewicht>0.500000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -16699,7 +16674,7 @@
       <klantprijs>6.25</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/1/6/16a6877-57lgr-0-32d7155c490ab5d8573735ea756d694ae5a2ab7744aaec18c6e329061cc26986_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/1/6/16a6877-57lgr-0-030a7114d2bec11061b90025134d695f28c440a9cf186ac48d52af3623381935_131.JPG</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/1/6/16a6877-57lgr-2-1e3840a7950b0b5491c3be2ba93f8a58b6e857bf38f514c946afe3deb9d9d167.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/1/6/16a6877-57lgr-3-ff3e89ec4fbd6978caa3295a6fc500781aeb9147c457cbc4e8ef6c721756a651.jpg</gallery_image>
 		<afmeting>0x0x0cm</afmeting>
@@ -18915,7 +18890,7 @@
 	<product>
 		<sku>272-70408.8</sku>
 		<titel>Marble vloermat grijs 65cmx15mtr</titel>
-      <voorraad>60</voorraad>
+      <voorraad>45</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Vloerkleden &gt; Vloerkleed</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Vloerkleden</subcategory>
@@ -19798,7 +19773,7 @@
 	<product>
 		<sku>4500-2061</sku>
 		<titel>Alcampo Vliegengordijn zwart 90x230cm</titel>
-      <voorraad>130</voorraad>
+      <voorraad>128</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
 		<subsubcategory>Deurgordijnen</subsubcategory>
       	<ean>8717266191121</ean>
@@ -19897,7 +19872,7 @@
 	<product>
 		<sku>4500-3001</sku>
 		<titel>Aruba Vliegengordijn multicolor 90x200cm</titel>
-      <voorraad>111</voorraad>
+      <voorraad>108</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
 		<subsubcategory>Deurgordijnen</subsubcategory>
       	<ean>3110061001124</ean>
@@ -19919,7 +19894,7 @@
 	<product>
 		<sku>4500-3002</sku>
 		<titel>Aruba Vliegengordijn zwart wit 90x200cm</titel>
-      <voorraad>299</voorraad>
+      <voorraad>293</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
 		<subsubcategory>Deurgordijnen</subsubcategory>
       	<ean>8717266350788</ean>
@@ -20882,7 +20857,7 @@
       <klantprijs>4.94</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/5/4/540-100v03-0-d48bc71e591ca7f3c564d4ddf7f177a218191cdefedea51eb1eac96946a43d15_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/5/4/540-100v03-0-e6aaf1e1ae799de39ca23b6d9ba81e2c8da319a5a20fe49802306684e18cd957_129.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/5/4/540-100v03-3-f9a16d82de1665fc171c093e1f651cd0d3335e3d66dde1ce4cd296ef1aed1c9b.jpg</gallery_image>
 		<afmeting>0x0x0cm</afmeting>
 		<gewicht>0.490000</gewicht>
@@ -21647,7 +21622,7 @@
 	<product>
 		<sku>550-404701</sku>
 		<titel>Lavanda Tafelzeil multi 140cmx20mtr</titel>
-      <voorraad>300</voorraad>
+      <voorraad>280</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; PVC tafelzeilen &gt; PVC tafelzeil</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>PVC tafelzeilen</subcategory>
@@ -21699,7 +21674,7 @@
 	<product>
 		<sku>550-4334</sku>
 		<titel>Vito Block Tafelzeil lime 140cmx20mtr</titel>
-      <voorraad>720</voorraad>
+      <voorraad>700</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; PVC tafelzeilen &gt; PVC tafelzeil</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>PVC tafelzeilen</subcategory>
@@ -22210,7 +22185,7 @@
       <klantprijs>4.56</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/5/5/551-132v07-0-952a5852cc325f04c2cfd6e8ce966555e7e2b55c9d4ca92286fc515a4e16bd2d_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/5/5/551-132v07-0-5bcd742b1e6de67727b8dda0a817fbf863a2a0ffd1d8a813e7276605dc0a1722_129.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/5/5/551-132v07-3-f9a16d82de1665fc171c093e1f651cd0d3335e3d66dde1ce4cd296ef1aed1c9b.jpg</gallery_image>
 		<afmeting>0x0x0cm</afmeting>
 		<gewicht>0.500000</gewicht>
@@ -22306,7 +22281,7 @@
 	<product>
 		<sku>555-020</sku>
 		<titel>Clear foil 0,20mm Tafelzeil transparant 140cmx30mtr</titel>
-      <voorraad>59</voorraad>
+      <voorraad>58</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Transparante tafelzeilen &gt; Transparante tafelzeil</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Transparante tafelzeilen</subcategory>
@@ -22554,7 +22529,7 @@
 	<product>
 		<sku>6000-0004</sku>
 		<titel>Glc-1116 Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
-      <voorraad>60</voorraad>
+      <voorraad>40</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -22577,34 +22552,9 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
-		<sku>6000-0005</sku>
-		<titel>Rice Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
-      <voorraad>20</voorraad>
-      	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
-      <maincategory>Tafelzeilen &amp; Folies</maincategory>
-		<subcategory>Statische raamfolies</subcategory>
-		<subsubcategory>ST grote rol</subsubcategory>
-      	<ean>8425162024220</ean>
-      	<merk>2Lif</merk>
-		<verpakt_per>20</verpakt_per>
-		<prijs>10.90</prijs>
-      <klantprijs>9.05</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/6/0/6000-0005-0-cbc72ffff0474e5952c6ed5f8cfe0c54d2ea4139e5c1c3e3b03d83cacd5716e5.jpg</image>
-		<afmeting>0x0x0cm</afmeting>
-		<gewicht>0.187000</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Afnemen met een vochtige doek</wasvoorschriften>
-      	<materiaal>PVC</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Transparant</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
 		<sku>6000-0014</sku>
 		<titel>Rubi Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
-      <voorraad>80</voorraad>
+      <voorraad>60</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -22653,7 +22603,7 @@
 	<product>
 		<sku>6000-0036</sku>
 		<titel>Sand Sl Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
-      <voorraad>80</voorraad>
+      <voorraad>60</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23101,7 +23051,7 @@
 	<product>
 		<sku>61450-0001</sku>
 		<titel>Frost Bright Static Foil Big Roll transparent 46cmx20mtr</titel>
-      <voorraad>1135</voorraad>
+      <voorraad>1038</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23126,7 +23076,7 @@
 	<product>
 		<sku>61450-0002</sku>
 		<titel>Frost Wit Statische raamfolie Grote Rol 45cmx20mtr</titel>
-      <voorraad>819</voorraad>
+      <voorraad>799</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23151,7 +23101,7 @@
 	<product>
 		<sku>61450-0003</sku>
 		<titel>Stripes-2Cm Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>160</voorraad>
+      <voorraad>140</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23176,7 +23126,7 @@
 	<product>
 		<sku>61450-0006</sku>
 		<titel>Brilliant Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>440</voorraad>
+      <voorraad>420</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23201,7 +23151,7 @@
 	<product>
 		<sku>61450-0008</sku>
 		<titel>Energy Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>319</voorraad>
+      <voorraad>299</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23226,7 +23176,7 @@
 	<product>
 		<sku>61450-0010</sku>
 		<titel>Spring Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>420</voorraad>
+      <voorraad>400</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23249,34 +23199,9 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
-		<sku>61450-0011</sku>
-		<titel>Shade Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>20</voorraad>
-      	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
-      <maincategory>Tafelzeilen &amp; Folies</maincategory>
-		<subcategory>Statische raamfolies</subcategory>
-		<subsubcategory>ST grote rol</subsubcategory>
-      	<ean>8717266195648</ean>
-      	<merk>2Lif</merk>
-		<verpakt_per>1</verpakt_per>
-		<prijs>7.80</prijs>
-      <klantprijs>6.47</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/6/1/61450-0011-0-e2b24da65d5e6300547179672b0decd087f78495df280f52f05720baf636537d.jpg</image>
-		<afmeting>0x0x0cm</afmeting>
-		<gewicht>0.160000</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Afnemen met een vochtige doek</wasvoorschriften>
-      	<materiaal>PVC</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Transparant</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
 		<sku>61450-0012</sku>
 		<titel>Bubble Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>300</voorraad>
+      <voorraad>280</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23301,7 +23226,7 @@
 	<product>
 		<sku>61450-0019</sku>
 		<titel>Abbey Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>460</voorraad>
+      <voorraad>440</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23326,7 +23251,7 @@
 	<product>
 		<sku>61450-0020</sku>
 		<titel>Turtle Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>1040</voorraad>
+      <voorraad>1020</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23376,7 +23301,7 @@
 	<product>
 		<sku>61450-0024</sku>
 		<titel>Lines Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>120</voorraad>
+      <voorraad>100</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23401,7 +23326,7 @@
 	<product>
 		<sku>61450-0031</sku>
 		<titel>Waves Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>460</voorraad>
+      <voorraad>440</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23427,7 +23352,7 @@
 	<product>
 		<sku>61450-0033</sku>
 		<titel>Lines Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>419</voorraad>
+      <voorraad>399</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23453,7 +23378,7 @@
 	<product>
 		<sku>61450-0034</sku>
 		<titel>Flower Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>240</voorraad>
+      <voorraad>220</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23479,7 +23404,7 @@
 	<product>
 		<sku>61450-0036</sku>
 		<titel>Ice Flower Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>400</voorraad>
+      <voorraad>380</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23504,7 +23429,7 @@
 	<product>
 		<sku>61450-0037</sku>
 		<titel>Circles Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>299</voorraad>
+      <voorraad>279</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23530,7 +23455,7 @@
 	<product>
 		<sku>61450-0038</sku>
 		<titel>Mini Square Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>500</voorraad>
+      <voorraad>480</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23556,7 +23481,7 @@
 	<product>
 		<sku>61675-0001</sku>
 		<titel>Frost Bright Statische raamfolie Grote Rol transparant 67,5cmx20mtr</titel>
-      <voorraad>336</voorraad>
+      <voorraad>278</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23581,7 +23506,7 @@
 	<product>
 		<sku>61675-0002</sku>
 		<titel>Frost Statische raamfolie Wit Grote Rol transparant 67,5cmx20mtr</titel>
-      <voorraad>240</voorraad>
+      <voorraad>220</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23606,7 +23531,7 @@
 	<product>
 		<sku>61675-0003</sku>
 		<titel>Stripes-2Cm Statische raamfolie Grote Rol transparant 67,5cmx20mtr</titel>
-      <voorraad>119</voorraad>
+      <voorraad>99</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23631,7 +23556,7 @@
 	<product>
 		<sku>61675-0010</sku>
 		<titel>Spring Statische raamfolie Grote Rol transparant 67,5cmx20mtr</titel>
-      <voorraad>120</voorraad>
+      <voorraad>100</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23656,7 +23581,7 @@
 	<product>
 		<sku>61900-0001</sku>
 		<titel>Frost Bright Statische raamfolie Grote Rol transparant 90cmx20mtr</titel>
-      <voorraad>1019</voorraad>
+      <voorraad>980</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23681,7 +23606,7 @@
 	<product>
 		<sku>61900-0002</sku>
 		<titel>Frost Wit Statische raamfolie Grote Rol transparant 90cmx20mtr</titel>
-      <voorraad>759</voorraad>
+      <voorraad>739</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23706,7 +23631,7 @@
 	<product>
 		<sku>61900-0003</sku>
 		<titel>Stripes-2Cm Statische raamfolie Grote Rol transparant 90cmx20mtr</titel>
-      <voorraad>340</voorraad>
+      <voorraad>320</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23731,7 +23656,7 @@
 	<product>
 		<sku>61900-0008</sku>
 		<titel>Energy Statische raamfolie Grote Rol transparant 90cmx20mtr</titel>
-      <voorraad>280</voorraad>
+      <voorraad>260</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23756,7 +23681,7 @@
 	<product>
 		<sku>61900-0010</sku>
 		<titel>Spring Statische raamfolie Grote Rol transparant 90cmx20mtr</titel>
-      <voorraad>240</voorraad>
+      <voorraad>220</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23781,7 +23706,7 @@
 	<product>
 		<sku>61900-0012</sku>
 		<titel>Bubble Statische raamfolie Grote Rol transparant 90cmx20mtr</titel>
-      <voorraad>420</voorraad>
+      <voorraad>400</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23806,7 +23731,7 @@
 	<product>
 		<sku>61900-0031</sku>
 		<titel>Waves Statische raamfolie Grote Rol transparant 90cmx20mtr</titel>
-      <voorraad>220</voorraad>
+      <voorraad>200</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23910,7 +23835,7 @@
 	<product>
 		<sku>61900-0036</sku>
 		<titel>Ice Flower Statische raamfolie Grote Rol transparant 90cmx20mtr</titel>
-      <voorraad>180</voorraad>
+      <voorraad>160</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23935,7 +23860,7 @@
 	<product>
 		<sku>61900-0037</sku>
 		<titel>Circles Statische raamfolie Grote Rol transparant 90cmx20mtr</titel>
-      <voorraad>280</voorraad>
+      <voorraad>260</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -26786,7 +26711,7 @@
 	<product>
 		<sku>7003G0200</sku>
 		<titel>Filling kussen wit 50x50cm</titel>
-      <voorraad>2150</voorraad>
+      <voorraad>2126</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussenvulling</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -26810,7 +26735,7 @@
 	<product>
 		<sku>7003G0210</sku>
 		<titel>Filling kussen wit 33x55cm</titel>
-      <voorraad>2339</voorraad>
+      <voorraad>2321</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussenvulling</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -26858,7 +26783,7 @@
 	<product>
 		<sku>7003G0257</sku>
 		<titel>Filling kussen wit 57x57cm</titel>
-      <voorraad>421</voorraad>
+      <voorraad>419</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussenvulling</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -29514,7 +29439,7 @@
 	<product>
 		<sku>7003GGFA11</sku>
 		<titel>Vintage Velvet kussen groen 50x50cm</titel>
-      <voorraad>34</voorraad>
+      <voorraad>32</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen fluweel</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -32644,7 +32569,7 @@
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7003ggts01-0-0ee6e7e12eeb0de1c312ea79900841898088a0dd5069a106baf89f36a084931c.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003ggts01-1-8981a2b5fee5223c2ffd2c68c9169ca10fffebb5136144c76857ab4a7b877fd3_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003ggts01-1-10e58e0c85eb59db61b3f5cbd2628d1bd75320b0ad88e5dd83e980c2bbd6deb0_129.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003ggts01-2-0a82cb77240bd96c615cec38813c49b0db5b1dbd5c427933e6be6eee183c6011.jpg</gallery_image>
 		<afmeting>45x45x10cm</afmeting>
 		<gewicht>0.873000</gewicht>
@@ -33549,7 +33474,7 @@
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7003ggxf01-0-a1beb7f0cf30303ea8c5264dae836d33e11371062c271273ebcca17f5940a177.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003ggxf01-1-ba24eb271b2301e9266ded4c0c60c10126777ef5028176180ee9773b870dfb4f_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003ggxf01-1-b8abbadea3589c9cefa3336136e55892c5c4aa39f9d14cb44a2fc0d8eeffde95_129.jpg</gallery_image>
 		<afmeting>40x45x7.5cm</afmeting>
 		<gewicht>0.530000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -44542,7 +44467,7 @@
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7019ggmd03-0-4f560306518f45747b4bb218ad69c0dbff21095f5d615bc8f0fcf049d186cc71.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7019ggmd03-1-511060fb99ddfd1f6fd7357e3d5bdadc03c6a196ad11bec792515518cefb4c6b_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7019ggmd03-1-f2d4e7585fd440e8e238fadcc25c2143237447d24fa800ed8be763a2e6a22226_129.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7019ggmd03-2-f68a879565af84fd102bc7637e04cc64ca3694962f5ddfce01753eee321e0fc9.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7019ggmd03-3-d6923974553391d8965b922268e3d90d4fba4c550c292c9198442ce763f54fa0.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7019ggmd03-4-a1a571d57112eca06a52b417107182e9290b911da28c83adb6bdda60739adc31.jpg</gallery_image>
@@ -45444,7 +45369,7 @@
       <klantprijs>17.50</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/7/0/7027a2460g-0-484e7339f921e3c8b617c1d58059b7a2bb1f0699cca0f9353cab53654bb3ffc9_129.JPG</image>
+      	<image>https://www.b-living.eu/media/catalog/product/7/0/7027a2460g-0-4250562429cde6f74cc97c1b2dd2440fb35070b95d549f7fd1e3f4cd4f5e86c9_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7027a2460g-2-ec6900df5837e5897c139bba56587c7d4ec4fd5afb8becbf02b33a5e08771d88.jpg</gallery_image>
 		<afmeting>9.3x1x1cm</afmeting>
 		<gewicht>2.000000</gewicht>
@@ -49056,7 +48981,7 @@
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7028ggts01-0-83f399c3e6c78e4e89354e73a8df3752b9f1a5f09ca0716e7ef2649cba20e393.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7028ggts01-1-391687ab85c738f2fd7b224008f35be53b011ede87b6c86a8c5aabf9d08542f0_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7028ggts01-1-10e58e0c85eb59db61b3f5cbd2628d1bd75320b0ad88e5dd83e980c2bbd6deb0_129.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7028ggts01-2-3277f44f622190b2c2e050debb3dfeaeef73b949bb81a4e91407686b3efc47bf.jpg</gallery_image>
 		<afmeting>50x30x10cm</afmeting>
 		<gewicht>0.843000</gewicht>
@@ -50919,7 +50844,7 @@
 	<product>
 		<sku>7034GGRQ05</sku>
 		<titel>Velvet Wool kussen groen 40x60cm</titel>
-      <voorraad>38</voorraad>
+      <voorraad>44</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8717266003608</ean>
@@ -54992,7 +54917,7 @@
       	<merk>Linen &amp; More</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>2.65</prijs>
-      <klantprijs>1.71</klantprijs>
+      <klantprijs>1.88</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7058ggac04-0-dc3c874e561c431672080bd1a892a8cb0dbab841cdcbd849dcca4a1a1c919036_1.jpg</image>
@@ -55017,7 +54942,7 @@
       	<merk>Linen &amp; More</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>2.65</prijs>
-      <klantprijs>1.71</klantprijs>
+      <klantprijs>2.07</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7058ggac07-0-d064799eeead65bdd1235f14e245f82eb72c50e60c89d912983b96a00a043711_1.jpg</image>
@@ -60208,7 +60133,7 @@
       <klantprijs>2.12</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/7/1/7196dghp01ar-0-71f57582bec7e9d5178ada751d17e435a2731d373208668d61b0206ba2bb3c80_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/7/1/7196dghp01ar-0-782c8ec58b636d62bb8740c7dc8ee849c31218d99fd3d66cc9ed81da943890d8_129.jpg</image>
 		<afmeting>1.2x1x1cm</afmeting>
 		<gewicht>0.138000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -68320,7 +68245,7 @@
       <klantprijs>5.25</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/g/1/g10b1202-04br-0-f684c580a6b5c97ac6ea54e1548e4728d37fb1d83e94b48827446cbf5a2d9e4e_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/g/1/g10b1202-04br-0-b4015a93d461232be2c819177326d77c96818323109d62e880d59bc9d1f24ffe_129.JPG</image>
 		<afmeting>0x0x0cm</afmeting>
 		<gewicht>0.500000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -70722,7 +70647,7 @@
 	<product>
 		<sku>ABKH</sku>
 		<titel>kandelaar 8cm</titel>
-      <voorraad>107</voorraad>
+      <voorraad>106</voorraad>
       	<category_path>B Living &gt; Theelichthouders &amp; Kandelaars &gt; Kandelaars &gt; Kandelaar</category_path>
       <maincategory>Theelichthouders &amp; Kandelaars</maincategory>
 		<subcategory>Kandelaars</subcategory>
@@ -71392,7 +71317,7 @@
 	<product>
 		<sku>BBPAK</sku>
 		<titel>paraplu alpen koe 105cm</titel>
-      <voorraad>144</voorraad>
+      <voorraad>136</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Paraplu's &gt; Paraplu</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Paraplu's</subcategory>
@@ -72078,7 +72003,7 @@
 	<product>
 		<sku>CCRG</sku>
 		<titel>trofee schedel reebok op hout 20cm</titel>
-      <voorraad>31</voorraad>
+      <voorraad>19</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Wanddecoratie &gt; Wanddecoratie</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Wanddecoratie</subcategory>
@@ -72090,7 +72015,7 @@
       <klantprijs>14.94</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/c/c/ccrg-0-8fa185faa38f7f96a16d652018296cea035876d2241ccfd8bd8005af36189f42_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/c/c/ccrg-0-17e395a11e54edc992638498c731207b275a429f507af2e35462ea0d2228a177_129.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/c/c/ccrg-2-8ea7e89151e0ac58751ead9f0d7b81f5ecbc1bbc4ed84115df1a317eb8c4980e.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/c/c/ccrg-3-fc91d381b25c78eef7354439ff675f8eb380ceb097b8350163e7c095a03b9122.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/c/c/ccrg-4-9eccf8f16075843585155290fda7ee49f5217bdec772c9786e4b21ab28ecb2d0.jpg</gallery_image>
@@ -72120,9 +72045,9 @@
       <klantprijs>157.70</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-0-c59632acf9a5560c347c1f95ed469d5fc2283f3e47533d366fee99ba7ad9954a_129.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-2-041030a169f1994ef141689dcb1779ac6da831cd8db9a69ef5b5b95128c3d811_130.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-3-220de2de62afcf6cd73df5261470dbedda7a2404b0244dc8f453d8a78e16b21d_130.jpg</gallery_image>
+      	<image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-0-0d4e00ba280f2b4bd7bfcb46ed5d397b3ecb65073f874e52f9e150181c428957_129.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-2-29a40ce0cc192f15c2c7690548c1b0d26e1a69a214b8a1f4b1795f82551444fc_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-3-c222f9508361f7c8aaadf43f9da04c2a1af957369ca8f4a90f4f7e4924616c94_129.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-4-3b36a430f6327f3b8b648505074ef5885b2a876987de62ac43698ab1bdbd06df.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-5-350e7dc83d0ef74da9d56497d0befbbc43682183c2e7af1c19e52c16a1b7b8ca.jpg</gallery_image>
 		<afmeting>30x30x5cm</afmeting>
@@ -72665,7 +72590,7 @@
       <klantprijs>4.40</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/c/i/cihgt21-0-9fcf171fbe9d2ab90d7d1effb55b244bb7b9d4ec1adfba60a8718b1401952b0e_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/c/i/cihgt21-0-17b0884ad60508807706597bdd086d8749e22e8a5f58b0e872919eb1a2514b4a_129.jpg</image>
 		<afmeting>21.5x20.5x2cm</afmeting>
 		<gewicht>0.132000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -76128,7 +76053,7 @@
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/e/h/ehsltk-0-efba57dac28e105faf054f917d0dd17314666b3b5a859f27f80b75bdd30a70d9.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/e/h/ehsltk-1-85f00e918ad89a402726e3ef777641c6be18991d94f1ebc08389a98e90c2baad_1.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/e/h/ehsltk-2-596b8118774f30c0f70460bf0966b0aff845ae3bcb5d3d2ebe4baa5fe6063b86_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/e/h/ehsltk-2-5311fc9b7e066957e4852ecebde392394d1d14fda0e490020fd216ec4a3e4f36_129.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/e/h/ehsltk-3-973939a65e6dd7174e37c7ec3496ada35fba6605d9286b82af62330b6e3b7130.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/e/h/ehsltk-4-0005351b6c0df88e78c3982847524f50791afa72b1e2b7a6d286cd7e68065fbc.jpg</gallery_image>
 		<afmeting>52x5x9.5cm</afmeting>
@@ -76291,7 +76216,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>4</verpakt_per>
 		<prijs>7.50</prijs>
-      <klantprijs>5.11</klantprijs>
+      <klantprijs>5.32</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/e/h/ehwdfl-0-509f7622483b4c1d85a49ff5e955293202b53793d8ae65afb49e282838e4d560.jpg</image>
@@ -76489,7 +76414,7 @@
 	<product>
 		<sku>ESSVTP80</sku>
 		<titel>schapenvacht nieuw zeeland beige 80cm</titel>
-      <voorraad>69</voorraad>
+      <voorraad>81</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -76516,7 +76441,7 @@
 	<product>
 		<sku>ESSVW90</sku>
 		<titel>schapenvacht nieuw zeeland wit 90-100cm</titel>
-      <voorraad>94</voorraad>
+      <voorraad>106</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -77147,7 +77072,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>1</verpakt_per>
 		<prijs>28.00</prijs>
-      <klantprijs>19.67</klantprijs>
+      <klantprijs>20.10</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/e/v/evkkwtl-0-1c829d71e22bf98fd6f74638f105a6a7acd15440ca39d9f2de288ad438abdef6.jpg</image>
@@ -77423,7 +77348,7 @@
 	<product>
 		<sku>EVKSBRE</sku>
 		<titel>gobelin kussen bloemen ree 45x45cm</titel>
-      <voorraad>58</voorraad>
+      <voorraad>56</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen gobelin</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -77680,7 +77605,7 @@
 	<product>
 		<sku>EVKSGHBT</sku>
 		<titel>gobelin kussen groen hert stropdas  45x45cm</titel>
-      <voorraad>21</voorraad>
+      <voorraad>15</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen gobelin</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -77732,7 +77657,7 @@
 	<product>
 		<sku>EVKSHGAG</sku>
 		<titel>gobelin kussen haas groen alpengilet 45x45cm</titel>
-      <voorraad>42</voorraad>
+      <voorraad>34</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen gobelin</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -77799,32 +77724,7 @@
       <klantprijs>28.63</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjeh-0-c1a7833162e7926e22b5289d9a512a798f36e14b1f37770e80f844df5e96e499_129.jpg</image>
-		<afmeting>45x15x45cm</afmeting>
-		<gewicht>0.600000</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Ja 30 graden</wasvoorschriften>
-      	<materiaal>Katoen</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Multi</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
-		<sku>EVKSJPH</sku>
-		<titel>gobelin kussen jagers pet hert 45x45cm</titel>
-      <voorraad>18</voorraad>
-      	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen gobelin</category_path>
-      <maincategory>Woontextiel</maincategory>
-		<subcategory>Sierkussens</subcategory>
-		<subsubcategory>Kussen gobelin</subsubcategory>
-      	<ean>8716522049176</ean>
-      	<merk>Mars &amp; More</merk>
-		<verpakt_per>1</verpakt_per>
-		<prijs>34.50</prijs>
-      <klantprijs>28.63</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjph-0-e5b829406ec2e6a83b8ac5d7ea507e175d16567d8df77263e742eb37f3728dcc.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjeh-0-a6b8f437433d468b96a9aad839df9aa5cfbb2f602caab3ec902327f3a8849107_129.jpg</image>
 		<afmeting>45x15x45cm</afmeting>
 		<gewicht>0.600000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -77874,7 +77774,7 @@
       <klantprijs>28.63</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjre-0-558ff61c1496d02de8e5ec1af19b05543eedf8f16e7164c869e868d75a03bda6_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjre-0-f7caaabd8e120c53c7e7dbf3049623ef33df488a10763e8326118f77927cda16_129.jpg</image>
 		<afmeting>45x15x45cm</afmeting>
 		<gewicht>0.600000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -77887,7 +77787,7 @@
 	<product>
 		<sku>EVKSJVS</sku>
 		<titel>gobelin kussen jager vos 45x45cm</titel>
-      <voorraad>56</voorraad>
+      <voorraad>48</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen gobelin</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -77899,7 +77799,7 @@
       <klantprijs>28.63</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjvs-0-2cd27eed15a0fe1d33b9f6919dfe4c5935df4a9e724c4951d685281b1666f558_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjvs-0-f2f989f61f65c8b83ecd4785488281d0293339408236143579b0676fce50c2d0_129.jpg</image>
 		<afmeting>45x15x45cm</afmeting>
 		<gewicht>0.600000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -78932,7 +78832,7 @@
       <klantprijs>54.74</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/f/x/fxtrrbg-0-75553561bec4563e98e5c2ec22aaa0635fe758a674914e1c7c61d318b8d74fd4_130.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/f/x/fxtrrbg-0-cb8aac56c1480a334e4297cdb185311fa479f35f49191d9d92ff8b96724c5a21_129.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/f/x/fxtrrbg-2-daccf151fd717576e59237f80e73fc900655251ddd49c772e03b20a331a5217d.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/f/x/fxtrrbg-3-62dd044354884054afb805cda497af339d8d70fe6e336b89b1f4ec0d34383ef9.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/f/x/fxtrrbg-4-91ffe082810928428be221589b75caf2daca25de2d298f2a3aedaa115931946b.jpg</gallery_image>
@@ -80385,7 +80285,7 @@
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/g/n/gnkpg-0-28a940a49fa16258b7feb6bd8f4f683806e2d05762770b4c7a8f7c64a5d24dd1.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/g/n/gnkpg-1-e92abe9330156a02442184f91611945762e83bf8c2919792156ed33372043036.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/g/n/gnkpg-2-37200aa4b66a693c9713c9f32d929008c1fc197c7a86b71c287d31d36543606c_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/g/n/gnkpg-2-0fb8381f8d185b00f3094d9ca5537b732edde41824dcd8066d301284d0655c7c_129.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/g/n/gnkpg-5-98481c248ef31a363c4309c8f7703ef79201f396ea77ba365768053c089fca1a.jpg</gallery_image>
 		<afmeting>5x4.5x2cm</afmeting>
 		<gewicht>0.100000</gewicht>
@@ -81787,7 +81687,7 @@
 	<product>
 		<sku>HLDSBR</sku>
 		<titel>Deurstopper Beer ruit 31x15x23cm</titel>
-      <voorraad>278</voorraad>
+      <voorraad>274</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Deurstoppers &gt; Deurstopper</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Deurstoppers</subcategory>
@@ -81991,7 +81891,7 @@
 	<product>
 		<sku>HLDSHZ</sku>
 		<titel>Deurstopper Hond zit ruit 21x16x26 cm</titel>
-      <voorraad>187</voorraad>
+      <voorraad>181</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Deurstoppers &gt; Deurstopper</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Deurstoppers</subcategory>
@@ -85966,9 +85866,9 @@
       <klantprijs>54.78</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/m/g/mgwkkb-0-634efc5c6479cabbdace0b0499ab125091af8f5757d55547b13e07f507fdcef8_95.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/m/g/mgwkkb-2-310075da305a4ee01728ba344200505397e1d3776e2a059d7e1deb223999d21c_95.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/m/g/mgwkkb-3-f7e690e398eec5fd37aee99830d4a915b196bda33a89b4d5b9ca52e5f76d3eb9_95.jpg</gallery_image>
+      	<image>https://www.b-living.eu/media/catalog/product/m/g/mgwkkb-0-d68bad8d2b7908ef40c6c7bd3082d83ceac97fd11d704df0d114554c4c5f0b70_96.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/m/g/mgwkkb-2-771174ac56c748165f0b2f5e02588d40b5966e49fa99250d3839a42e1927e30c_96.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/m/g/mgwkkb-3-22d6dde096bba983cf443e143226f1640e688109557aad83ecd6185cdb375742_96.jpg</gallery_image>
 		<afmeting>21x21x23cm</afmeting>
 		<gewicht>0.901000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -92189,6 +92089,34 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
+		<sku>POKL2GW</sku>
+		<titel>plaid 2 ijslandse schapen geschoren wit 190cm (butt to butt)</titel>
+      <voorraad>23</voorraad>
+      	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
+      <maincategory>Woontextiel</maincategory>
+		<subcategory>Huiden &amp; vachten</subcategory>
+		<subsubcategory>Schapenvacht</subsubcategory>
+      	<ean>8716522053104</ean>
+      	<merk>Mars &amp; More</merk>
+		<verpakt_per>1</verpakt_per>
+		<prijs>115.00</prijs>
+      <klantprijs>95.45</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/p/o/pokl2gw-0-f00d4ff5b40fe9baf98b4c44f35fd65d3e5f642f797a76f4828b476008cea023.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/p/o/pokl2gw-4-3f61b388f06ae5680459c4fdfb4972c4e47841a6b06a4e59b5fb923cb2d29cad.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/p/o/pokl2gw-5-ef4cb1502349608ea68a0151666e7387b8c36a02fbc92d5ad562ac61c7d3aae5.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/p/o/pokl2gw-6-3f61b388f06ae5680459c4fdfb4972c4e47841a6b06a4e59b5fb923cb2d29cad.jpg</gallery_image>
+		<afmeting>190x50x5cm</afmeting>
+		<gewicht>1.000000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Nee</wasvoorschriften>
+      	<materiaal>Vachten</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Wit</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
 		<sku>POKLMM</sku>
 		<titel>plaid ijslandse schapen melange mix licht 120x180cm</titel>
       <voorraad>6</voorraad>
@@ -92217,7 +92145,7 @@
 	<product>
 		<sku>POVLSM</sku>
 		<titel>vacht lam slavic melange 60-70cm</titel>
-      <voorraad>7</voorraad>
+      <voorraad>67</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -92298,7 +92226,7 @@
 	<product>
 		<sku>POVYCM</sku>
 		<titel>schapenvacht ijsland camel 100-110cm</titel>
-      <voorraad>18</voorraad>
+      <voorraad>23</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -92325,7 +92253,7 @@
 	<product>
 		<sku>POVYDBL</sku>
 		<titel>schapenvacht ijsland donkerblond 100-110cm</titel>
-      <voorraad>18</voorraad>
+      <voorraad>38</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -92350,9 +92278,34 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
+		<sku>POVYG</sku>
+		<titel>schapenvacht ijsland geschoren grijs 100-110cm</titel>
+      <voorraad>27</voorraad>
+      	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
+      <maincategory>Woontextiel</maincategory>
+		<subcategory>Huiden &amp; vachten</subcategory>
+		<subsubcategory>Schapenvacht</subsubcategory>
+      	<ean>8716522045697</ean>
+      	<merk>Mars &amp; More</merk>
+		<verpakt_per>1</verpakt_per>
+		<prijs>61.00</prijs>
+      <klantprijs>42.85</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/p/o/povyg-0-df2c6717fb35e5516558d7965712ad9fac9d630e1c23c4f2e17b5b4ac2b51dc6.jpg</image>
+		<afmeting>105x60x5cm</afmeting>
+		<gewicht>0.600000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Nee</wasvoorschriften>
+      	<materiaal>Vachten</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Grijs</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
 		<sku>POVYGB</sku>
 		<titel>schapenvacht ijsland geschoren multi colour 100-110cm</titel>
-      <voorraad>16</voorraad>
+      <voorraad>46</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -92379,7 +92332,7 @@
 	<product>
 		<sku>POVYGM</sku>
 		<titel>schapenvacht ijsland multi colour 100-110cm</titel>
-      <voorraad>20</voorraad>
+      <voorraad>40</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -92409,7 +92362,7 @@
 	<product>
 		<sku>POVYGNGW</sku>
 		<titel>schapenvacht ijsland geschoren natuurlijk gebroken wit 110cm</titel>
-      <voorraad>24</voorraad>
+      <voorraad>44</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -92462,9 +92415,34 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
+		<sku>POVYGT</sku>
+		<titel>schapenvacht ijsland geschoren taupe 100-110cm</titel>
+      <voorraad>49</voorraad>
+      	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
+      <maincategory>Woontextiel</maincategory>
+		<subcategory>Huiden &amp; vachten</subcategory>
+		<subsubcategory>Schapenvacht</subsubcategory>
+      	<ean>8716522046120</ean>
+      	<merk>Mars &amp; More</merk>
+		<verpakt_per>1</verpakt_per>
+		<prijs>61.00</prijs>
+      <klantprijs>50.63</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/p/o/povygt-0-1cd9cdf95b11507c6bc4e69270f1e61216be162022a0992fdc329e34ca8a0d5e.jpg</image>
+		<afmeting>105x60x5cm</afmeting>
+		<gewicht>0.600000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Nee</wasvoorschriften>
+      	<materiaal>Vachten</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Taupe</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
 		<sku>POVYGW</sku>
 		<titel>schapenvacht ijsland geschoren wit 100-110cm</titel>
-      <voorraad>20</voorraad>
+      <voorraad>60</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -92476,7 +92454,7 @@
       <klantprijs>46.06</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/p/o/povygw-0-75623b2b5e91c9c074580892b28e8d6a70d79bc8e2c4bf50ac8de8939db964aa_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/p/o/povygw-0-7dcc185bdd93b317a62ea59cc7dcf275fb5914f933eab476925243fb7fc47838_129.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/p/o/povygw-5-ff121699b54f45a050cfef53c93f5c87a8fe6d38a8a0bbe559bebe365feae79b.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/p/o/povygw-6-fa2679ecba1bb89728f3b41219c3dbd64981731f4929ccc12e854b9ccf1584e4.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/p/o/povygw-7-ee2ac24d90254efc4e840b41088903396875bbddc75c7a1460cd16a3e6d1090e.jpg</gallery_image>
@@ -92542,7 +92520,7 @@
 	<product>
 		<sku>POVYHB</sku>
 		<titel>schapenvacht ijsland hazelnoot bruin 100-110cm</titel>
-      <voorraad>16</voorraad>
+      <voorraad>41</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -92569,7 +92547,7 @@
 	<product>
 		<sku>POVYLBL</sku>
 		<titel>schapenvacht ijsland lichtblond 100-110cm</titel>
-      <voorraad>24</voorraad>
+      <voorraad>59</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -92627,7 +92605,7 @@
 	<product>
 		<sku>POVYW</sku>
 		<titel>schapenvacht ijsland wit 100-110cm</titel>
-      <voorraad>22</voorraad>
+      <voorraad>82</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -92659,7 +92637,7 @@
 	<product>
 		<sku>POVYZ</sku>
 		<titel>schapenvacht ijsland natuur zwart 100-110cm</titel>
-      <voorraad>15</voorraad>
+      <voorraad>55</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Huiden &amp; vachten &gt; Schapenvachten &gt; Schapenvacht</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Huiden &amp; vachten</subcategory>
@@ -92849,7 +92827,7 @@
 	<product>
 		<sku>QTLDS17</sku>
 		<titel>knuffel lief dik schaapje 17cm</titel>
-      <voorraad>269</voorraad>
+      <voorraad>270</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Knuffels &gt; Knuffel</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Knuffels</subcategory>
@@ -94751,7 +94729,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>30</verpakt_per>
 		<prijs>16.50</prijs>
-      <klantprijs>11.59</klantprijs>
+      <klantprijs>12.09</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmhfb-0-55e9eb66a74c90090658b7a4e11ab8f33b32ff37dc2efc5cff40b8c0201e4872_14.jpg</image>
@@ -94799,7 +94777,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>30</verpakt_per>
 		<prijs>16.50</prijs>
-      <klantprijs>11.59</klantprijs>
+      <klantprijs>11.63</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmhjr-0-a7dcf03be19f6c0a8b4bbd4c05fe288918d6cf606ff1f6cabdcafeeb6f815d9c.jpg</image>
@@ -94827,7 +94805,7 @@
       <klantprijs>13.69</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmhtw-0-ec4aca9609d0fe6a9ff334f127f970d87dae93f0fd71afd0f8494fea2bf20132_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmhtw-0-5cd95ac0b150a5ddb8cde3fb831bbdf2e0f635b2a8d385571833293d48414f8a_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmhtw-2-84d9052ec2ffda93c33cb14f0e05991dd6ba4983b91b9f541b83cece7eff7a9f.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmhtw-3-8ddc6d139b22cbeededdd237077005e5708eb1bce24bc0a9f26bdc65d62f6630.jpg</gallery_image>
 		<afmeting>75x50x1cm</afmeting>
@@ -94927,7 +94905,7 @@
       <klantprijs>13.69</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmoh-0-b054fec155ac425d41410a9555368d33ec26eba8699afb73d2c2c8ad2882947c_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmoh-0-f76bd7f3ce2a75ab8ef153309f8fa5e92b745c4840b5148e114d96fd99e49ae4_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmoh-2-3cc5a395744c4c907bb633c0d175776a90d0faa46afdb8b007fccbe9caa07a53.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmoh-3-e07b921633eb92f306a49a5dfccefbfc078aca4f983f665f717185f91f3a6790.jpg</gallery_image>
 		<afmeting>75x50x1cm</afmeting>
@@ -95026,7 +95004,7 @@
       <klantprijs>13.69</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmsnrh-0-19f2e127ac8c92e78c33489c9790e749741c9b0251552376ca9a08c30d289f5c_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmsnrh-0-1ef20e57253c7c2d15a20a23339ee5f79eefd8f0e1529f5bc71ffccf1ce70b58_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmsnrh-2-a484d6414eee480824dad41478885fff9ce4e7245f814fd55950ccd07cbfb26a.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmsnrh-3-095b21c0877fd0b911071682b90729e7b14b2327c4c00ee688da1989816bd563.jpg</gallery_image>
 		<afmeting>75x50x1cm</afmeting>
@@ -95041,7 +95019,7 @@
 	<product>
 		<sku>RARMTZ</sku>
 		<titel>deurmat teckel zittend 75x50cm</titel>
-      <voorraad>107</voorraad>
+      <voorraad>103</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurmatten &gt; Deurmat binnen</category_path>
 		<subsubcategory>Deurmat binnen</subsubcategory>
       	<ean>8716522029192</ean>
@@ -95128,7 +95106,7 @@
       <klantprijs>13.69</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmwd-0-32769f8d7b54ff4480afd1fb67c98a3121762c545852ce0e9b8ec219934b3a53_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmwd-0-674dba6c057b5d291fe73f572ebf8df7f164159a9aa58484663dc47ceb82faa9_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmwd-2-a484d6414eee480824dad41478885fff9ce4e7245f814fd55950ccd07cbfb26a.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmwd-3-b27bf2a88af714cc3a99e277230698d8a8c417cfeb638e0fce72a0d11999fa2b.jpg</gallery_image>
 		<afmeting>75x50x1cm</afmeting>
@@ -95926,7 +95904,7 @@
 	<product>
 		<sku>RNLTWH</sku>
 		<titel>schootkussen winter hert 43cm</titel>
-      <voorraad>82</voorraad>
+      <voorraad>81</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Schootkussens &gt; Dienblad</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Schootkussens</subcategory>
@@ -97446,7 +97424,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>30.50</prijs>
-      <klantprijs>21.42</klantprijs>
+      <klantprijs>21.73</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/s/s/ssdksh-0-1a229bfba114c23669bf8b9990d0b3a7fa952da06c5d993f9ae6beab19df6665.jpg</image>
@@ -97477,9 +97455,9 @@
       <klantprijs>25.31</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/s/s/ssdksth-0-4684ff794acb567980a760fd6ce00813d42a9b187286cddcda1f4aba258c5e68_130.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdksth-2-3469d5acaa23ac6985c8f8cd01e5d08e6b93555acbfee669fa551007f56159ac_129.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdksth-3-7abf7beb3efd3eb2ba1b17aba86f8e093cc8942fac1ef8c33f70f317251f4d9a_129.jpg</gallery_image>
+      	<image>https://www.b-living.eu/media/catalog/product/s/s/ssdksth-0-e6d65aae6681d020af7c3d83cf7c652094f59d85f743a4337067104280eeb82b_130.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdksth-2-2dc9582f7953a1a2fa5bae123ac838f81c79acde5534ca6a0ddbd5b6ec900f3f_130.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdksth-3-20aa023a3d662c5daf66929880cfa9412ed916423ac5d6d268e683aa00ccf983_130.jpg</gallery_image>
 		<afmeting>130x180x3cm</afmeting>
 		<gewicht>1.040000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -100837,7 +100815,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>8</verpakt_per>
 		<prijs>2.75</prijs>
-      <klantprijs>1.78</klantprijs>
+      <klantprijs>2.07</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/x/m/xmwljzs-0-6993ef9f276a2719e53a6545fe99e10433cfa8ad7e6324966fdff09da82c2214.jpg</image>
@@ -100965,7 +100943,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>8</verpakt_per>
 		<prijs>2.75</prijs>
-      <klantprijs>1.02</klantprijs>
+      <klantprijs>1.11</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/x/m/xmwllsgs-0-5fa21e018905952abc9d872433b28bc60aeb13018942ee8b20742b191c2ad2c7.jpg</image>
@@ -103448,7 +103426,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>5.00</prijs>
-      <klantprijs>3.36</klantprijs>
+      <klantprijs>3.40</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/x/m/xmwlvg8-0-e33410e38daabf14062cfefa9dabab53945828fbf5d081b9c53cef08bff7617b.jpg</image>
@@ -103770,7 +103748,7 @@
 	<product>
 		<sku>EVHKRTK</sku>
 		<titel>gobelin kussen ruwharige teckel 30x45cm</titel>
-      <voorraad>32</voorraad>
+      <voorraad>26</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen gobelin</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -105515,7 +105493,7 @@
 	<product>
 		<sku>LJRWLS13</sku>
 		<titel>rotan windlicht ster 13cm</titel>
-      <voorraad>212</voorraad>
+      <voorraad>211</voorraad>
       	<category_path>B Living &gt; Theelichthouders &amp; Kandelaars &gt; Kandelaars &gt; Lantaarn</category_path>
       <maincategory>Theelichthouders &amp; Kandelaars</maincategory>
 		<subcategory>Kandelaars</subcategory>
@@ -106499,7 +106477,7 @@
 	<product>
 		<sku>BL54893</sku>
 		<titel>Willow zelfklevende folie 67,5cmx2mtr</titel>
-      <voorraad>36</voorraad>
+      <voorraad>24</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Plakfolies &gt; AD minirol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Plakfolies</subcategory>
@@ -106523,7 +106501,7 @@
 	<product>
 		<sku>BL55504</sku>
 		<titel>Wit mat zelfklevende folie 67,5cmx2mtr</titel>
-      <voorraad>41</voorraad>
+      <voorraad>29</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Plakfolies &gt; AD minirol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Plakfolies</subcategory>
@@ -106568,56 +106546,6 @@
       	<materiaal>PVC</materiaal>
 		<meerdere_formaten>0</meerdere_formaten>
       	<kleur>Zwart</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
-		<sku>BL55522</sku>
-		<titel>Zilver grijs mat zelfklevende folie 45cmx2mtr</titel>
-      <voorraad>11</voorraad>
-      	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Plakfolies &gt; AD minirol</category_path>
-      <maincategory>Tafelzeilen &amp; Folies</maincategory>
-		<subcategory>Plakfolies</subcategory>
-		<subsubcategory>AD minirol</subsubcategory>
-      	<ean>3700837155221</ean>
-      	<merk>2Lif</merk>
-		<verpakt_per>6</verpakt_per>
-		<prijs>4.90</prijs>
-      <klantprijs>3.29</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/b/l/bl55522-0-ad3dbf588425d75291c03997bd39b0b831f5f668e9fd94d8610fc232608f0841.jpg</image>
-		<afmeting>48x4.5x4.5cm</afmeting>
-		<gewicht>0.183333</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Afnemen met een vochtige doek</wasvoorschriften>
-      	<materiaal>PVC</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Grijs</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
-		<sku>BL55528</sku>
-		<titel>Antraciet mat zelfklevende folie 45cmx2mtr</titel>
-      <voorraad>6</voorraad>
-      	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Plakfolies &gt; AD minirol</category_path>
-      <maincategory>Tafelzeilen &amp; Folies</maincategory>
-		<subcategory>Plakfolies</subcategory>
-		<subsubcategory>AD minirol</subsubcategory>
-      	<ean>3700837155283</ean>
-      	<merk>2Lif</merk>
-		<verpakt_per>6</verpakt_per>
-		<prijs>4.90</prijs>
-      <klantprijs>3.29</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/b/l/bl55528-0-ef42d600d5ca38c875097253b7b539554eeb7cd0ad08cde0905f058782ccab21.jpg</image>
-		<afmeting>48x4.5x4.5cm</afmeting>
-		<gewicht>0.183333</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Afnemen met een vochtige doek</wasvoorschriften>
-      	<materiaal>PVC</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Antraciet</kleur>
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
@@ -106680,7 +106608,7 @@
       	<merk>2Lif</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>4.90</prijs>
-      <klantprijs>3.29</klantprijs>
+      <klantprijs>4.17</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/b/l/bl55808-0-39c49bae51420b70876ce40421847850329ac1031e31e7b15f584734d3eeb45e.jpg</image>
@@ -106705,7 +106633,7 @@
       	<merk>2Lif</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>4.90</prijs>
-      <klantprijs>3.29</klantprijs>
+      <klantprijs>4.17</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/b/l/bl55810-0-7c4d1ca7e22b5b3daa746b00e412fa97b20bdd09d09c4d062d608a9f3bab8926.jpg</image>
@@ -106820,7 +106748,7 @@
 	<product>
 		<sku>BL56156</sku>
 		<titel>Dennengrijs zelfklevende folie 45cmx2mtr</titel>
-      <voorraad>18</voorraad>
+      <voorraad>12</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Plakfolies &gt; AD minirol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Plakfolies</subcategory>
@@ -106895,7 +106823,7 @@
 	<product>
 		<sku>BL56245</sku>
 		<titel>Zand transparente zelfklevende folie 45cmx2mtr</titel>
-      <voorraad>24</voorraad>
+      <voorraad>12</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Plakfolies &gt; AD minirol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Plakfolies</subcategory>
@@ -106920,7 +106848,7 @@
 	<product>
 		<sku>BL56246</sku>
 		<titel>Zand transparente zelfklevende folie 67,5cmx2mtr</titel>
-      <voorraad>78</voorraad>
+      <voorraad>72</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Plakfolies &gt; AD minirol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Plakfolies</subcategory>
@@ -106945,7 +106873,7 @@
 	<product>
 		<sku>BL56259</sku>
 		<titel>Ice flowers transparente zelfklevende folie 45cmx2mtr</titel>
-      <voorraad>30</voorraad>
+      <voorraad>18</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Plakfolies &gt; AD minirol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Plakfolies</subcategory>
@@ -109074,7 +109002,7 @@
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7003gjbn01-0-53d1a8312808ec74c415d6a5b67e2759caf683b9ab5c518eaae534d5661585c7.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003gjbn01-2-4d42b368a96e105cf7ee0b0042ef06bf6a806e88e13af50fd09620c91138bd7a.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003gjbn01-3-0b8f615542ad007e6284833c2d3bf31857c57913dda94b70c3f8f7ebb02ae13f_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003gjbn01-3-5b0004522d2eedad43a7a16a993c69af7e4dcb353bbb77d7bd465e0d9fea7af1_129.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003gjbn01-8-33ceaec37ea123ecc26663fdeb5955e8d9ba908a905927fb578b18f9ab376d6f.jpg</gallery_image>
 		<afmeting>45x45x3.5cm</afmeting>
 		<gewicht>0.540000</gewicht>
@@ -113279,34 +113207,9 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
-		<sku>6000-0006</sku>
-		<titel>Viena Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
-      <voorraad>20</voorraad>
-      	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
-      <maincategory>Tafelzeilen &amp; Folies</maincategory>
-		<subcategory>Statische raamfolies</subcategory>
-		<subsubcategory>ST grote rol</subsubcategory>
-      	<ean>8425162083128</ean>
-      	<merk>2Lif</merk>
-		<verpakt_per>1</verpakt_per>
-		<prijs>10.90</prijs>
-      <klantprijs>9.05</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/6/0/6000-0006-0-c6d989043435b98ceadb1bca6152e3a5826aef0a6e1a87652749fb476005f321.jpg</image>
-		<afmeting>0x0x0cm</afmeting>
-		<gewicht>0.160000</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Afnemen met een vochtige doek</wasvoorschriften>
-      	<materiaal>PVC</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Transparant</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
 		<sku>6000-0013</sku>
 		<titel>Panda Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
-      <voorraad>40</voorraad>
+      <voorraad>20</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -117201,7 +117104,7 @@
 	<product>
 		<sku>7003GGZZ022</sku>
 		<titel>Knitted Rudolf 2 kussen grijs 40x40cm</titel>
-      <voorraad>89</voorraad>
+      <voorraad>185</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Sierkussen</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -117226,7 +117129,7 @@
 	<product>
 		<sku>7003GGZZ023</sku>
 		<titel>Knitted Rudolf 2 kussen beige 40x40cm</titel>
-      <voorraad>112</voorraad>
+      <voorraad>202</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Sierkussen</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -117246,6 +117149,31 @@
 		<wasvoorschriften>Yes, hand wash</wasvoorschriften>
 		<meerdere_formaten>0</meerdere_formaten>
       	<kleur>Beige</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
+		<sku>7003GGZZ021</sku>
+		<titel>Knitted Rudolf 2 kussen rood 40x40cm</titel>
+      <voorraad>159</voorraad>
+      	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Sierkussen</category_path>
+      <maincategory>Woontextiel</maincategory>
+		<subcategory>Sierkussens</subcategory>
+		<subsubcategory>Sierkussen</subsubcategory>
+      	<ean>8717266431937</ean>
+      	<merk>Linen &amp; More</merk>
+		<verpakt_per>6</verpakt_per>
+		<prijs>13.25</prijs>
+      <klantprijs>11.00</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/7/0/7003ggzz021-0-6f7e11b923e3c033e780e92ec062c2803b9ab9daae5931398ba153bd3183436e.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003ggzz021-2-609b97155643ca3bedc96803a0cc84fa4def710bcd9744f6f080285d23f361ff.jpg</gallery_image>
+		<afmeting>40x40x7cm</afmeting>
+		<gewicht>0.800000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Yes, hand wash</wasvoorschriften>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Rood</kleur>
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
@@ -117345,8 +117273,8 @@
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/s/s/ssdkxlrh-0-d581bd363bef593f510e408a78819cd63c7e37bc708f8492fea2a15ffe84ae99.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdkxlrh-2-c074f08171b0001be59b44a6f3400b123c00657f512f1866f0b0f6e025be19aa_129.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdkxlrh-3-f2d8b8d56e8323e615df09827a8bbb5174a5b4d6fbeed512efb49cec185e632c_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdkxlrh-2-a189b4149f2151cde4f0fa2106771dfa82622ddf5de583015d1d3b1163c56a65_130.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdkxlrh-3-8ca0ac6d754d9ce92058773d2375795b4e3985f7e5e00c99f4019c2d7a84baf6_130.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdkxlrh-9-0b8e9785f8636738aa2e30a6161240f53dcfb50b92c027cd4beb4ad86db2795c.jpg</gallery_image>
 		<afmeting>150x200x3cm</afmeting>
 		<gewicht>1.344000</gewicht>
@@ -117457,31 +117385,6 @@
       	<materiaal>Katoen</materiaal>
 		<meerdere_formaten>0</meerdere_formaten>
       	<kleur>Multi</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
-		<sku>7013GGZZ021</sku>
-		<titel>Gebreide Rudolf windstopper rood 30x88cm</titel>
-      <voorraad>61</voorraad>
-      	<category_path>B Living &gt; Woontextiel &gt; Tochtkussens &gt; Tochtkussen</category_path>
-      <maincategory>Woontextiel</maincategory>
-		<subcategory>Tochtkussens</subcategory>
-		<subsubcategory>Tochtkussen</subsubcategory>
-      	<ean>8717266432132</ean>
-      	<merk>Linen &amp; More</merk>
-		<verpakt_per>6</verpakt_per>
-		<prijs>21.00</prijs>
-      <klantprijs>14.75</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz021-0-e28b324ee56b7e538e547f5244f6942f63f58e44d4d13b8c788ec0c0626225ff.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz021-3-fc2ef6d6843dfb1ac5fe7d4c23ea8f2f5bba24da057a8d417a8357ec8f510814.jpg</gallery_image>
-		<afmeting>90x15x30cm</afmeting>
-		<gewicht>0.300000</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Yes, hand wash</wasvoorschriften>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Rood</kleur>
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
@@ -118661,7 +118564,7 @@
 	<product>
 		<sku>GOPHL45</sku>
 		<titel>Paraplu Standaard leer zilver h45cm</titel>
-      <voorraad>76</voorraad>
+      <voorraad>80</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Opbergen &gt; Mand</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Opbergen</subcategory>
@@ -118688,7 +118591,7 @@
 	<product>
 		<sku>GOPH45</sku>
 		<titel>Paraplu Standaard zilver h45cm</titel>
-      <voorraad>65</voorraad>
+      <voorraad>69</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Opbergen &gt; Mand</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Opbergen</subcategory>
@@ -122571,7 +122474,7 @@
 	<product>
 		<sku>550-0018</sku>
 		<titel>Mimosa Tafelzeil 140cmx20mtr</titel>
-      <voorraad>200</voorraad>
+      <voorraad>180</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; PVC tafelzeilen &gt; PVC tafelzeil</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>PVC tafelzeilen</subcategory>
@@ -122599,7 +122502,7 @@
 	<product>
 		<sku>6000-0037</sku>
 		<titel>Zenit Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
-      <voorraad>80</voorraad>
+      <voorraad>60</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -122625,7 +122528,7 @@
 	<product>
 		<sku>6000-5037</sku>
 		<titel>Zenit Statische raamfolie Grote Rol transparant 92cmx20mtr</titel>
-      <voorraad>120</voorraad>
+      <voorraad>100</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -122651,7 +122554,7 @@
 	<product>
 		<sku>6000-5038</sku>
 		<titel>Garbi Statische raamfolie Grote Rol transparant 92cmx20mtr</titel>
-      <voorraad>60</voorraad>
+      <voorraad>40</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -122961,7 +122864,7 @@
 	<product>
 		<sku>7003GAAF02</sku>
 		<titel>Zaragoza cognac Cushion 45 cm x 45 cm</titel>
-      <voorraad>339</voorraad>
+      <voorraad>337</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -123285,7 +123188,7 @@
 	<product>
 		<sku>7003GJDR01</sku>
 		<titel>Kussen Queen chenille beige 45x45cm</titel>
-      <voorraad>89</voorraad>
+      <voorraad>113</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -125914,7 +125817,7 @@
 	<product>
 		<sku>YAWLNL</sku>
 		<titel>Theelichthouder narcis large 18cm</titel>
-      <voorraad>40</voorraad>
+      <voorraad>39</voorraad>
       	<category_path>B Living &gt; Theelichthouders &amp; Kandelaars &gt; Theelichthouders &gt; Theelicht</category_path>
       <maincategory>Theelichthouders &amp; Kandelaars</maincategory>
 		<subcategory>Theelichthouders</subcategory>
@@ -129904,7 +129807,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>8.50</prijs>
-      <klantprijs>5.82</klantprijs>
+      <klantprijs>5.92</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7003gjfc02-0-f14d95896cdc4b376749faa6e1954fbc00655f8fff3f4cd4a713585497426b4b.jpg</image>
@@ -131296,6 +131199,139 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
+		<sku>7013GGZZ024</sku>
+		<titel>Deurstopper Tekkel 47cm</titel>
+      <voorraad>302</voorraad>
+      	<category_path>B Living &gt; Woontextiel &gt; Tochtkussens &gt; Tochtkussen</category_path>
+      <maincategory>Woontextiel</maincategory>
+		<subcategory>Tochtkussens</subcategory>
+		<subsubcategory>Tochtkussen</subsubcategory>
+      	<ean>8717266054716</ean>
+      	<merk>Linen &amp; More</merk>
+		<verpakt_per>6</verpakt_per>
+		<prijs>15.00</prijs>
+      <klantprijs>12.45</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz024-0-fb0443382d93f37c433adaae7f3f575ba876aa5f26cf3413d5419aee9b28db10.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz024-2-798b78a53dd9b10c5a45b0c1e7199ae10dbc59b204865341e4ead87f4ebd7573.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz024-3-aeb67b9bb4d3ac9a3052f2b5f4f91bdd234e3a94e819e31d9f004b0ebce282a9.jpg</gallery_image>
+		<afmeting>90x15x30cm</afmeting>
+		<gewicht>1.000000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Yes, hand wash</wasvoorschriften>
+      	<materiaal>Polyester/Cotton</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Bruin</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
+		<sku>7013GGZZ025</sku>
+		<titel>Deurstopper Beer licht bruin h27cm</titel>
+      <voorraad>372</voorraad>
+      	<category_path>B Living &gt; Woontextiel &gt; Tochtkussens &gt; Tochtkussen</category_path>
+      <maincategory>Woontextiel</maincategory>
+		<subcategory>Tochtkussens</subcategory>
+		<subsubcategory>Tochtkussen</subsubcategory>
+      	<ean>8717266054723</ean>
+      	<merk>Linen &amp; More</merk>
+		<verpakt_per>6</verpakt_per>
+		<prijs>13.25</prijs>
+      <klantprijs>11.00</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz025-0-07a7c2315e9aa545aeec4df675ac16295e6d31053f6a6ade15e85279aeca3e59.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz025-2-f9c55a00ab80df0eaafe867e7839d56a2a5e60e0bb6c0db72e37a876996cb3a4.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz025-3-95c59689beef79b37cea4d03b02ff907de41b8e6efcaa29efb8453b4ec1f421c.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz025-4-28df105fe80a6976e69b38ba0417f87e50b606765710d0cfcfef1608bbf858f0.jpg</gallery_image>
+		<afmeting>27x15x30cm</afmeting>
+		<gewicht>1.000000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Yes, hand wash</wasvoorschriften>
+      	<materiaal>Polyester/Cotton</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Bruin</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
+		<sku>7013GGZZ033</sku>
+		<titel>Windstopper 5 Rendier groen rood bruin 90cm</titel>
+      <voorraad>156</voorraad>
+      	<category_path>B Living &gt; Woontextiel &gt; Tochtkussens &gt; Tochtkussen</category_path>
+      <maincategory>Woontextiel</maincategory>
+		<subcategory>Tochtkussens</subcategory>
+		<subsubcategory>Tochtkussen</subsubcategory>
+      	<ean>8717266054808</ean>
+      	<merk>Linen &amp; More</merk>
+		<verpakt_per>6</verpakt_per>
+		<prijs>22.30</prijs>
+      <klantprijs>18.51</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz033-0-104fb13c15fceeb7dc2f56d1cc3fa6ff4b4b7b78f7528dbca9115f879a193e78.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz033-2-5dd1b65228560d6ec539d09eaff68250bb0161a9c2ce9eab745a1f275c788ad1.jpg</gallery_image>
+		<afmeting>90x15x15cm</afmeting>
+		<gewicht>0.800000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Yes, hand wash</wasvoorschriften>
+      	<materiaal>Polyester/Cotton</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Multi</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
+		<sku>7013GGZZ034</sku>
+		<titel>Windstopper Rendier rood muts en bel 85cm</titel>
+      <voorraad>174</voorraad>
+      	<category_path>B Living &gt; Woontextiel &gt; Tochtkussens &gt; Tochtkussen</category_path>
+      <maincategory>Woontextiel</maincategory>
+		<subcategory>Tochtkussens</subcategory>
+		<subsubcategory>Tochtkussen</subsubcategory>
+      	<ean>8717266054815</ean>
+      	<merk>Linen &amp; More</merk>
+		<verpakt_per>6</verpakt_per>
+		<prijs>22.30</prijs>
+      <klantprijs>18.51</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz034-0-a137f38346ac33418cb0911484501d0c229f753573256f7858e4a5f1ec9cd661.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz034-2-a1d45cc95b0e286dbcca8744b368c3be606af367c1b856d158cbd15c2c3546ee.jpg</gallery_image>
+		<afmeting>85x15x15cm</afmeting>
+		<gewicht>0.800000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Yes, hand wash</wasvoorschriften>
+      	<materiaal>Polyester/Cotton</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Multi</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
+		<sku>7013GGZZ037</sku>
+		<titel>Windstopper 4 Rendier grijs 90cm</titel>
+      <voorraad>132</voorraad>
+      	<category_path>B Living &gt; Woontextiel &gt; Tochtkussens &gt; Tochtkussen</category_path>
+      <maincategory>Woontextiel</maincategory>
+		<subcategory>Tochtkussens</subcategory>
+		<subsubcategory>Tochtkussen</subsubcategory>
+      	<ean>8717266054846</ean>
+      	<merk>Linen &amp; More</merk>
+		<verpakt_per>6</verpakt_per>
+		<prijs>20.50</prijs>
+      <klantprijs>17.02</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz037-0-887e6738a756735416a59b8b1dec3f074052fcb273217b056cdebe9979eae98c.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7013ggzz037-2-f32794ac2ea374d40d57e732e006251d961c785b9cf42a2b0e2b760f18bcbf3f.jpg</gallery_image>
+		<afmeting>90x15x15cm</afmeting>
+		<gewicht>0.800000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Yes, hand wash</wasvoorschriften>
+      	<materiaal>Polyester/Cotton</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Multi</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
 		<sku>7018GJFH01</sku>
 		<titel>Jingle Christmas Schort beige groen rood 75x90cm</titel>
       <voorraad>30</voorraad>
@@ -132350,7 +132386,7 @@
 	<product>
 		<sku>QTR20</sku>
 		<titel>Knuffel Ram off white 20cm</titel>
-      <voorraad>171</voorraad>
+      <voorraad>172</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Knuffels &gt; Knuffel</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Knuffels</subcategory>
@@ -132658,7 +132694,7 @@
 	<product>
 		<sku>QTSS20</sku>
 		<titel>Knuffel Schaap off white 20cm</titel>
-      <voorraad>51</voorraad>
+      <voorraad>52</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Knuffels &gt; Knuffel</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Knuffels</subcategory>
@@ -132739,7 +132775,7 @@
 	<product>
 		<sku>QTWKAS20</sku>
 		<titel>Wandkop Alpaca off white M</titel>
-      <voorraad>66</voorraad>
+      <voorraad>82</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Knuffels &gt; Wandknuffel</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Knuffels</subcategory>
@@ -132748,7 +132784,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>16</verpakt_per>
 		<prijs>16.00</prijs>
-      <klantprijs>11.24</klantprijs>
+      <klantprijs>11.25</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/q/t/qtwkas20-0-6abdbbed91d97bc60fbe027713b58e39f414c0496d9d4d31380c1c290eeef677.jpg</image>
@@ -132800,7 +132836,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>16</verpakt_per>
 		<prijs>15.00</prijs>
-      <klantprijs>10.54</klantprijs>
+      <klantprijs>11.15</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/q/t/qtwkks20-0-b824ec12e81936224474aa1bdff40b1b91431de6c2afc7afb0da87e2354504b3.jpg</image>
@@ -132826,7 +132862,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>4</verpakt_per>
 		<prijs>29.75</prijs>
-      <klantprijs>20.90</klantprijs>
+      <klantprijs>22.09</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/q/t/qtwkks33-0-7c5cf8c2864a1acee232211e53bacb08812cd16c7bc264568a5560820ebac183.jpg</image>
@@ -133007,7 +133043,7 @@
 	<product>
 		<sku>HLDSHQB</sku>
 		<titel>Deurstopper hond quilted bruin 20x17x27cm</titel>
-      <voorraad>91</voorraad>
+      <voorraad>99</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Deurstoppers &gt; Deurstopper</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Deurstoppers</subcategory>
@@ -133727,7 +133763,7 @@
 	<product>
 		<sku>RARMSHD</sku>
 		<titel>Deurmat Schotse hooglander donker 75x50cm</titel>
-      <voorraad>65</voorraad>
+      <voorraad>61</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurmatten &gt; Deurmat binnen</category_path>
 		<subsubcategory>Deurmat binnen</subsubcategory>
       	<ean>8716522110531</ean>
@@ -134855,6 +134891,62 @@
       	<materiaal>PVC</materiaal>
 		<meerdere_formaten>0</meerdere_formaten>
       	<kleur>Zwart</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
+		<sku>NNDBSA</sku>
+		<titel>Dienbladen rond fluweel appel groen dia 30, 38, 45 cm (set of 3)</titel>
+      <voorraad>101</voorraad>
+      	<category_path>B Living &gt; Woonaccessoires &gt; Serveerartikelen &gt; Serveerschalen</category_path>
+      <maincategory>Woonaccessoires</maincategory>
+		<subcategory>Serveerartikelen</subcategory>
+		<subsubcategory>Serveerschalen</subsubcategory>
+      	<ean>8716522113129</ean>
+      	<merk>Mars &amp; More</merk>
+		<verpakt_per>6</verpakt_per>
+		<prijs>37.00</prijs>
+      <klantprijs>30.71</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/n/n/nndbsa-0-2a0ab889e6e53492a9ec437cbd58ed8f297d101bb2077379e871d2765766bebe.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/n/n/nndbsa-2-5a4602f48932d239bedb16a8a69031d1885935fa0e86fabf6d52b48060c62af1.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/n/n/nndbsa-3-60733f09865ee069c8ec0a36cff263aac2983f656933c4e901785b281cc8dee6.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/n/n/nndbsa-4-dc94336cc07d27f503e74e7a4eb066060b7d28abceeae48ab1451e160b7625b9.jpg</gallery_image>
+		<afmeting>45x45x0cm</afmeting>
+		<gewicht>1.800000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Nee</wasvoorschriften>
+      	<materiaal>Hout</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Groen</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
+		<sku>MHDS</sku>
+		<titel>Regisseursstoel koehuid bruin-wit opvouwbaar 48x35x45cm (bos taurus taurus)</titel>
+      <voorraad>24</voorraad>
+      	<category_path>B Living &gt; Kleinmeubelen &gt; Krukken &gt; Kruk</category_path>
+      <maincategory>Kleinmeubelen</maincategory>
+		<subcategory>Krukken</subcategory>
+		<subsubcategory>Kruk</subsubcategory>
+      	<ean>8716522113167</ean>
+      	<merk>Mars &amp; More</merk>
+		<verpakt_per>1</verpakt_per>
+		<prijs>110.00</prijs>
+      <klantprijs>91.30</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/m/h/mhds-0-886b1a306ff8667b86a20c0b0035448e638be47de5e6619dd941fb94f783eec4.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/m/h/mhds-2-5d8cc1bbe184a102821b016c8eeaa3f880d02f5a4535449972ade4268b6acc06.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/m/h/mhds-3-94a40341a800e3fdf6665308cc20371e429b1c7170b60dbedfaa0ee4edf492a0.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/m/h/mhds-4-250f1d3a4d94637713870a9725f6e595402e2a585ff9e598d11ac9cb38302714.jpg</gallery_image>
+		<afmeting>48x35x45cm</afmeting>
+		<gewicht>2.700000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Nee</wasvoorschriften>
+      	<materiaal>Vachten</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Bruin</kleur>
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
