@@ -1,30 +1,5 @@
 [
   {
-    "task": "probe_check",
-    "started": "2026-08-18T12:15:02",
-    "duration_s": 32,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[KEPT] 8716522062021: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522062267: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522103458: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522070903: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522106763: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522106756: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522106770: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522083057: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522085266: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522103632: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8014772133974: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522103649: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522102611: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522106558: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522047349: still has buybox at the higher price - margin recovered!",
-      "[DONE] Kept higher price: 15 | Reverted to safe price: 0"
-    ]
-  },
-  {
     "task": "sync",
     "started": "2026-08-18T14:15:01",
     "duration_s": 506,
@@ -789,6 +764,16 @@
     "result": "ok",
     "summary": [
       "[DONE] Verhoogd: 0 artikelen (+EUR0.00 per verkoopcyclus) | ongemoeid: 37 | check mislukt: 3"
+    ]
+  },
+  {
+    "task": "probe_check",
+    "started": "2026-09-02T12:15:02",
+    "duration_s": 1,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] No probes currently in progress"
     ]
   }
 ]
