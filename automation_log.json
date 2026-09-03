@@ -1,20 +1,5 @@
 [
   {
-    "task": "morning",
-    "started": "2026-08-19T09:00:02",
-    "duration_s": 351,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[MATCH] Checking 250 active EAN(s) for immediate price-matching...",
-      "[MATCH] Matched (undercut competitor): 243",
-      "[MATCH] Already winning (frozen now): 7",
-      "[MATCH] Hit minimum price floor: 192",
-      "[MATCH] Check failed: 34",
-      "[MATCH] No-competitor (exempt from daily reset): 39"
-    ]
-  },
-  {
     "task": "probe_start",
     "started": "2026-08-19T10:45:03",
     "duration_s": 16,
@@ -774,6 +759,21 @@
     "summary": [
       "[DONE] Frozen total now: 143 (+13 new, -0 unfrozen)",
       "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
+    ]
+  },
+  {
+    "task": "morning",
+    "started": "2026-09-03T09:00:03",
+    "duration_s": 286,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[MATCH] Checking 224 active EAN(s) for immediate price-matching...",
+      "[MATCH] Matched (undercut competitor): 224",
+      "[MATCH] Already winning (frozen now): 0",
+      "[MATCH] Hit minimum price floor: 176",
+      "[MATCH] Check failed: 35",
+      "[MATCH] No-competitor (exempt from daily reset): 40"
     ]
   }
 ]
