@@ -1,29 +1,5 @@
 [
   {
-    "task": "probe_check",
-    "started": "2026-08-19T12:15:02",
-    "duration_s": 30,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[KEPT] 8716522089578: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522091397: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522091403: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522070477: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522051384: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522051377: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522086256: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8716522103755: still has buybox at the higher price - margin recovered!",
-      "[REVERTED] 4004947363262: lost buybox - restored to safe price 23.19",
-      "[KEPT] 8716522100945: still has buybox at the higher price - margin recovered!",
-      "[KEPT] 8717774820148: still has buybox at the higher price - margin recovered!",
-      "[REVERTED] 8717774820117: lost buybox - restored to safe price 95.62",
-      "[KEPT] 8716522079302: still has buybox at the higher price - margin recovered!",
-      "[DONE] Kept higher price: 11 | Reverted to safe price: 2",
-      "[LET OP] Draai de komende ~90 minuten GEEN sync_buybox.py."
-    ]
-  },
-  {
     "task": "sync",
     "started": "2026-08-19T14:15:02",
     "duration_s": 526,
@@ -761,6 +737,16 @@
     "result": "ok",
     "summary": [
       "[DONE] Verhoogd: 43 artikelen (+EUR134.76 per verkoopcyclus) | ongemoeid: 79 | check mislukt: 18"
+    ]
+  },
+  {
+    "task": "probe_check",
+    "started": "2026-09-03T12:15:02",
+    "duration_s": 1,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] No probes currently in progress"
     ]
   }
 ]
