@@ -12547,7 +12547,7 @@
       <klantprijs>5.25</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/1/2/12a6203-57re-0-bdc6080ff12dbbcf909e47561287610664062c70b95b8f1ec37eecdd868b2f9d_130.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/1/2/12a6203-57re-0-bb77bb16d8de8282835cb0a1c828ba53ef8d699cc77ed41468155a5f3cc6eef7_130.JPG</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/1/2/12a6203-57re-3-294d10e56c3fd22a29b0d823ead4a0993dbbabe6cb72579885ccbe6e4d4e9edf.jpg</gallery_image>
 		<afmeting>0x0x0cm</afmeting>
 		<gewicht>0.400000</gewicht>
@@ -16316,7 +16316,7 @@
       <klantprijs>10.50</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/1/5/15a6619-259nvbe-0-df7b7d3a6315fb1ad6d1820cd16e4550f314c92e38826db7101df2c04e9042af_130.JPG</image>
+      	<image>https://www.b-living.eu/media/catalog/product/1/5/15a6619-259nvbe-0-54053443172d85eb2fa1ae78cbd20e61529750f82e2885b7be68663f552c5c6f_130.jpg</image>
 		<afmeting>0x0x0cm</afmeting>
 		<gewicht>0.500000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -16674,7 +16674,7 @@
       <klantprijs>6.25</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/1/6/16a6877-57lgr-0-030a7114d2bec11061b90025134d695f28c440a9cf186ac48d52af3623381935_131.JPG</image>
+      	<image>https://www.b-living.eu/media/catalog/product/1/6/16a6877-57lgr-0-32d7155c490ab5d8573735ea756d694ae5a2ab7744aaec18c6e329061cc26986_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/1/6/16a6877-57lgr-2-1e3840a7950b0b5491c3be2ba93f8a58b6e857bf38f514c946afe3deb9d9d167.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/1/6/16a6877-57lgr-3-ff3e89ec4fbd6978caa3295a6fc500781aeb9147c457cbc4e8ef6c721756a651.jpg</gallery_image>
 		<afmeting>0x0x0cm</afmeting>
@@ -19473,7 +19473,7 @@
 	<product>
 		<sku>4500-2001</sku>
 		<titel>Paris Vliegengordijn transparant 90x210cm</titel>
-      <voorraad>320</voorraad>
+      <voorraad>94</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
 		<subsubcategory>Deurgordijnen</subsubcategory>
       	<ean>8014772133868</ean>
@@ -19574,7 +19574,7 @@
 	<product>
 		<sku>4500-2013</sku>
 		<titel>Madrid Vliegengordijn transparant 90x230cm</titel>
-      <voorraad>76</voorraad>
+      <voorraad>73</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
 		<subsubcategory>Deurgordijnen</subsubcategory>
       	<ean>8014772136500</ean>
@@ -19750,7 +19750,7 @@
 	<product>
 		<sku>4500-2052</sku>
 		<titel>Malta Vliegengordijn zwart 90x230cm</titel>
-      <voorraad>11</voorraad>
+      <voorraad>10</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
 		<subsubcategory>Deurgordijnen</subsubcategory>
       	<ean>8717266191107</ean>
@@ -19773,7 +19773,7 @@
 	<product>
 		<sku>4500-2061</sku>
 		<titel>Alcampo Vliegengordijn zwart 90x230cm</titel>
-      <voorraad>128</voorraad>
+      <voorraad>127</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
 		<subsubcategory>Deurgordijnen</subsubcategory>
       	<ean>8717266191121</ean>
@@ -19872,7 +19872,7 @@
 	<product>
 		<sku>4500-3001</sku>
 		<titel>Aruba Vliegengordijn multicolor 90x200cm</titel>
-      <voorraad>108</voorraad>
+      <voorraad>107</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
 		<subsubcategory>Deurgordijnen</subsubcategory>
       	<ean>3110061001124</ean>
@@ -19894,7 +19894,7 @@
 	<product>
 		<sku>4500-3002</sku>
 		<titel>Aruba Vliegengordijn zwart wit 90x200cm</titel>
-      <voorraad>293</voorraad>
+      <voorraad>295</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
 		<subsubcategory>Deurgordijnen</subsubcategory>
       	<ean>8717266350788</ean>
@@ -19938,7 +19938,7 @@
 	<product>
 		<sku>4500-3010</sku>
 		<titel>Saba Vliegengordijn multicolor 93x220cm</titel>
-      <voorraad>217</voorraad>
+      <voorraad>216</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
 		<subsubcategory>Deurgordijnen</subsubcategory>
       	<ean>8717266197635</ean>
@@ -19962,7 +19962,7 @@
 	<product>
 		<sku>4500-3015</sku>
 		<titel>Saba Vliegengordijn transparant 93x220cm</titel>
-      <voorraad>460</voorraad>
+      <voorraad>208</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
 		<subsubcategory>Deurgordijnen</subsubcategory>
       	<ean>8717266191060</ean>
@@ -20039,29 +20039,6 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
-		<sku>4500-4051</sku>
-		<titel>Dominica Beads Vliegengordijn grijs 90x210cm</titel>
-      <voorraad>67</voorraad>
-      	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
-		<subsubcategory>Deurgordijnen</subsubcategory>
-      	<ean>8717266396984</ean>
-      	<merk>2Lif</merk>
-		<verpakt_per>6</verpakt_per>
-		<prijs>42.00</prijs>
-      <klantprijs>29.50</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/4/5/4500-4051-0-06ec87cbe8ddf1cf0829f74524da563dbe730ea9ee8e023fef4735cea0219021.jpg</image>
-		<afmeting>10x8x101cm</afmeting>
-		<gewicht>4.170000</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Afnemen met een vochtige doek</wasvoorschriften>
-      	<materiaal>PVC</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Grijs</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
 		<sku>4500-5020</sku>
 		<titel>Tortuga Vliegengordijn wit 90x200cm</titel>
       <voorraad>158</voorraad>
@@ -20131,30 +20108,6 @@
 		<wasvoorschriften>Afnemen met een vochtige doek</wasvoorschriften>
 		<meerdere_formaten>0</meerdere_formaten>
       	<kleur>Grijs</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
-		<sku>4500-6003</sku>
-		<titel>Screen Mesh Vliegengordijn zwart 100x230cm</titel>
-      <voorraad>109</voorraad>
-      	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen</category_path>
-		<subsubcategory>Deurgordijnen</subsubcategory>
-      	<ean>8717266396465</ean>
-      	<merk>2Lif</merk>
-		<verpakt_per>1</verpakt_per>
-		<prijs>8.90</prijs>
-      <klantprijs>6.10</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/4/5/4500-6003-0-446431418497adcf2fd36318508afd4508203f7a9c31b6d54e801444880f0537.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/4/5/4500-6003-1-2b329fc84d23d8fd5251e02986368dfa7c196b2133a13f2e70a0538737382706.jpg</gallery_image>
-		<afmeting>0x0x0cm</afmeting>
-		<gewicht>0.900000</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Afnemen met een vochtige doek</wasvoorschriften>
-      	<materiaal>PVC</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Zwart</kleur>
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
@@ -20857,7 +20810,7 @@
       <klantprijs>4.94</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/5/4/540-100v03-0-e6aaf1e1ae799de39ca23b6d9ba81e2c8da319a5a20fe49802306684e18cd957_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/5/4/540-100v03-0-d48bc71e591ca7f3c564d4ddf7f177a218191cdefedea51eb1eac96946a43d15_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/5/4/540-100v03-3-f9a16d82de1665fc171c093e1f651cd0d3335e3d66dde1ce4cd296ef1aed1c9b.jpg</gallery_image>
 		<afmeting>0x0x0cm</afmeting>
 		<gewicht>0.490000</gewicht>
@@ -21285,7 +21238,7 @@
 	<product>
 		<sku>550-117V01</sku>
 		<titel>Madura Tafelzeil licht blauw 140cmx20mtr</titel>
-      <voorraad>1560</voorraad>
+      <voorraad>1540</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; PVC tafelzeilen &gt; PVC tafelzeil</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>PVC tafelzeilen</subcategory>
@@ -22185,7 +22138,7 @@
       <klantprijs>4.56</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/5/5/551-132v07-0-5bcd742b1e6de67727b8dda0a817fbf863a2a0ffd1d8a813e7276605dc0a1722_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/5/5/551-132v07-0-952a5852cc325f04c2cfd6e8ce966555e7e2b55c9d4ca92286fc515a4e16bd2d_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/5/5/551-132v07-3-f9a16d82de1665fc171c093e1f651cd0d3335e3d66dde1ce4cd296ef1aed1c9b.jpg</gallery_image>
 		<afmeting>0x0x0cm</afmeting>
 		<gewicht>0.500000</gewicht>
@@ -22271,34 +22224,6 @@
       <gallery_image>https://www.b-living.eu/media/catalog/product/5/5/555-010-8-1b79b20d59a500696985d7a61a2a706f11db05e5220c22f2ec7a9a6119e10e03.jpg</gallery_image>
 		<afmeting>0x0x0cm</afmeting>
 		<gewicht>0.500000</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Vaatwasserbestendig</wasvoorschriften>
-      	<materiaal>PVC</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Transparant</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
-		<sku>555-020</sku>
-		<titel>Clear foil 0,20mm Tafelzeil transparant 140cmx30mtr</titel>
-      <voorraad>58</voorraad>
-      	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Transparante tafelzeilen &gt; Transparante tafelzeil</category_path>
-      <maincategory>Tafelzeilen &amp; Folies</maincategory>
-		<subcategory>Transparante tafelzeilen</subcategory>
-		<subsubcategory>Transparante tafelzeil</subsubcategory>
-      	<ean>8714918005638</ean>
-      	<merk>2Lif</merk>
-		<verpakt_per>30</verpakt_per>
-		<prijs>4.25</prijs>
-      <klantprijs>3.53</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/5/5/555-020-0-914c2e8469232ceaf2ff2e427797c7d6f735ab91efaa9be0abbee68ce4c542f0.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/5/5/555-020-1-1b79b20d59a500696985d7a61a2a706f11db05e5220c22f2ec7a9a6119e10e03.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/5/5/555-020-3-58e61b597adf96f6465cf50556769c42266880fb30e75f83a18295285f9fbc89.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/5/5/555-020-5-fb63e307ad5e9aefa9be94ca0f79db83012312b8a592c355af3927d460096298.jpg</gallery_image>
-		<afmeting>100x140x0.1cm</afmeting>
-		<gewicht>0.600000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
 		<wasvoorschriften>Vaatwasserbestendig</wasvoorschriften>
       	<materiaal>PVC</materiaal>
@@ -22529,7 +22454,7 @@
 	<product>
 		<sku>6000-0004</sku>
 		<titel>Glc-1116 Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
-      <voorraad>40</voorraad>
+      <voorraad>60</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -22552,9 +22477,34 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
+		<sku>6000-0005</sku>
+		<titel>Rice Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
+      <voorraad>20</voorraad>
+      	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
+      <maincategory>Tafelzeilen &amp; Folies</maincategory>
+		<subcategory>Statische raamfolies</subcategory>
+		<subsubcategory>ST grote rol</subsubcategory>
+      	<ean>8425162024220</ean>
+      	<merk>2Lif</merk>
+		<verpakt_per>20</verpakt_per>
+		<prijs>10.90</prijs>
+      <klantprijs>9.05</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/6/0/6000-0005-0-cbc72ffff0474e5952c6ed5f8cfe0c54d2ea4139e5c1c3e3b03d83cacd5716e5.jpg</image>
+		<afmeting>0x0x0cm</afmeting>
+		<gewicht>0.187000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Afnemen met een vochtige doek</wasvoorschriften>
+      	<materiaal>PVC</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Transparant</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
 		<sku>6000-0014</sku>
 		<titel>Rubi Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
-      <voorraad>60</voorraad>
+      <voorraad>80</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -22603,7 +22553,7 @@
 	<product>
 		<sku>6000-0036</sku>
 		<titel>Sand Sl Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
-      <voorraad>60</voorraad>
+      <voorraad>80</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23051,7 +23001,7 @@
 	<product>
 		<sku>61450-0001</sku>
 		<titel>Frost Bright Static Foil Big Roll transparent 46cmx20mtr</titel>
-      <voorraad>1038</voorraad>
+      <voorraad>1018</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23076,7 +23026,7 @@
 	<product>
 		<sku>61450-0002</sku>
 		<titel>Frost Wit Statische raamfolie Grote Rol 45cmx20mtr</titel>
-      <voorraad>799</voorraad>
+      <voorraad>779</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23151,7 +23101,7 @@
 	<product>
 		<sku>61450-0008</sku>
 		<titel>Energy Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>299</voorraad>
+      <voorraad>280</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23226,7 +23176,7 @@
 	<product>
 		<sku>61450-0019</sku>
 		<titel>Abbey Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>440</voorraad>
+      <voorraad>420</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23301,7 +23251,7 @@
 	<product>
 		<sku>61450-0024</sku>
 		<titel>Lines Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>100</voorraad>
+      <voorraad>80</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23352,7 +23302,7 @@
 	<product>
 		<sku>61450-0033</sku>
 		<titel>Lines Statische raamfolie Grote Rol transparant 45cmx20mtr</titel>
-      <voorraad>399</voorraad>
+      <voorraad>380</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23481,7 +23431,7 @@
 	<product>
 		<sku>61675-0001</sku>
 		<titel>Frost Bright Statische raamfolie Grote Rol transparant 67,5cmx20mtr</titel>
-      <voorraad>278</voorraad>
+      <voorraad>259</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23531,7 +23481,7 @@
 	<product>
 		<sku>61675-0003</sku>
 		<titel>Stripes-2Cm Statische raamfolie Grote Rol transparant 67,5cmx20mtr</titel>
-      <voorraad>99</voorraad>
+      <voorraad>79</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23556,7 +23506,7 @@
 	<product>
 		<sku>61675-0010</sku>
 		<titel>Spring Statische raamfolie Grote Rol transparant 67,5cmx20mtr</titel>
-      <voorraad>100</voorraad>
+      <voorraad>80</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -23581,7 +23531,7 @@
 	<product>
 		<sku>61900-0001</sku>
 		<titel>Frost Bright Statische raamfolie Grote Rol transparant 90cmx20mtr</titel>
-      <voorraad>980</voorraad>
+      <voorraad>960</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -26711,7 +26661,7 @@
 	<product>
 		<sku>7003G0200</sku>
 		<titel>Filling kussen wit 50x50cm</titel>
-      <voorraad>2126</voorraad>
+      <voorraad>2124</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussenvulling</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -26735,7 +26685,7 @@
 	<product>
 		<sku>7003G0210</sku>
 		<titel>Filling kussen wit 33x55cm</titel>
-      <voorraad>2321</voorraad>
+      <voorraad>2320</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussenvulling</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -26783,7 +26733,7 @@
 	<product>
 		<sku>7003G0257</sku>
 		<titel>Filling kussen wit 57x57cm</titel>
-      <voorraad>419</voorraad>
+      <voorraad>418</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussenvulling</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -28836,7 +28786,7 @@
 	<product>
 		<sku>7003GGCM01</sku>
 		<titel>Half Half kussen groen 45x45cm</titel>
-      <voorraad>82</voorraad>
+      <voorraad>80</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8717266348242</ean>
@@ -29272,7 +29222,7 @@
 	<product>
 		<sku>7003GGDK05</sku>
 		<titel>Montreal kussen grijs 45x45cm</titel>
-      <voorraad>43</voorraad>
+      <voorraad>31</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen van imitatiebont</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -32569,7 +32519,7 @@
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7003ggts01-0-0ee6e7e12eeb0de1c312ea79900841898088a0dd5069a106baf89f36a084931c.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003ggts01-1-10e58e0c85eb59db61b3f5cbd2628d1bd75320b0ad88e5dd83e980c2bbd6deb0_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003ggts01-1-8981a2b5fee5223c2ffd2c68c9169ca10fffebb5136144c76857ab4a7b877fd3_130.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003ggts01-2-0a82cb77240bd96c615cec38813c49b0db5b1dbd5c427933e6be6eee183c6011.jpg</gallery_image>
 		<afmeting>45x45x10cm</afmeting>
 		<gewicht>0.873000</gewicht>
@@ -33474,7 +33424,7 @@
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7003ggxf01-0-a1beb7f0cf30303ea8c5264dae836d33e11371062c271273ebcca17f5940a177.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003ggxf01-1-b8abbadea3589c9cefa3336136e55892c5c4aa39f9d14cb44a2fc0d8eeffde95_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003ggxf01-1-ba24eb271b2301e9266ded4c0c60c10126777ef5028176180ee9773b870dfb4f_130.jpg</gallery_image>
 		<afmeting>40x45x7.5cm</afmeting>
 		<gewicht>0.530000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -34888,7 +34838,7 @@
 	<product>
 		<sku>7003GZW07</sku>
 		<titel>Bergen kussen grijs 45x45cm</titel>
-      <voorraad>26</voorraad>
+      <voorraad>20</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8717266152726</ean>
@@ -39932,7 +39882,7 @@
 	<product>
 		<sku>7007BSG9300</sku>
 		<titel>Flame Retardant Lasalle Draadgordijn zwart 300x400cm</titel>
-      <voorraad>21</voorraad>
+      <voorraad>20</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurgordijnen &gt; Deco koordgordijnen</category_path>
       <maincategory>Event Decoratie</maincategory>
 		<subsubcategory>Deco koordgordijnen</subsubcategory>
@@ -44467,7 +44417,7 @@
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7019ggmd03-0-4f560306518f45747b4bb218ad69c0dbff21095f5d615bc8f0fcf049d186cc71.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7019ggmd03-1-f2d4e7585fd440e8e238fadcc25c2143237447d24fa800ed8be763a2e6a22226_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7019ggmd03-1-511060fb99ddfd1f6fd7357e3d5bdadc03c6a196ad11bec792515518cefb4c6b_130.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7019ggmd03-2-f68a879565af84fd102bc7637e04cc64ca3694962f5ddfce01753eee321e0fc9.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7019ggmd03-3-d6923974553391d8965b922268e3d90d4fba4c550c292c9198442ce763f54fa0.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7019ggmd03-4-a1a571d57112eca06a52b417107182e9290b911da28c83adb6bdda60739adc31.jpg</gallery_image>
@@ -45369,7 +45319,7 @@
       <klantprijs>17.50</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/7/0/7027a2460g-0-4250562429cde6f74cc97c1b2dd2440fb35070b95d549f7fd1e3f4cd4f5e86c9_130.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/7/0/7027a2460g-0-484e7339f921e3c8b617c1d58059b7a2bb1f0699cca0f9353cab53654bb3ffc9_130.JPG</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7027a2460g-2-ec6900df5837e5897c139bba56587c7d4ec4fd5afb8becbf02b33a5e08771d88.jpg</gallery_image>
 		<afmeting>9.3x1x1cm</afmeting>
 		<gewicht>2.000000</gewicht>
@@ -48870,7 +48820,7 @@
 	<product>
 		<sku>7028GGTG02</sku>
 		<titel>Lioni kussen taupe 30x50cm</titel>
-      <voorraad>8</voorraad>
+      <voorraad>7</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8717266021978</ean>
@@ -48981,7 +48931,7 @@
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7028ggts01-0-83f399c3e6c78e4e89354e73a8df3752b9f1a5f09ca0716e7ef2649cba20e393.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7028ggts01-1-10e58e0c85eb59db61b3f5cbd2628d1bd75320b0ad88e5dd83e980c2bbd6deb0_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7028ggts01-1-391687ab85c738f2fd7b224008f35be53b011ede87b6c86a8c5aabf9d08542f0_130.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7028ggts01-2-3277f44f622190b2c2e050debb3dfeaeef73b949bb81a4e91407686b3efc47bf.jpg</gallery_image>
 		<afmeting>50x30x10cm</afmeting>
 		<gewicht>0.843000</gewicht>
@@ -54708,7 +54658,7 @@
 	<product>
 		<sku>7057GGAC11</sku>
 		<titel>Indi Ovenwant army groen 18x33cm</titel>
-      <voorraad>140</voorraad>
+      <voorraad>134</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Keukentextiel &gt; Ovenwanten</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Keukentextiel</subcategory>
@@ -54917,7 +54867,7 @@
       	<merk>Linen &amp; More</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>2.65</prijs>
-      <klantprijs>1.71</klantprijs>
+      <klantprijs>1.88</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7058ggac04-0-dc3c874e561c431672080bd1a892a8cb0dbab841cdcbd849dcca4a1a1c919036_1.jpg</image>
@@ -54933,7 +54883,7 @@
 	<product>
 		<sku>7058GGAC07</sku>
 		<titel>Indi Pannenlap Onderzetter grijs 20x20cm</titel>
-      <voorraad>396</voorraad>
+      <voorraad>372</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Keukentextiel &gt; Pannenlappen</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Keukentextiel</subcategory>
@@ -54942,7 +54892,7 @@
       	<merk>Linen &amp; More</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>2.65</prijs>
-      <klantprijs>1.71</klantprijs>
+      <klantprijs>2.07</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7058ggac07-0-d064799eeead65bdd1235f14e245f82eb72c50e60c89d912983b96a00a043711_1.jpg</image>
@@ -54958,7 +54908,7 @@
 	<product>
 		<sku>7058GGAC11</sku>
 		<titel>Indi Pannenlap Onderzetter army groen 20x20cm</titel>
-      <voorraad>308</voorraad>
+      <voorraad>296</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Keukentextiel &gt; Pannenlappen</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Keukentextiel</subcategory>
@@ -60133,7 +60083,7 @@
       <klantprijs>2.12</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/7/1/7196dghp01ar-0-782c8ec58b636d62bb8740c7dc8ee849c31218d99fd3d66cc9ed81da943890d8_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/7/1/7196dghp01ar-0-71f57582bec7e9d5178ada751d17e435a2731d373208668d61b0206ba2bb3c80_130.jpg</image>
 		<afmeting>1.2x1x1cm</afmeting>
 		<gewicht>0.138000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -67059,7 +67009,7 @@
 	<product>
 		<sku>7B4015-01PU</sku>
 		<titel>Cushion Padma 40x40 purple</titel>
-      <voorraad>119</voorraad>
+      <voorraad>118</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8717266006302</ean>
@@ -67351,7 +67301,7 @@
 	<product>
 		<sku>890-10AQ01</sku>
 		<titel>Jacquard Diamond Wasbaar gecoat tafeltextiel zwart 140cmx20mtr</titel>
-      <voorraad>39</voorraad>
+      <voorraad>20</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Gecoate linnen wasbare tafelzeilen &gt; Gecoat tafellinnen tafelzeil</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Gecoate linnen wasbare tafelzeilen</subcategory>
@@ -67627,7 +67577,7 @@
 	<product>
 		<sku>890-4961101</sku>
 		<titel>Textile Flamand Wasbaar gecoat tafeltextiel blauw 140cmx20mtr</titel>
-      <voorraad>219</voorraad>
+      <voorraad>200</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Gecoate linnen wasbare tafelzeilen &gt; Gecoat tafellinnen tafelzeil</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Gecoate linnen wasbare tafelzeilen</subcategory>
@@ -68245,7 +68195,7 @@
       <klantprijs>5.25</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/g/1/g10b1202-04br-0-b4015a93d461232be2c819177326d77c96818323109d62e880d59bc9d1f24ffe_129.JPG</image>
+      	<image>https://www.b-living.eu/media/catalog/product/g/1/g10b1202-04br-0-f684c580a6b5c97ac6ea54e1548e4728d37fb1d83e94b48827446cbf5a2d9e4e_130.jpg</image>
 		<afmeting>0x0x0cm</afmeting>
 		<gewicht>0.500000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -70697,7 +70647,7 @@
 	<product>
 		<sku>ABKRZN</sku>
 		<titel>kroon zon</titel>
-      <voorraad>40</voorraad>
+      <voorraad>38</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Overige accessoires &gt; Kroon</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Overige accessoires</subcategory>
@@ -72015,7 +71965,7 @@
       <klantprijs>14.94</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/c/c/ccrg-0-17e395a11e54edc992638498c731207b275a429f507af2e35462ea0d2228a177_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/c/c/ccrg-0-8fa185faa38f7f96a16d652018296cea035876d2241ccfd8bd8005af36189f42_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/c/c/ccrg-2-8ea7e89151e0ac58751ead9f0d7b81f5ecbc1bbc4ed84115df1a317eb8c4980e.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/c/c/ccrg-3-fc91d381b25c78eef7354439ff675f8eb380ceb097b8350163e7c095a03b9122.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/c/c/ccrg-4-9eccf8f16075843585155290fda7ee49f5217bdec772c9786e4b21ab28ecb2d0.jpg</gallery_image>
@@ -72045,9 +71995,9 @@
       <klantprijs>157.70</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-0-0d4e00ba280f2b4bd7bfcb46ed5d397b3ecb65073f874e52f9e150181c428957_129.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-2-29a40ce0cc192f15c2c7690548c1b0d26e1a69a214b8a1f4b1795f82551444fc_129.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-3-c222f9508361f7c8aaadf43f9da04c2a1af957369ca8f4a90f4f7e4924616c94_129.jpg</gallery_image>
+      	<image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-0-c59632acf9a5560c347c1f95ed469d5fc2283f3e47533d366fee99ba7ad9954a_130.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-2-041030a169f1994ef141689dcb1779ac6da831cd8db9a69ef5b5b95128c3d811_131.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-3-220de2de62afcf6cd73df5261470dbedda7a2404b0244dc8f453d8a78e16b21d_131.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-4-3b36a430f6327f3b8b648505074ef5885b2a876987de62ac43698ab1bdbd06df.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/c/g/cgcbsb-5-350e7dc83d0ef74da9d56497d0befbbc43682183c2e7af1c19e52c16a1b7b8ca.jpg</gallery_image>
 		<afmeting>30x30x5cm</afmeting>
@@ -72291,7 +72241,7 @@
 	<product>
 		<sku>CIBGT14</sku>
 		<titel>bel goud touw 14cm</titel>
-      <voorraad>27</voorraad>
+      <voorraad>26</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Hangdecoratie &gt; Bel</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Hangdecoratie</subcategory>
@@ -72578,7 +72528,7 @@
 	<product>
 		<sku>CIHGT21</sku>
 		<titel>hart goud touw 21cm</titel>
-      <voorraad>68</voorraad>
+      <voorraad>67</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Hangdecoratie &gt; Hanger</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Hangdecoratie</subcategory>
@@ -72590,7 +72540,7 @@
       <klantprijs>4.40</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/c/i/cihgt21-0-17b0884ad60508807706597bdd086d8749e22e8a5f58b0e872919eb1a2514b4a_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/c/i/cihgt21-0-9fcf171fbe9d2ab90d7d1effb55b244bb7b9d4ec1adfba60a8718b1401952b0e_130.jpg</image>
 		<afmeting>21.5x20.5x2cm</afmeting>
 		<gewicht>0.132000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -72655,7 +72605,7 @@
 	<product>
 		<sku>CIHHTG7</sku>
 		<titel>hert hanger mango touw 7cm</titel>
-      <voorraad>303</voorraad>
+      <voorraad>302</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Hangdecoratie &gt; Hanger</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Hangdecoratie</subcategory>
@@ -72709,7 +72659,7 @@
 	<product>
 		<sku>CIHHTV8</sku>
 		<titel>vogel hanger mango touw 8cm</titel>
-      <voorraad>445</voorraad>
+      <voorraad>444</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Hangdecoratie &gt; Hanger</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Hangdecoratie</subcategory>
@@ -72923,7 +72873,7 @@
 	<product>
 		<sku>CIKHRO25</sku>
 		<titel>kandelaar rond mango hout 25cm</titel>
-      <voorraad>8</voorraad>
+      <voorraad>7</voorraad>
       	<category_path>B Living &gt; Theelichthouders &amp; Kandelaars &gt; Kandelaars &gt; Kandelaar</category_path>
       <maincategory>Theelichthouders &amp; Kandelaars</maincategory>
 		<subcategory>Kandelaars</subcategory>
@@ -73323,7 +73273,7 @@
 	<product>
 		<sku>CISHM27</sku>
 		<titel>staand hart mango hout h27 d12x12cm</titel>
-      <voorraad>130</voorraad>
+      <voorraad>122</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Decoratie op voet &gt; Decoratie op voet</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Decoratie op voet</subcategory>
@@ -73350,7 +73300,7 @@
 	<product>
 		<sku>CISHM35</sku>
 		<titel>staand hart mango hout h35 d18x8cm</titel>
-      <voorraad>10</voorraad>
+      <voorraad>16</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Decoratie op voet &gt; Decoratie op voet</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Decoratie op voet</subcategory>
@@ -73721,7 +73671,7 @@
 	<product>
 		<sku>CISPV30</sku>
 		<titel>snijplank mango vierkant 30cm</titel>
-      <voorraad>216</voorraad>
+      <voorraad>215</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Snijplanken &gt; Snijplank</category_path>
 		<subsubcategory>Snijplank</subsubcategory>
       	<ean>8716522085815</ean>
@@ -75460,7 +75410,7 @@
 	<product>
 		<sku>DCVKSBR</sku>
 		<titel>kussen fluweel blauwe reiger gouden franjes 45x45cm*</titel>
-      <voorraad>82</voorraad>
+      <voorraad>81</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8716522063905</ean>
@@ -75511,7 +75461,7 @@
 	<product>
 		<sku>DCVKSWK</sku>
 		<titel>kussen fluweel zilverreigers gouden franjes 45x45cm*</titel>
-      <voorraad>66</voorraad>
+      <voorraad>65</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8716522063899</ean>
@@ -75536,7 +75486,7 @@
 	<product>
 		<sku>DCVKSWP</sku>
 		<titel>kussen fluweel witte pauwen gouden franjes 45x45cm*</titel>
-      <voorraad>206</voorraad>
+      <voorraad>205</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8716522063912</ean>
@@ -75561,7 +75511,7 @@
 	<product>
 		<sku>DCVKSZR</sku>
 		<titel>kussen fluweel witte kraanvogels gouden franjes 45x45cm*</titel>
-      <voorraad>76</voorraad>
+      <voorraad>75</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8716522063882</ean>
@@ -76053,7 +76003,7 @@
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/e/h/ehsltk-0-efba57dac28e105faf054f917d0dd17314666b3b5a859f27f80b75bdd30a70d9.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/e/h/ehsltk-1-85f00e918ad89a402726e3ef777641c6be18991d94f1ebc08389a98e90c2baad_1.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/e/h/ehsltk-2-5311fc9b7e066957e4852ecebde392394d1d14fda0e490020fd216ec4a3e4f36_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/e/h/ehsltk-2-596b8118774f30c0f70460bf0966b0aff845ae3bcb5d3d2ebe4baa5fe6063b86_130.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/e/h/ehsltk-3-973939a65e6dd7174e37c7ec3496ada35fba6605d9286b82af62330b6e3b7130.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/e/h/ehsltk-4-0005351b6c0df88e78c3982847524f50791afa72b1e2b7a6d286cd7e68065fbc.jpg</gallery_image>
 		<afmeting>52x5x9.5cm</afmeting>
@@ -76123,7 +76073,7 @@
 	<product>
 		<sku>EHVKBK</sku>
 		<titel>vintage koper briefopener kroon 24cm*</titel>
-      <voorraad>188</voorraad>
+      <voorraad>187</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Overige accessoires &gt; Briefopener</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Overige accessoires</subcategory>
@@ -76216,7 +76166,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>4</verpakt_per>
 		<prijs>7.50</prijs>
-      <klantprijs>5.11</klantprijs>
+      <klantprijs>5.32</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/e/h/ehwdfl-0-509f7622483b4c1d85a49ff5e955293202b53793d8ae65afb49e282838e4d560.jpg</image>
@@ -76232,7 +76182,7 @@
 	<product>
 		<sku>EHWDHK</sku>
 		<titel>wijnstopper hertenkop</titel>
-      <voorraad>100</voorraad>
+      <voorraad>99</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Wijnaccessoires &gt; Wijndop</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Wijnaccessoires</subcategory>
@@ -76963,7 +76913,7 @@
 	<product>
 		<sku>EVHKGEH</sku>
 		<titel>gobelin kussen eekhoorn 30x45cm</titel>
-      <voorraad>26</voorraad>
+      <voorraad>24</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen gobelin</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -77072,7 +77022,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>1</verpakt_per>
 		<prijs>28.00</prijs>
-      <klantprijs>19.67</klantprijs>
+      <klantprijs>20.10</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/e/v/evkkwtl-0-1c829d71e22bf98fd6f74638f105a6a7acd15440ca39d9f2de288ad438abdef6.jpg</image>
@@ -77348,7 +77298,7 @@
 	<product>
 		<sku>EVKSBRE</sku>
 		<titel>gobelin kussen bloemen ree 45x45cm</titel>
-      <voorraad>56</voorraad>
+      <voorraad>58</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen gobelin</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -77724,7 +77674,7 @@
       <klantprijs>28.63</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjeh-0-a6b8f437433d468b96a9aad839df9aa5cfbb2f602caab3ec902327f3a8849107_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjeh-0-c1a7833162e7926e22b5289d9a512a798f36e14b1f37770e80f844df5e96e499_130.jpg</image>
 		<afmeting>45x15x45cm</afmeting>
 		<gewicht>0.600000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -77774,7 +77724,7 @@
       <klantprijs>28.63</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjre-0-f7caaabd8e120c53c7e7dbf3049623ef33df488a10763e8326118f77927cda16_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjre-0-558ff61c1496d02de8e5ec1af19b05543eedf8f16e7164c869e868d75a03bda6_130.jpg</image>
 		<afmeting>45x15x45cm</afmeting>
 		<gewicht>0.600000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -77799,7 +77749,7 @@
       <klantprijs>28.63</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjvs-0-f2f989f61f65c8b83ecd4785488281d0293339408236143579b0676fce50c2d0_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/e/v/evksjvs-0-2cd27eed15a0fe1d33b9f6919dfe4c5935df4a9e724c4951d685281b1666f558_130.jpg</image>
 		<afmeting>45x15x45cm</afmeting>
 		<gewicht>0.600000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -77887,7 +77837,7 @@
 	<product>
 		<sku>EVKSRRH</sku>
 		<titel>gobelin kussen hert rode rand 45x45cm</titel>
-      <voorraad>10</voorraad>
+      <voorraad>8</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen gobelin</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -78832,7 +78782,7 @@
       <klantprijs>54.74</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/f/x/fxtrrbg-0-cb8aac56c1480a334e4297cdb185311fa479f35f49191d9d92ff8b96724c5a21_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/f/x/fxtrrbg-0-75553561bec4563e98e5c2ec22aaa0635fe758a674914e1c7c61d318b8d74fd4_131.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/f/x/fxtrrbg-2-daccf151fd717576e59237f80e73fc900655251ddd49c772e03b20a331a5217d.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/f/x/fxtrrbg-3-62dd044354884054afb805cda497af339d8d70fe6e336b89b1f4ec0d34383ef9.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/f/x/fxtrrbg-4-91ffe082810928428be221589b75caf2daca25de2d298f2a3aedaa115931946b.jpg</gallery_image>
@@ -79666,7 +79616,7 @@
 	<product>
 		<sku>GKTSZH</sku>
 		<titel>canvas shopper zwart edelhert*</titel>
-      <voorraad>73</voorraad>
+      <voorraad>71</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8716522066548</ean>
@@ -79714,7 +79664,7 @@
 	<product>
 		<sku>GKWGKSK</sku>
 		<titel>wol grijs kussen koe kop 45x45cm</titel>
-      <voorraad>57</voorraad>
+      <voorraad>53</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8716522052374</ean>
@@ -80285,7 +80235,7 @@
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/g/n/gnkpg-0-28a940a49fa16258b7feb6bd8f4f683806e2d05762770b4c7a8f7c64a5d24dd1.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/g/n/gnkpg-1-e92abe9330156a02442184f91611945762e83bf8c2919792156ed33372043036.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/g/n/gnkpg-2-0fb8381f8d185b00f3094d9ca5537b732edde41824dcd8066d301284d0655c7c_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/g/n/gnkpg-2-37200aa4b66a693c9713c9f32d929008c1fc197c7a86b71c287d31d36543606c_130.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/g/n/gnkpg-5-98481c248ef31a363c4309c8f7703ef79201f396ea77ba365768053c089fca1a.jpg</gallery_image>
 		<afmeting>5x4.5x2cm</afmeting>
 		<gewicht>0.100000</gewicht>
@@ -80541,7 +80491,7 @@
 	<product>
 		<sku>GNWKHHGS</sku>
 		<titel>wijnkoeler hert half champagne goud small</titel>
-      <voorraad>57</voorraad>
+      <voorraad>56</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Wijnaccessoires &gt; Wijnkoeler</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Wijnaccessoires</subcategory>
@@ -80895,7 +80845,7 @@
 	<product>
 		<sku>GNWSFG</sku>
 		<titel>wijnstopper fazant champagne goud 8,5X8,5X8cm</titel>
-      <voorraad>50</voorraad>
+      <voorraad>44</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Wijnaccessoires &gt; Wijndop</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Wijnaccessoires</subcategory>
@@ -81618,7 +81568,7 @@
 	<product>
 		<sku>HFWDHHL</sku>
 		<titel>hout mix wanddecoratie hart large 78cm</titel>
-      <voorraad>60</voorraad>
+      <voorraad>52</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8716522065190</ean>
@@ -81641,7 +81591,7 @@
 	<product>
 		<sku>HFWDHHM</sku>
 		<titel>hout mix wanddecoratie hart medium 58cm</titel>
-      <voorraad>22</voorraad>
+      <voorraad>14</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8716522065206</ean>
@@ -81664,7 +81614,7 @@
 	<product>
 		<sku>HFWDHHS</sku>
 		<titel>hout mix wanddecoratie hart small 30cm</titel>
-      <voorraad>92</voorraad>
+      <voorraad>80</voorraad>
       	<category_path>B Living &gt; Sale</category_path>
 		<subsubcategory>Sale</subsubcategory>
       	<ean>8716522065213</ean>
@@ -81687,7 +81637,7 @@
 	<product>
 		<sku>HLDSBR</sku>
 		<titel>Deurstopper Beer ruit 31x15x23cm</titel>
-      <voorraad>274</voorraad>
+      <voorraad>256</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Deurstoppers &gt; Deurstopper</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Deurstoppers</subcategory>
@@ -81770,36 +81720,6 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
-		<sku>HLDSHB</sku>
-		<titel>Deurstopper hond befje 16x17x25cm</titel>
-      <voorraad>36</voorraad>
-      	<category_path>B Living &gt; Woonaccessoires &gt; Deurstoppers &gt; Deurstopper</category_path>
-      <maincategory>Woonaccessoires</maincategory>
-		<subcategory>Deurstoppers</subcategory>
-		<subsubcategory>Deurstopper</subsubcategory>
-      	<ean>8716522090949</ean>
-      	<merk>Mars &amp; More</merk>
-		<verpakt_per>12</verpakt_per>
-		<prijs>9.50</prijs>
-      <klantprijs>6.52</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/h/l/hldshb-0-7609a6e7b1b767947641a264c22b27b4886cfe7392f159ffc33f4d0ea6dead1f.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/h/l/hldshb-2-35e8391a1d5812e48eb0a7edf4131a99cb80273059910fd916813165cf71ccee.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/h/l/hldshb-3-5058b2447f8c751c687922ad112c319d76b8d8ce873a52255453ff2e39d7032f.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/h/l/hldshb-4-5af2de6846c63af4a42397c57859f8c9e8c0ff781d95d2ee39f553cde62c8d31.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/h/l/hldshb-5-dfc043efe4cfced35d429904c6bba48cc62b0edc5cbbc29f3922b9428ddc0f16.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/h/l/hldshb-7-68c1c9e3c681f2c0d5e27a653c66f757b607ef5e3729c81438c7a2d836dcac26.jpg</gallery_image>
-		<afmeting>16x17x26cm</afmeting>
-		<gewicht>1.000000</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Nee</wasvoorschriften>
-      	<materiaal>Polyester</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Taupe</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
 		<sku>HLDSHK</sku>
 		<titel>deurstopper hond krul 21x22x25 cm</titel>
       <voorraad>153</voorraad>
@@ -81861,7 +81781,7 @@
 	<product>
 		<sku>HLDSHT</sku>
 		<titel>Deurstopper Hertje 22x13x31cm</titel>
-      <voorraad>52</voorraad>
+      <voorraad>48</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Deurstoppers &gt; Deurstopper</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Deurstoppers</subcategory>
@@ -83813,7 +83733,7 @@
 	<product>
 		<sku>KGDSHT</sku>
 		<titel>deurstopper hert 21cm</titel>
-      <voorraad>113</voorraad>
+      <voorraad>112</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Deurstoppers &gt; Deurstopper</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Deurstoppers</subcategory>
@@ -83867,7 +83787,7 @@
 	<product>
 		<sku>KGDSKT</sku>
 		<titel>deurstopper kat 15cm</titel>
-      <voorraad>289</voorraad>
+      <voorraad>288</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Deurstoppers &gt; Deurstopper</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Deurstoppers</subcategory>
@@ -84025,7 +83945,7 @@
 	<product>
 		<sku>KGKRG</sku>
 		<titel>kroon zilver groot 43cm</titel>
-      <voorraad>15</voorraad>
+      <voorraad>13</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Overige accessoires &gt; Kroon</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Overige accessoires</subcategory>
@@ -84663,7 +84583,7 @@
 	<product>
 		<sku>KIKSBBE</sku>
 		<titel>kussen teddy bubble beige 45x45cm</titel>
-      <voorraad>51</voorraad>
+      <voorraad>49</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen van imitatiebont</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -85167,7 +85087,7 @@
 	<product>
 		<sku>KMMZU</sku>
 		<titel>deurmat kokos zuhause 75cm</titel>
-      <voorraad>210</voorraad>
+      <voorraad>207</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurmatten &gt; Deurmat buiten</category_path>
 		<subsubcategory>Deurmat buiten</subsubcategory>
       	<ean>8716522073027</ean>
@@ -85461,7 +85381,7 @@
 	<product>
 		<sku>MGE4R</sku>
 		<titel>etagère rond 4 lagen 120cm</titel>
-      <voorraad>15</voorraad>
+      <voorraad>14</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Etageres &gt; Etagere</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Etageres</subcategory>
@@ -85486,7 +85406,7 @@
 	<product>
 		<sku>MGE5R</sku>
 		<titel>etagère rond 5 lagen 170cm</titel>
-      <voorraad>20</voorraad>
+      <voorraad>19</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Etageres &gt; Etagere</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Etageres</subcategory>
@@ -85866,9 +85786,9 @@
       <klantprijs>54.78</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/m/g/mgwkkb-0-d68bad8d2b7908ef40c6c7bd3082d83ceac97fd11d704df0d114554c4c5f0b70_96.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/m/g/mgwkkb-2-771174ac56c748165f0b2f5e02588d40b5966e49fa99250d3839a42e1927e30c_96.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/m/g/mgwkkb-3-22d6dde096bba983cf443e143226f1640e688109557aad83ecd6185cdb375742_96.jpg</gallery_image>
+      	<image>https://www.b-living.eu/media/catalog/product/m/g/mgwkkb-0-634efc5c6479cabbdace0b0499ab125091af8f5757d55547b13e07f507fdcef8_96.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/m/g/mgwkkb-2-310075da305a4ee01728ba344200505397e1d3776e2a059d7e1deb223999d21c_96.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/m/g/mgwkkb-3-f7e690e398eec5fd37aee99830d4a915b196bda33a89b4d5b9ca52e5f76d3eb9_96.jpg</gallery_image>
 		<afmeting>21x21x23cm</afmeting>
 		<gewicht>0.901000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -90504,7 +90424,7 @@
 	<product>
 		<sku>MRKSCKV</sku>
 		<titel>kussen fluweel charming kuifvogel 45x45cm</titel>
-      <voorraad>34</voorraad>
+      <voorraad>33</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen fluweel</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -91530,7 +91450,7 @@
 	<product>
 		<sku>OMKKVRB</sku>
 		<titel>kruk koe bruin wit vierkant 45cm</titel>
-      <voorraad>10</voorraad>
+      <voorraad>8</voorraad>
       	<category_path>B Living &gt; Kleinmeubelen &gt; Krukken &gt; Kruk</category_path>
       <maincategory>Kleinmeubelen</maincategory>
 		<subcategory>Krukken</subcategory>
@@ -92059,7 +91979,7 @@
 	<product>
 		<sku>OMSLKZ</sku>
 		<titel>stoel relax koevel zwart/wit (zelfmontage)</titel>
-      <voorraad>16</voorraad>
+      <voorraad>14</voorraad>
       	<category_path>B Living &gt; Kleinmeubelen &gt; Stoelen &gt; Stoel</category_path>
       <maincategory>Kleinmeubelen</maincategory>
 		<subcategory>Stoelen</subcategory>
@@ -92454,7 +92374,7 @@
       <klantprijs>46.06</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/p/o/povygw-0-7dcc185bdd93b317a62ea59cc7dcf275fb5914f933eab476925243fb7fc47838_129.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/p/o/povygw-0-75623b2b5e91c9c074580892b28e8d6a70d79bc8e2c4bf50ac8de8939db964aa_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/p/o/povygw-5-ff121699b54f45a050cfef53c93f5c87a8fe6d38a8a0bbe559bebe365feae79b.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/p/o/povygw-6-fa2679ecba1bb89728f3b41219c3dbd64981731f4929ccc12e854b9ccf1584e4.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/p/o/povygw-7-ee2ac24d90254efc4e840b41088903396875bbddc75c7a1460cd16a3e6d1090e.jpg</gallery_image>
@@ -94729,7 +94649,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>30</verpakt_per>
 		<prijs>16.50</prijs>
-      <klantprijs>11.59</klantprijs>
+      <klantprijs>12.09</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmhfb-0-55e9eb66a74c90090658b7a4e11ab8f33b32ff37dc2efc5cff40b8c0201e4872_14.jpg</image>
@@ -94777,7 +94697,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>30</verpakt_per>
 		<prijs>16.50</prijs>
-      <klantprijs>11.59</klantprijs>
+      <klantprijs>11.63</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmhjr-0-a7dcf03be19f6c0a8b4bbd4c05fe288918d6cf606ff1f6cabdcafeeb6f815d9c.jpg</image>
@@ -94805,7 +94725,7 @@
       <klantprijs>13.69</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmhtw-0-5cd95ac0b150a5ddb8cde3fb831bbdf2e0f635b2a8d385571833293d48414f8a_130.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmhtw-0-ec4aca9609d0fe6a9ff334f127f970d87dae93f0fd71afd0f8494fea2bf20132_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmhtw-2-84d9052ec2ffda93c33cb14f0e05991dd6ba4983b91b9f541b83cece7eff7a9f.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmhtw-3-8ddc6d139b22cbeededdd237077005e5708eb1bce24bc0a9f26bdc65d62f6630.jpg</gallery_image>
 		<afmeting>75x50x1cm</afmeting>
@@ -94844,7 +94764,7 @@
 	<product>
 		<sku>RARMKGA</sku>
 		<titel>deurmat konijn achterpoten 75x50cm</titel>
-      <voorraad>89</voorraad>
+      <voorraad>81</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurmatten &gt; Deurmat binnen</category_path>
 		<subsubcategory>Deurmat binnen</subsubcategory>
       	<ean>8716522084757</ean>
@@ -94905,7 +94825,7 @@
       <klantprijs>13.69</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmoh-0-f76bd7f3ce2a75ab8ef153309f8fa5e92b745c4840b5148e114d96fd99e49ae4_130.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmoh-0-b054fec155ac425d41410a9555368d33ec26eba8699afb73d2c2c8ad2882947c_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmoh-2-3cc5a395744c4c907bb633c0d175776a90d0faa46afdb8b007fccbe9caa07a53.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmoh-3-e07b921633eb92f306a49a5dfccefbfc078aca4f983f665f717185f91f3a6790.jpg</gallery_image>
 		<afmeting>75x50x1cm</afmeting>
@@ -94994,7 +94914,7 @@
 	<product>
 		<sku>RARMSNRH</sku>
 		<titel>deurmat sneeuw roedel herten 75x50cm</titel>
-      <voorraad>65</voorraad>
+      <voorraad>60</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurmatten &gt; Deurmat binnen</category_path>
 		<subsubcategory>Deurmat binnen</subsubcategory>
       	<ean>8716522052770</ean>
@@ -95004,7 +94924,7 @@
       <klantprijs>13.69</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmsnrh-0-1ef20e57253c7c2d15a20a23339ee5f79eefd8f0e1529f5bc71ffccf1ce70b58_130.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmsnrh-0-19f2e127ac8c92e78c33489c9790e749741c9b0251552376ca9a08c30d289f5c_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmsnrh-2-a484d6414eee480824dad41478885fff9ce4e7245f814fd55950ccd07cbfb26a.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmsnrh-3-095b21c0877fd0b911071682b90729e7b14b2327c4c00ee688da1989816bd563.jpg</gallery_image>
 		<afmeting>75x50x1cm</afmeting>
@@ -95019,7 +94939,7 @@
 	<product>
 		<sku>RARMTZ</sku>
 		<titel>deurmat teckel zittend 75x50cm</titel>
-      <voorraad>103</voorraad>
+      <voorraad>99</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurmatten &gt; Deurmat binnen</category_path>
 		<subsubcategory>Deurmat binnen</subsubcategory>
       	<ean>8716522029192</ean>
@@ -95096,7 +95016,7 @@
 	<product>
 		<sku>RARMWD</sku>
 		<titel>deurmat winter hert 75x50cm</titel>
-      <voorraad>86</voorraad>
+      <voorraad>82</voorraad>
       	<category_path>B Living &gt; Outdoor &gt; Deurmatten &gt; Deurmat binnen</category_path>
 		<subsubcategory>Deurmat binnen</subsubcategory>
       	<ean>8716522032529</ean>
@@ -95106,7 +95026,7 @@
       <klantprijs>13.69</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmwd-0-674dba6c057b5d291fe73f572ebf8df7f164159a9aa58484663dc47ceb82faa9_130.jpg</image>
+      	<image>https://www.b-living.eu/media/catalog/product/r/a/rarmwd-0-32769f8d7b54ff4480afd1fb67c98a3121762c545852ce0e9b8ec219934b3a53_130.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmwd-2-a484d6414eee480824dad41478885fff9ce4e7245f814fd55950ccd07cbfb26a.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/r/a/rarmwd-3-b27bf2a88af714cc3a99e277230698d8a8c417cfeb638e0fce72a0d11999fa2b.jpg</gallery_image>
 		<afmeting>75x50x1cm</afmeting>
@@ -95523,7 +95443,7 @@
 	<product>
 		<sku>RNLTBHS</sku>
 		<titel>schootkussen boomstam grijs hartjes 43cm*</titel>
-      <voorraad>60</voorraad>
+      <voorraad>57</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Schootkussens &gt; Dienblad</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Schootkussens</subcategory>
@@ -95817,7 +95737,7 @@
 	<product>
 		<sku>RNLTSH</sku>
 		<titel>schootkussen steigerhout 43cm</titel>
-      <voorraad>91</voorraad>
+      <voorraad>87</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Schootkussens &gt; Dienblad</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Schootkussens</subcategory>
@@ -95904,7 +95824,7 @@
 	<product>
 		<sku>RNLTWH</sku>
 		<titel>schootkussen winter hert 43cm</titel>
-      <voorraad>81</voorraad>
+      <voorraad>77</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Schootkussens &gt; Dienblad</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Schootkussens</subcategory>
@@ -95991,7 +95911,7 @@
 	<product>
 		<sku>RNLTZW</sku>
 		<titel>schootkussen zwart edelhert 43cm</titel>
-      <voorraad>58</voorraad>
+      <voorraad>54</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Schootkussens &gt; Dienblad</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Schootkussens</subcategory>
@@ -97424,7 +97344,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>30.50</prijs>
-      <klantprijs>21.42</klantprijs>
+      <klantprijs>21.73</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/s/s/ssdksh-0-1a229bfba114c23669bf8b9990d0b3a7fa952da06c5d993f9ae6beab19df6665.jpg</image>
@@ -97455,9 +97375,9 @@
       <klantprijs>25.31</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/s/s/ssdksth-0-e6d65aae6681d020af7c3d83cf7c652094f59d85f743a4337067104280eeb82b_130.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdksth-2-2dc9582f7953a1a2fa5bae123ac838f81c79acde5534ca6a0ddbd5b6ec900f3f_130.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdksth-3-20aa023a3d662c5daf66929880cfa9412ed916423ac5d6d268e683aa00ccf983_130.jpg</gallery_image>
+      	<image>https://www.b-living.eu/media/catalog/product/s/s/ssdksth-0-4684ff794acb567980a760fd6ce00813d42a9b187286cddcda1f4aba258c5e68_131.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdksth-2-3469d5acaa23ac6985c8f8cd01e5d08e6b93555acbfee669fa551007f56159ac_130.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdksth-3-7abf7beb3efd3eb2ba1b17aba86f8e093cc8942fac1ef8c33f70f317251f4d9a_130.jpg</gallery_image>
 		<afmeting>130x180x3cm</afmeting>
 		<gewicht>1.040000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
@@ -100815,7 +100735,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>8</verpakt_per>
 		<prijs>2.75</prijs>
-      <klantprijs>1.78</klantprijs>
+      <klantprijs>2.07</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/x/m/xmwljzs-0-6993ef9f276a2719e53a6545fe99e10433cfa8ad7e6324966fdff09da82c2214.jpg</image>
@@ -100943,7 +100863,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>8</verpakt_per>
 		<prijs>2.75</prijs>
-      <klantprijs>1.02</klantprijs>
+      <klantprijs>1.11</klantprijs>
       <kortingpercentage>50</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/x/m/xmwllsgs-0-5fa21e018905952abc9d872433b28bc60aeb13018942ee8b20742b191c2ad2c7.jpg</image>
@@ -103426,7 +103346,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>5.00</prijs>
-      <klantprijs>3.36</klantprijs>
+      <klantprijs>3.40</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/x/m/xmwlvg8-0-e33410e38daabf14062cfefa9dabab53945828fbf5d081b9c53cef08bff7617b.jpg</image>
@@ -103748,7 +103668,7 @@
 	<product>
 		<sku>EVHKRTK</sku>
 		<titel>gobelin kussen ruwharige teckel 30x45cm</titel>
-      <voorraad>26</voorraad>
+      <voorraad>24</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen gobelin</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -103773,7 +103693,7 @@
 	<product>
 		<sku>EVKSGGH</sku>
 		<titel>gobelin kussen grauwe gans hoog 45x45cm</titel>
-      <voorraad>33</voorraad>
+      <voorraad>31</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen gobelin</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -103798,7 +103718,7 @@
 	<product>
 		<sku>EVKSGGL</sku>
 		<titel>gobelin kussen grauwe gans laag 45x45cm</titel>
-      <voorraad>56</voorraad>
+      <voorraad>54</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen gobelin</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -106274,7 +106194,7 @@
 	<product>
 		<sku>RNLTZEV</sku>
 		<titel>schootkussen zwart ezelin met veulen 43cm</titel>
-      <voorraad>200</voorraad>
+      <voorraad>196</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Schootkussens &gt; Dienblad</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Schootkussens</subcategory>
@@ -106608,7 +106528,7 @@
       	<merk>2Lif</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>4.90</prijs>
-      <klantprijs>3.29</klantprijs>
+      <klantprijs>4.17</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/b/l/bl55808-0-39c49bae51420b70876ce40421847850329ac1031e31e7b15f584734d3eeb45e.jpg</image>
@@ -106633,7 +106553,7 @@
       	<merk>2Lif</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>4.90</prijs>
-      <klantprijs>3.29</klantprijs>
+      <klantprijs>4.17</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/b/l/bl55810-0-7c4d1ca7e22b5b3daa746b00e412fa97b20bdd09d09c4d062d608a9f3bab8926.jpg</image>
@@ -109002,7 +108922,7 @@
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7003gjbn01-0-53d1a8312808ec74c415d6a5b67e2759caf683b9ab5c518eaae534d5661585c7.jpg</image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003gjbn01-2-4d42b368a96e105cf7ee0b0042ef06bf6a806e88e13af50fd09620c91138bd7a.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003gjbn01-3-5b0004522d2eedad43a7a16a993c69af7e4dcb353bbb77d7bd465e0d9fea7af1_129.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003gjbn01-3-0b8f615542ad007e6284833c2d3bf31857c57913dda94b70c3f8f7ebb02ae13f_130.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003gjbn01-8-33ceaec37ea123ecc26663fdeb5955e8d9ba908a905927fb578b18f9ab376d6f.jpg</gallery_image>
 		<afmeting>45x45x3.5cm</afmeting>
 		<gewicht>0.540000</gewicht>
@@ -113207,9 +113127,34 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
+		<sku>6000-0006</sku>
+		<titel>Viena Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
+      <voorraad>20</voorraad>
+      	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
+      <maincategory>Tafelzeilen &amp; Folies</maincategory>
+		<subcategory>Statische raamfolies</subcategory>
+		<subsubcategory>ST grote rol</subsubcategory>
+      	<ean>8425162083128</ean>
+      	<merk>2Lif</merk>
+		<verpakt_per>1</verpakt_per>
+		<prijs>10.90</prijs>
+      <klantprijs>9.05</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/6/0/6000-0006-0-c6d989043435b98ceadb1bca6152e3a5826aef0a6e1a87652749fb476005f321.jpg</image>
+		<afmeting>0x0x0cm</afmeting>
+		<gewicht>0.160000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Afnemen met een vochtige doek</wasvoorschriften>
+      	<materiaal>PVC</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Transparant</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
 		<sku>6000-0013</sku>
 		<titel>Panda Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
-      <voorraad>20</voorraad>
+      <voorraad>40</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -117080,7 +117025,7 @@
 	<product>
 		<sku>ABCPH35</sku>
 		<titel>Cake Standaard hout dia 35cm</titel>
-      <voorraad>31</voorraad>
+      <voorraad>30</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Schalen &amp; potten &gt; Schaal op voet</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Schalen &amp; potten</subcategory>
@@ -117273,8 +117218,8 @@
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/s/s/ssdkxlrh-0-d581bd363bef593f510e408a78819cd63c7e37bc708f8492fea2a15ffe84ae99.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdkxlrh-2-a189b4149f2151cde4f0fa2106771dfa82622ddf5de583015d1d3b1163c56a65_130.jpg</gallery_image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdkxlrh-3-8ca0ac6d754d9ce92058773d2375795b4e3985f7e5e00c99f4019c2d7a84baf6_130.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdkxlrh-2-c074f08171b0001be59b44a6f3400b123c00657f512f1866f0b0f6e025be19aa_130.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdkxlrh-3-f2d8b8d56e8323e615df09827a8bbb5174a5b4d6fbeed512efb49cec185e632c_130.jpg</gallery_image>
       <gallery_image>https://www.b-living.eu/media/catalog/product/s/s/ssdkxlrh-9-0b8e9785f8636738aa2e30a6161240f53dcfb50b92c027cd4beb4ad86db2795c.jpg</gallery_image>
 		<afmeting>150x200x3cm</afmeting>
 		<gewicht>1.344000</gewicht>
@@ -118354,7 +118299,7 @@
 	<product>
 		<sku>GOWKHHS46</sku>
 		<titel>Champagne Koeler hert hout zilver 18x45x29cm</titel>
-      <voorraad>29</voorraad>
+      <voorraad>27</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Wijnaccessoires &gt; Champagnekoeler</category_path>
       <maincategory>Keuken</maincategory>
 		<subcategory>Wijnaccessoires</subcategory>
@@ -120323,7 +120268,7 @@
 	<product>
 		<sku>BCPZF</sku>
 		<titel>Paraplu Zara bloemen 105cm</titel>
-      <voorraad>116</voorraad>
+      <voorraad>111</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Paraplu's &gt; Paraplu</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Paraplu's</subcategory>
@@ -120447,7 +120392,7 @@
 	<product>
 		<sku>DASPXL90</sku>
 		<titel>Snijplank mango hout XL 90x17cm</titel>
-      <voorraad>87</voorraad>
+      <voorraad>86</voorraad>
       	<category_path>B Living &gt; Keuken &gt; Snijplanken &gt; Snijplank</category_path>
 		<subsubcategory>Snijplank</subsubcategory>
       	<ean>8716522102932</ean>
@@ -121525,7 +121470,7 @@
 	<product>
 		<sku>BCPZFIP</sku>
 		<titel>Paraplu Zara bloemen binnenprint 105cm</titel>
-      <voorraad>96</voorraad>
+      <voorraad>84</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Paraplu's &gt; Paraplu</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Paraplu's</subcategory>
@@ -122502,7 +122447,7 @@
 	<product>
 		<sku>6000-0037</sku>
 		<titel>Zenit Statische raamfolie Grote Rol transparant 46cmx20mtr</titel>
-      <voorraad>60</voorraad>
+      <voorraad>80</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -122528,7 +122473,7 @@
 	<product>
 		<sku>6000-5037</sku>
 		<titel>Zenit Statische raamfolie Grote Rol transparant 92cmx20mtr</titel>
-      <voorraad>100</voorraad>
+      <voorraad>120</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -122554,7 +122499,7 @@
 	<product>
 		<sku>6000-5038</sku>
 		<titel>Garbi Statische raamfolie Grote Rol transparant 92cmx20mtr</titel>
-      <voorraad>40</voorraad>
+      <voorraad>60</voorraad>
       	<category_path>B Living &gt; Tafelzeilen &amp; Folies &gt; Statische raamfolies &gt; ST grote rol</category_path>
       <maincategory>Tafelzeilen &amp; Folies</maincategory>
 		<subcategory>Statische raamfolies</subcategory>
@@ -122864,7 +122809,7 @@
 	<product>
 		<sku>7003GAAF02</sku>
 		<titel>Zaragoza cognac Cushion 45 cm x 45 cm</titel>
-      <voorraad>337</voorraad>
+      <voorraad>339</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -124351,32 +124296,6 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
-		<sku>7048GJCT03</sku>
-		<titel>Daisy Flowers Pannenlap Onderzetter rond roze 20cm</titel>
-      <voorraad>22</voorraad>
-      	<category_path>B Living &gt; Keuken &gt; Keukentextiel &gt; Pannenlappen</category_path>
-      <maincategory>Keuken</maincategory>
-		<subcategory>Keukentextiel</subcategory>
-		<subsubcategory>Pannenlappen</subsubcategory>
-      	<ean>8717266051616</ean>
-      	<merk>Linen &amp; More</merk>
-		<verpakt_per>6</verpakt_per>
-		<prijs>1.90</prijs>
-      <klantprijs>1.39</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/7/0/7048gjct03-0-e02ea90e423e875f141279b58a2b5bd6b1f40fd24682bdcd48e1e9e529575f93.jpg</image>
-      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7048gjct03-3-ded671309748c3f1fd238d6cf76d651b26d5b7ca5d50a9b96b44e5e0b3277757.jpg</gallery_image>
-		<afmeting>20x20x0.9cm</afmeting>
-		<gewicht>0.072600</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Yes, see label</wasvoorschriften>
-      	<materiaal>Katoen</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Roze</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
 		<sku>7048GJCU01</sku>
 		<titel>Freddie Pannenlap Onderzetter rond roze 20cm</titel>
       <voorraad>102</voorraad>
@@ -124639,7 +124558,7 @@
 	<product>
 		<sku>EISLHH</sku>
 		<titel>Schoenlepel met hout teckel 50cm</titel>
-      <voorraad>136</voorraad>
+      <voorraad>135</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Schoenlepels &gt; Schoenlepel</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Schoenlepels</subcategory>
@@ -125174,7 +125093,7 @@
 	<product>
 		<sku>SKKCM</sku>
 		<titel>Knuffel Koe Clara middel 25cm</titel>
-      <voorraad>112</voorraad>
+      <voorraad>88</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Knuffels &gt; Knuffel</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Knuffels</subcategory>
@@ -125202,7 +125121,7 @@
 	<product>
 		<sku>SKKCS</sku>
 		<titel>Knuffel Koe Clara klein 20cm</titel>
-      <voorraad>172</voorraad>
+      <voorraad>132</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Knuffels &gt; Knuffel</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Knuffels</subcategory>
@@ -127574,7 +127493,7 @@
 	<product>
 		<sku>FGFLHKS1010</sku>
 		<titel>Fotolijst hart klavertjes zilver 15,6x2x15,7cm</titel>
-      <voorraad>58</voorraad>
+      <voorraad>57</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Fotolijsten &gt; Fotolijst</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Fotolijsten</subcategory>
@@ -127601,7 +127520,7 @@
 	<product>
 		<sku>FGFLORG1015</sku>
 		<titel>Fotolijst ovaal rozen hars goud 15x2,3x20cm</titel>
-      <voorraad>92</voorraad>
+      <voorraad>91</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Fotolijsten &gt; Fotolijst</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Fotolijsten</subcategory>
@@ -127682,7 +127601,7 @@
 	<product>
 		<sku>FGFLRHABG1015</sku>
 		<titel>Fotolijst rechthoek allover bloemen hars goud 17x2x22cm</titel>
-      <voorraad>70</voorraad>
+      <voorraad>69</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Fotolijsten &gt; Fotolijst</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Fotolijsten</subcategory>
@@ -127843,7 +127762,7 @@
 	<product>
 		<sku>FGFLRBG1010</sku>
 		<titel>Fotolijst rond bloem resin goud 14x2,7x17cm</titel>
-      <voorraad>72</voorraad>
+      <voorraad>71</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Fotolijsten &gt; Fotolijst</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Fotolijsten</subcategory>
@@ -129638,7 +129557,7 @@
 	<product>
 		<sku>7003GJFA08</sku>
 		<titel>Kussen Abstracte Lijnen Paars 45x45cm</titel>
-      <voorraad>105</voorraad>
+      <voorraad>104</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen van imitatiebont</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -129742,6 +129661,33 @@
 <meerdere_kleuren>0</meerdere_kleuren>
 	</product>
 	<product>
+		<sku>7003GJFB08</sku>
+		<titel>Kussen Hartjes Paars 45x45cm</titel>
+      <voorraad>18</voorraad>
+      	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen van imitatiebont</category_path>
+      <maincategory>Woontextiel</maincategory>
+		<subcategory>Sierkussens</subcategory>
+		<subsubcategory>Kussen van imitatiebont</subsubcategory>
+      	<ean>8717266048494</ean>
+      	<merk>Linen &amp; More</merk>
+		<verpakt_per>6</verpakt_per>
+		<prijs>8.15</prijs>
+      <klantprijs>6.76</klantprijs>
+      <kortingpercentage>17</kortingpercentage>
+      <allowlinediscount>1</allowlinediscount>
+      	<image>https://www.b-living.eu/media/catalog/product/7/0/7003gjfb08-0-d427f03355122cdb896e2163f1055ca148a4bbfb14295c085da33d6dc49410b5.jpg</image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003gjfb08-2-e978376deb31e96a5a91ff8ea0d436de9582e8bdd601fcb8b0d007b2f7394722.jpg</gallery_image>
+      <gallery_image>https://www.b-living.eu/media/catalog/product/7/0/7003gjfb08-3-711df1232b66eb570e3848a1f98c27b665b8511b48478051ff3dde53eeea90e2.jpg</gallery_image>
+		<afmeting>45x45x3.55cm</afmeting>
+		<gewicht>0.550000</gewicht>
+      <beschikbaar>In Stock</beschikbaar>
+		<wasvoorschriften>Yes, see label</wasvoorschriften>
+      	<materiaal>Polyester</materiaal>
+		<meerdere_formaten>0</meerdere_formaten>
+      	<kleur>Paars</kleur>
+<meerdere_kleuren>0</meerdere_kleuren>
+	</product>
+	<product>
 		<sku>7003GJFB09</sku>
 		<titel>Kussen Hartjes Roze 45x45cm</titel>
       <voorraad>96</voorraad>
@@ -129807,7 +129753,7 @@
       	<merk>Mars &amp; More</merk>
 		<verpakt_per>6</verpakt_per>
 		<prijs>8.50</prijs>
-      <klantprijs>5.82</klantprijs>
+      <klantprijs>5.92</klantprijs>
       <kortingpercentage>17</kortingpercentage>
       <allowlinediscount>1</allowlinediscount>
       	<image>https://www.b-living.eu/media/catalog/product/7/0/7003gjfc02-0-f14d95896cdc4b376749faa6e1954fbc00655f8fff3f4cd4a713585497426b4b.jpg</image>
@@ -130580,7 +130526,7 @@
 	<product>
 		<sku>ADKSBD</sku>
 		<titel>Dominica Kussen multi 45x45cm</titel>
-      <voorraad>110</voorraad>
+      <voorraad>109</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -130607,7 +130553,7 @@
 	<product>
 		<sku>ADGKBF</sku>
 		<titel>Formentera Kussen multi 40x60cm</titel>
-      <voorraad>106</voorraad>
+      <voorraad>104</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -130634,7 +130580,7 @@
 	<product>
 		<sku>ADHKBG</sku>
 		<titel>Guam Kussen multi 35x50cm</titel>
-      <voorraad>114</voorraad>
+      <voorraad>113</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -130661,7 +130607,7 @@
 	<product>
 		<sku>ADKSBH</sku>
 		<titel>Hawaii Kussen multi 45x45cm</titel>
-      <voorraad>110</voorraad>
+      <voorraad>109</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -130688,7 +130634,7 @@
 	<product>
 		<sku>ADKSBI</sku>
 		<titel>Ibiza Kussen multi 45x45cm</titel>
-      <voorraad>118</voorraad>
+      <voorraad>117</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -130715,7 +130661,7 @@
 	<product>
 		<sku>ADKSBL</sku>
 		<titel>Lanai Kussen multi 50x50cm</titel>
-      <voorraad>68</voorraad>
+      <voorraad>67</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -130742,7 +130688,7 @@
 	<product>
 		<sku>ADKSBN</sku>
 		<titel>Nauru Kussen multi 50x50cm</titel>
-      <voorraad>104</voorraad>
+      <voorraad>103</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -130769,7 +130715,7 @@
 	<product>
 		<sku>ADKSBO</sku>
 		<titel>Oahu Kussen multi 50x50cm</titel>
-      <voorraad>112</voorraad>
+      <voorraad>111</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -130796,7 +130742,7 @@
 	<product>
 		<sku>ADGKBP</sku>
 		<titel>Patmos Kussen multi 40x60cm</titel>
-      <voorraad>78</voorraad>
+      <voorraad>77</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -130823,7 +130769,7 @@
 	<product>
 		<sku>ADKSBR</sku>
 		<titel>Rhodos Kussen multi 50x50cm</titel>
-      <voorraad>118</voorraad>
+      <voorraad>117</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -130850,7 +130796,7 @@
 	<product>
 		<sku>ADHKBS</sku>
 		<titel>Saba Kussen multi 35x50cm</titel>
-      <voorraad>112</voorraad>
+      <voorraad>111</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen overige</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -131580,7 +131526,7 @@
 	<product>
 		<sku>7028GJGA02</sku>
 		<titel>Kussen Carey paars 30x50cm</titel>
-      <voorraad>84</voorraad>
+      <voorraad>83</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen van imitatiebont</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -131607,7 +131553,7 @@
 	<product>
 		<sku>7028GJGB02</sku>
 		<titel>Kussen Gugu roze 30x50cm</titel>
-      <voorraad>96</voorraad>
+      <voorraad>95</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen van imitatiebont</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -131898,7 +131844,7 @@
 	<product>
 		<sku>DCPHKAV</sku>
 		<titel>Cushion Check deer grey 30x50cm</titel>
-      <voorraad>54</voorraad>
+      <voorraad>53</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Sierkussen</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -131924,7 +131870,7 @@
 	<product>
 		<sku>DCPHKAW</sku>
 		<titel>Cushion Check deer black 30x50cm</titel>
-      <voorraad>46</voorraad>
+      <voorraad>45</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Sierkussen</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -132084,7 +132030,7 @@
 	<product>
 		<sku>NNHKHV</sku>
 		<titel>Kussen Allover vacht bruin 30x50cm</titel>
-      <voorraad>24</voorraad>
+      <voorraad>23</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen van imitatiebont</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -132111,7 +132057,7 @@
 	<product>
 		<sku>NNKSHB02</sku>
 		<titel>Kussen Geborduurd hert staand bruin 45x45cm</titel>
-      <voorraad>19</voorraad>
+      <voorraad>13</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen van imitatiebont</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -132138,7 +132084,7 @@
 	<product>
 		<sku>NNKSHB03</sku>
 		<titel>Kussen Geborduurd hert springend bruin 45x45cm</titel>
-      <voorraad>14</voorraad>
+      <voorraad>8</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen van imitatiebont</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -133016,7 +132962,7 @@
 	<product>
 		<sku>HLDSHGC</sku>
 		<titel>Deurstopper hond grijze ruit Door Stopper dog grey check 18x20x28cm</titel>
-      <voorraad>144</voorraad>
+      <voorraad>104</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Deurstoppers &gt; Deurstopper</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subcategory>Deurstoppers</subcategory>
@@ -133420,7 +133366,7 @@
 	<product>
 		<sku>FXDMTB100</sku>
 		<titel>Dierenmand XL tibetan lamb beige 100x70x22cm</titel>
-      <voorraad>34</voorraad>
+      <voorraad>30</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Huisdieraccessoires &gt; Dierenmand</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subsubcategory>Dierenmand</subsubcategory>
@@ -134069,7 +134015,7 @@
 	<product>
 		<sku>7019GGDJ08</sku>
 		<titel>Plaid Marmaris Paars 140x200cm</titel>
-      <voorraad>218</voorraad>
+      <voorraad>217</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Plaids &gt; Plaid</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Plaids</subcategory>
@@ -134357,7 +134303,7 @@
 	<product>
 		<sku>7028GJGD03</sku>
 		<titel>Cushion Imelda blauw 30x50cm</titel>
-      <voorraad>72</voorraad>
+      <voorraad>71</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen van imitatiebont</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -134438,7 +134384,7 @@
 	<product>
 		<sku>7028GJGD04</sku>
 		<titel>Cushion Imelda geel 30x50cm</titel>
-      <voorraad>84</voorraad>
+      <voorraad>83</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Kussen van imitatiebont</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -135003,7 +134949,7 @@
 	<product>
 		<sku>FXBTB</sku>
 		<titel>Bank Tibetan lamb beige 138,5x40,5x44cm</titel>
-      <voorraad>11</voorraad>
+      <voorraad>10</voorraad>
       	<category_path>B Living &gt; Kleinmeubelen &gt; Banken &gt; Bank</category_path>
       <maincategory>Kleinmeubelen</maincategory>
 		<subcategory>Banken</subcategory>
@@ -135029,7 +134975,7 @@
 	<product>
 		<sku>FXBTBR</sku>
 		<titel>Bank Tibetan lamb bruin 138,5x40,5x44cm</titel>
-      <voorraad>16</voorraad>
+      <voorraad>15</voorraad>
       	<category_path>B Living &gt; Kleinmeubelen &gt; Banken &gt; Bank</category_path>
       <maincategory>Kleinmeubelen</maincategory>
 		<subcategory>Banken</subcategory>
@@ -135828,7 +135774,7 @@
 	<product>
 		<sku>7001KFL014</sku>
 		<titel>Solid velvet wine red cushion 35x45 cm</titel>
-      <voorraad>298</voorraad>
+      <voorraad>297</voorraad>
       	<category_path>B Living &gt; Woontextiel &gt; Sierkussens &gt; Sierkussen</category_path>
       <maincategory>Woontextiel</maincategory>
 		<subcategory>Sierkussens</subcategory>
@@ -136199,7 +136145,7 @@
 	<product>
 		<sku>FXDMTBR100</sku>
 		<titel>Dierenmand XL tibetan lamb bruin 100x70x22cm</titel>
-      <voorraad>18</voorraad>
+      <voorraad>8</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Huisdieraccessoires &gt; Dierenmand</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subsubcategory>Dierenmand</subsubcategory>
@@ -136247,7 +136193,7 @@
 	<product>
 		<sku>FXDMTBR65</sku>
 		<titel>Dierenmand M tibetan lamb bruin 65x50x20cm</titel>
-      <voorraad>27</voorraad>
+      <voorraad>19</voorraad>
       	<category_path>B Living &gt; Woonaccessoires &gt; Huisdieraccessoires &gt; Dierenmand</category_path>
       <maincategory>Woonaccessoires</maincategory>
 		<subsubcategory>Dierenmand</subsubcategory>
@@ -136261,30 +136207,6 @@
       	<image>https://www.b-living.eu/media/catalog/product/f/x/fxdmtbr65-0-367f1ed36d528fce71953a6d0d8843a6c390686dff3e3d123a2ebe9abcaaa435.jpg</image>
 		<afmeting>65x50x20cm</afmeting>
 		<gewicht>1.333000</gewicht>
-      <beschikbaar>In Stock</beschikbaar>
-		<wasvoorschriften>Yes, see label</wasvoorschriften>
-      	<materiaal>Polyester</materiaal>
-		<meerdere_formaten>0</meerdere_formaten>
-      	<kleur>Bruin</kleur>
-<meerdere_kleuren>0</meerdere_kleuren>
-	</product>
-	<product>
-		<sku>FXDMTBR80</sku>
-		<titel>Dierenmand L tibetan lamb bruin 80x60x22cm</titel>
-      <voorraad>7</voorraad>
-      	<category_path>B Living &gt; Woonaccessoires &gt; Huisdieraccessoires &gt; Dierenmand</category_path>
-      <maincategory>Woonaccessoires</maincategory>
-		<subsubcategory>Dierenmand</subsubcategory>
-      	<ean>8716522112818</ean>
-      	<merk>Mars &amp; More</merk>
-		<verpakt_per>4</verpakt_per>
-		<prijs>42.50</prijs>
-      <klantprijs>35.27</klantprijs>
-      <kortingpercentage>17</kortingpercentage>
-      <allowlinediscount>1</allowlinediscount>
-      	<image>https://www.b-living.eu/media/catalog/product/f/x/fxdmtbr80-0-01cb2921294f5dc1e6d37606a6cfaca27401865fac258dbb28a51b3b56f0499a.jpg</image>
-		<afmeting>80x60x22cm</afmeting>
-		<gewicht>1.875000</gewicht>
       <beschikbaar>In Stock</beschikbaar>
 		<wasvoorschriften>Yes, see label</wasvoorschriften>
       	<materiaal>Polyester</materiaal>
