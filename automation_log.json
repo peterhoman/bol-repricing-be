@@ -1,15 +1,5 @@
 [
   {
-    "task": "probe_check",
-    "started": "2026-08-20T12:15:02",
-    "duration_s": 2,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] No probes currently in progress"
-    ]
-  },
-  {
     "task": "sync",
     "started": "2026-08-20T14:15:02",
     "duration_s": 481,
@@ -747,6 +737,17 @@
       "[MATCH] Hit minimum price floor: 182",
       "[MATCH] Check failed: 35",
       "[MATCH] No-competitor (exempt from daily reset): 40"
+    ]
+  },
+  {
+    "task": "probe_start",
+    "started": "2026-09-04T10:45:02",
+    "duration_s": 144,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] Verhoogd: 8 artikelen (+EUR11.07 per verkoopcyclus) | ongemoeid: 98 | overgeslagen (concurrent niet trager): 6 | check mislukt: 19",
+      "[DONE] Overgeslagen per levertijd-oordeel: sneller 4, gelijk 2"
     ]
   }
 ]
