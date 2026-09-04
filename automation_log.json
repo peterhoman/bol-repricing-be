@@ -1,16 +1,5 @@
 [
   {
-    "task": "sync",
-    "started": "2026-08-20T14:15:02",
-    "duration_s": 481,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] Frozen total now: 142 (+9 new, -0 unfrozen)",
-      "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
-    ]
-  },
-  {
     "task": "selftest",
     "started": "2026-08-21T07:50:38",
     "duration_s": 0,
@@ -748,6 +737,16 @@
     "summary": [
       "[DONE] Verhoogd: 8 artikelen (+EUR11.07 per verkoopcyclus) | ongemoeid: 98 | overgeslagen (concurrent niet trager): 6 | check mislukt: 19",
       "[DONE] Overgeslagen per levertijd-oordeel: sneller 4, gelijk 2"
+    ]
+  },
+  {
+    "task": "probe_check",
+    "started": "2026-09-04T12:15:02",
+    "duration_s": 1,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] No probes currently in progress"
     ]
   }
 ]
