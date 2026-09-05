@@ -1,16 +1,5 @@
 [
   {
-    "task": "probe_check",
-    "started": "2026-08-21T12:15:01",
-    "duration_s": 15,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[KEPT] 8717266396977: still has buybox at the higher price - margin recovered!",
-      "[DONE] Kept higher price: 1 | Reverted to safe price: 0"
-    ]
-  },
-  {
     "task": "sync",
     "started": "2026-08-21T14:15:01",
     "duration_s": 447,
@@ -748,6 +737,16 @@
     "summary": [
       "[DONE] Verhoogd: 6 artikelen (+EUR16.03 per verkoopcyclus) | ongemoeid: 101 | overgeslagen (concurrent niet trager): 7 | check mislukt: 20",
       "[DONE] Overgeslagen per levertijd-oordeel: sneller 5, gelijk 2"
+    ]
+  },
+  {
+    "task": "probe_check",
+    "started": "2026-09-05T12:15:02",
+    "duration_s": 1,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] No probes currently in progress"
     ]
   }
 ]
