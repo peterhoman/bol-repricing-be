@@ -1,15 +1,5 @@
 [
   {
-    "task": "probe_start",
-    "started": "2026-08-26T10:45:02",
-    "duration_s": 5,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] No candidates with at least EUR10.00 to recover"
-    ]
-  },
-  {
     "task": "probe_check",
     "started": "2026-08-26T12:15:02",
     "duration_s": 1,
@@ -720,6 +710,17 @@
       "[MATCH] Hit minimum price floor: 184",
       "[MATCH] Check failed: 34",
       "[MATCH] No-competitor (exempt from daily reset): 39"
+    ]
+  },
+  {
+    "task": "probe_start",
+    "started": "2026-09-10T10:45:01",
+    "duration_s": 166,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] Verhoogd: 17 artikelen (+EUR73.81 per verkoopcyclus) | ongemoeid: 111 | overgeslagen (concurrent niet trager): 9 | check mislukt: 16",
+      "[DONE] Overgeslagen per levertijd-oordeel: sneller 6, gelijk 2, onbekend 1"
     ]
   }
 ]
