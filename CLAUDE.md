@@ -24,6 +24,17 @@ oppakt.
   `https://raw.githubusercontent.com/peterhoman/bol-repricing-be/main/repricing_current.xml`
 - B-Living leveranciersfeed (zelfde als NL-project):
   `https://www.b-living.eu/feeds/product-feed-15003253-bbed70ea1f95308232732fe3b662e36f2fab51359cce3fc9ff7e33cac2ef9b07.xml`
+- **B-Living-feed filtert zelf op voorraad ≥ 6 (gemeten 10/9):** van 5438
+  artikelen is de laagste voorraad 6, geen enkel artikel op 1-5. Een artikel
+  dat "uit de feed verdwijnt" is dus meestal NIET uit het assortiment, maar
+  tijdelijk op voorraad ≤ 5 (voorbeeld 8716522062021, website: 5 stuks).
+  Gevolg: ons aanbod verdwijnt bij bol.com, koopblok gaat naar een ander
+  (vaak Bohemian), sync ontdooit → komt vanzelf terug zodra de voorraad
+  weer ≥ 6 is. Peters Channable-regel "voorraad < 4 → eruit" komt daardoor
+  nooit aan de beurt. B-Living (Bas) bevestigde 10/9: filter "minimale
+  voorraad 6"; **sinds 10/9 11:27 op 4 gezet** (Bas), gelijk aan Peters
+  Channable-regel. Artikelen met voorraad 4-5 komen nu vanzelf terug in de
+  feed en in onze XML. Ons systeem is niet aangepast.
 - `.env` in deze map: `GITHUB_TOKEN` (fine-grained PAT, alleen deze repo,
   Contents/Workflows/Actions R&W, geen vervaldatum) + `GITHUB_REPO`
 
@@ -142,7 +153,10 @@ is ... Je bespaart 3%.") en breekt één gecombineerd patroon.
 de juiste prijs in plaats van te gokken:
 - geen andere verkoper → stapje van max €5 omhoog (niet ineens naar vol: een
   slecht geparste pagina ziet er hetzelfde uit)
-- goedkoopste ander BOVEN ons → naar net eronder (−€0,02)
+- goedkoopste ander BOVEN ons → naar net eronder (−€0,02), **sinds 3/9 alleen
+  als die concurrent trager levert dan wij** (zie openstaand punt 2: 6 van
+  7 verloren tegen even snelle of snellere verkopers, 22/22 gehouden tegen
+  "1 - 2 weken")
 - goedkoopste ander ONDER ons → **niets doen**; we winnen dan op beoordeling
   (8,9 vs 8,1) en levertijd. Gemeten: wij €255,03 vs concurrent €254,95 én
   toch het koopblok. Verlagen geeft marge weg, verhogen riskeert het.
@@ -159,18 +173,96 @@ dus dáár compenseert een fors prijsverschil het levertijdnadeel en is
 hangt af van je positie op levertijd en beoordeling, niet van een vast bedrag.
 Peter heeft op 2/9 bevestigd dat BE blijft zoals het is.
 
-Openstaande kans (niet gebouwd): wij houden het koopblok soms terwijl we
-DUURDER zijn — 8716522103465 stond op €255,03 tegen €254,95 van Bohemian
-Living NL en wij hadden het koopblok. `UNDERCUT_EUR` gaat nooit boven de
-concurrent; voorzichtig testen of dat wél kan (bv. tot 1% erboven) kan extra
-marge opleveren.
+**Gemeten op 2/9 met `src/measure_tolerance.py`** (leest per bevroren artikel
+in één run: hebben wij het koopblok NU, alle concurrentprijzen, én levertijd
++ beoordeling per verkoper — die laatste twee staan ook op de
+prijsoverzichtspagina). Uitkomst over 127 bevroren artikelen:
+- 48 met zichtbare concurrent; bij **20 daarvan (41%) hebben wij het koopblok
+  terwijl een ander goedkoper is**. Prijsnadeel min €0,08 (0,03%), mediaan
+  €0,77 (0,77%), max €6,56 (3,10%). In alle 20 gevallen: wij "uiterlijk
+  9 september in huis", concurrent "1 - 2 weken". NL's levertijdregel dus,
+  op onze cijfers: wij verdragen minstens 3% prijsnadeel.
+- Levertijdtekst verandert in de loop van de dag (NL, 4/9: "onleesbaar" 3
+  van 176 om 10:00, 11 van 166 om 19:20 — besteldeadline verstreken geeft
+  een andere formulering). Levertijd-metingen alleen op hetzelfde tijdstip
+  vergelijken; in `optimize` is dat onschadelijk (onleesbaar = niet trager =
+  laten staan).
+- **Weekdag-effect (NL 7/9):** de levertijdtekst hangt van de weekdag af.
+  Bij NL lazen Bohemian/Cactula op maandag ineens "3d later" (vr-zo "even
+  snel") en verhoogde de regel 24 artikelen, 23 hielden. Bij BE op 7/9
+  precies andersom: Cactula "voor 17:00 besteld, donderdag in huis" =
+  sneller dan ons "uiterlijk 14 september" → correct overgeslagen. Onze
+  bereik-parser vangt beide richtingen; wel elke maandag kijken of
+  optimize ineens veel meer verhoogt dan gewoonlijk (1-8 per dag is normaal).
+- **Werkhypothese sinds 8/9 (NL-meting): de VERKOPER voorspelt, niet de
+  levertijd.** Cactula las bij NL op dinsdag weer "even snel" en de 7
+  Cactula-artikelen op 2 cent onder hielden toch (0 van 23 verloren). Bij
+  NL: Bohemian/Cactula/Izziet → tot vlak onder houdt; Cammeraat/Bouwkern →
+  pakken het koopblok bij elke verhoging, ook bij €3 verschil. Onze 22/22
+  tegen "1 - 2 weken" waren óók Cactula/Bohemian/Izziet — de levertijdrem
+  werkt bij ons waarschijnlijk omdat die verkopers hier toevallig "trager"
+  lezen en Sebic/Boholifestylestore/Woonuden "sneller/gelijk". Goede
+  benadering, maar niet de kern. Gevolg voor het lezen van verliezen: eerst
+  kijken WELKE verkoper won, dan pas naar levertijd. Systeem blijft zoals
+  het staat (besluit 6/9).
+- **Verkoper-specifiek gedrag (NL 7/9):** Cammeraat pakt bij NL het koopblok
+  bij élke verhoging, ook als NL €3 goedkoper en even snel is. Bij BE zijn
+  Sebic en Boholifestylestore de kandidaten; onze rem houdt ze nu al tegen
+  via levertijd. Verliest een artikel twee keer na een verhoging aan
+  dezelfde verkoper, dan is dat het signaal. **BE-voorbeeld 8/9:**
+  8716522110388 (Wandkop Koe) op onze bodem €35,90 verloor het koopblok aan
+  Woonuden op €37,50 — duurder, en toch. Peters screenshot verklaart het:
+  Woonuden levert donderdag (wij 15 sept), beoordeling 9 tegen onze 8,9, en
+  heeft er maar 1 op voorraad → komt vanzelf terug zodra die verkocht is.
+  Wij kunnen niet lager (bodem). Parser-detail: bij een "Op voorraad"-label
+  staat de echte levertijd ("Voor 17:00 uur besteld, donderdag in huis")
+  in het VOLGENDE veld; onze parser leest nu alleen het label → `onbekend`
+  → met rust laten. Uitkomst identiek aan `sneller`, dus bewust niet
+  aangepast (besluit 6/9: systeem blijft zoals het staat).
+  **Boholifestylestore = BE's "Cammeraat" (8/9):** 8716522077254 (Zeegras
+  ring) verloor op 3/9 na verhoging naar €19,73 én op 8/9 op €18,04 (4 cent
+  boven de bodem) aan Boholifestylestore op €19,95 — duurder, zelfde
+  levertijd. Wint dus ongeacht onze prijs. Niets aan te doen; dagroute.
+- **Flip-lus-risico:** een artikel dat na een €5-stap verliest komt via de
+  dagroute lager terug en stapt na een paar dagen weer omhoog (NL:
+  8716522090192, plafond ~€122, twee keer verloren). Bij BE nog niet gezien
+  (16/16 gehouden). Als het gebeurt: geheugen na verlies-na-verhoging
+  (COOLDOWN-idee), niet de regel zelf aanpassen. **NL heeft dit op 8/9
+  gebouwd** (verkoperlijsten VLAK_ONDER/NOOIT, cooldown via
+  optimize_history.json op basis van frozen.json-vergelijking — geen
+  wijziging in sync nodig —, en "geen concurrent" pas na twee runs op rij).
+  Mocht BE ooit omslaan: dat ontwerp is het startpunt, via een
+  instructie-MD opvragen bij de NL-chat, niet in hun repo kijken.
+- **Twee meetbronnen:** de sync van 14:15 mist nachtelijke verliezen die de
+  ochtendrun al hersteld heeft; de ochtend-export (CSV) is de tweede bron.
+  Daarom checkt de sessie 's ochtends alle verhoogde EANs tegen de CSV.
+- Levertijd als BEREIK meten, niet als getal: "uiterlijk 9 september" is een
+  harde bovengrens (7,7), "1 - 2 weken" een schatting (7,14). Plat op één
+  getal lijken ze even snel. Een concurrent heet pas trager als zijn vroegste
+  dag ná onze laatste valt; anders "onbeslist".
+- **Groep A (20 artikelen, €652,34 ruimte tot de volle prijs):** wij zijn al
+  duurder dan de concurrent en winnen toch; `optimize` laat ze met rust.
+  Alleen te pakken door bewust BOVEN de concurrent te gaan zitten. Niet
+  gedaan; Peters beslissing.
+- **Groep B (9 artikelen, €18,72/cyclus):** concurrent zit BOVEN ons, de
+  bestaande regel mág verhogen — maar geen van de 9 zat in de dagelijkse
+  top-40 (rangen 42–92). Zie de sorteerkwestie hieronder.
+
+**Sorteerkwestie in `optimize` (gevonden 2/9, gefixt 3/9: limiet 40 → 200 in `scheduled_run.py`, zodat elke dag álle bevroren artikelen bekeken worden; de sortering zelf staat er nog en is nu onschadelijk):** de
+kandidaten worden gesorteerd op headroom (volle prijs op verse inkoop − onze
+prijs) en dan afgekapt op `limit`. Die headroom is het grootst waar B-Living
+de inkoop verhoogde — dat zijn de dure artikelen waar wij al boven de
+concurrent zitten, precies de tak waar de regel niets doet. De top-40 van 2/9
+bestond volledig uit zulke artikelen: "0 verhoogd, 37 ongemoeid". Dat zag
+eruit als "catalogus klaar", maar is een sorteerartefact dat elke dag
+terugkomt. Bij NL nagevraagd of het daar ook zit.
 
 Eerste live ronde 1/9: 40 bekeken, **19 verhoogd, +€66,26 per verkoopcyclus**,
 18 met rust gelaten, 3 mislukt; 0 onder de bodem, 0 boven de volle prijs.
 Terugkerende concurrenten: Bohemian Living NL, Cactula, Izziet (dropshippers
 die net als wij bij de leverancier bestellen).
 
-De dagtaak van 10:45 draait sinds 1/9 `optimize 40`; `probe_check` blijft in het
+De dagtaak van 10:45 draait sinds 1/9 `optimize`, sinds 3/9 met limiet 200 (alle bevroren artikelen; tot dan 40, zie sorteerkwestie); `probe_check` blijft in het
 schema maar heeft niets meer te doen. De oude probe-modi (`auto`, `step`) staan
 er nog voor noodgevallen. Instructie voor NL:
 `instructie-NL-concurrentprijzen-zichtbaar.md`.
@@ -253,6 +345,18 @@ er nog voor noodgevallen. Instructie voor NL:
     alleen als ze bestaan. `remove_eans_from_csv()` deed dit al goed.
     Instructie voor NL: `instructie-NL-csv-kolomnamen.md`.
 
+12. **Volle prijs en bodem ALTIJD uit de VERSE feed-klantprijs berekenen,
+    nooit uit `frozen[ean]` (analysefout 2/9, door Peter gevangen):**
+    `frozen[ean]` is de klantprijs waarop we het koopblok wonnen, niet de
+    huidige inkoop. Bij 100 van de 143 bevroren artikelen was de inkoop
+    sindsdien gestegen. Een analyse die `calculate_normal_price(frozen[ean])`
+    als "volle prijs" nam, concludeerde dat álles al op de volle prijs stond
+    en er niets te halen viel — fout; de echte volle prijs lag tot €60 hoger.
+    Voorbeeld 8716522104899: feed 12,04 → vol €39,80, wij stonden op €34,99
+    (= vol op de oude 10,19, toevallig ook de nieuwe bodem). De
+    productiecode (`optimize`, beide clamps) doet dit goed via
+    `bliving_klantprijzen[ean]`; de valkuil zit in losse analyses.
+
 ## AUTOMATISCH SINDS 17/8 — eerst lezen vóór je iets draait!
 
 De dagelijkse routine draait sinds 17/8 via de **Windows-taakplanner** (vier
@@ -272,7 +376,7 @@ rate-limiting. Wat een sessie nog wél doet:
    lokaal in `logs/automation-JJJJ-MM.log`.
 2. Handmatig ingrijpen alleen bij een storing of op Peters verzoek.
    NB: taak 2 ("probe starten") draait sinds 1/9 `probe_recovery.py optimize
-   40`, niet meer de oude gok-probe. Taak 3 ("probe controleren") staat nog in
+   200` (limiet 40 tot 3/9), niet meer de oude gok-probe. Taak 3 ("probe controleren") staat nog in
    het schema maar meldt normaal "No probes currently in progress" — dat is
    correct, niet een gemiste run.
 3. `taken_aanmaken.ps1` (projectmap) maakt de taken opnieuw aan als dat ooit
@@ -351,9 +455,15 @@ workflow-mails tijdens zo'n storing zijn dus bewust en veilig.
 
 ## Status per 2 september 2026 (verifieer bij sessiestart tegen GitHub!)
 
-- **129 bevroren koopblokken**, 42 in `no_competitor`, `big_gap` op 0, audit
-  schoon, nul mislukte cloud-runs. Bevroren schommelt normaal tussen ~120 en
+- **133 bevroren koopblokken** (4/9 09:00; schommelt 125-145), 40 in `no_competitor`,
+  `big_gap` op 0, audit schoon, nul mislukte cloud-runs, 0 onder de bodem
+  (live gemeten 2/9). Bevroren schommelt normaal tussen ~120 en
   ~150; dat is auto-unfreeze, geen probleem.
+- **Peters besluit 6/9: het systeem blijft zoals het nu staat.** Optimize
+  met limiet 200 en levertijdregel (geen concurrent → €5-stapjes; concurrent
+  trager → net eronder; even snel/sneller → met rust), niet boven de
+  concurrent. Geen nieuwe voorstellen om de prijsregels te veranderen tenzij
+  de cijfers omslaan (verliezen in de "geen concurrent"- of "trager"-groep).
 - **Alles draait automatisch** via de taakplanner (zie hoofdstuk hierboven).
   Peter uploadt 's ochtends alleen de export. Een sessie doet de
   ochtendcontrole op `automation_log.json` en rapporteert; verder niets
@@ -373,9 +483,60 @@ workflow-mails tijdens zo'n storing zijn dus bewust en veilig.
    of verhoogde artikelen in de export opduiken; de lijst van 1/9 staat in
    `logs/optimize-2026-09-01.txt`. `UNDERCUT_EUR` in `probe_recovery.py` is
    de knop.
-2. **Kans, niet gebouwd:** wij houden het koopblok soms terwijl we DUURDER
-   zijn (8716522103465: wij €255,03 vs Bohemian Living NL €254,95). De regel
-   gaat nooit boven de concurrent. Voorzichtig testen of dat wél kan.
+2. **Gemeten op 2/9 — zie het hoofdstuk over concurrentprijzen.** 41% van
+   de artikelen met concurrent winnen we terwijl we duurder zijn (tot 3,10%).
+   Twee beslissingen: (a) groep A bewust boven de concurrent zetten (€652
+   ruimte, koopblokrisico) — **BESLIST DOOR PETER 4/9: NIET DOEN.** Geen
+   nieuwe voorstellen hierover; de regel blijft "nooit boven de goedkoopste
+   concurrent". Reden: **waarschuwing van NL (4/9):** bij
+   8716522090192 verloor NL het koopblok op €5,10 ónder Izziet (5 dagen
+   trager) aan toonies-woondeco die €7 DUURDER én 5 dagen trager was; op €10
+   eronder wonnen ze wel. Er is dus een derde factor naast prijs en
+   levertijd (beoordeling / bol's eigen weging), en "trager" is geen
+   vrijbrief. Onze 41% "koopblok ondanks duurder" kan deels die factor
+   zijn — die kan zich tegen ons keren zodra we de buffer weghalen. Bij een
+   verliezer altijd nakijken wie het koopblok HEEFT, niet alleen dat wij het
+   kwijt zijn. (b) GEDAAN 3/9: limiet op 200.
+   Eerste brede run 3/9 10:45: 140 bekeken, **43 verhoogd (+€134,76/cyclus)**:
+   33 zonder concurrent (€5-stapjes, €114,36) en 10 tegen een concurrent
+   boven ons (€20,40). Sync 14:15: **6 verloren, alle 6 uit de
+   concurrent-groep, 0 uit de €5-groep.** Lijst: `logs/optimize-2026-09-03.txt`.
+   Levertijd verklaart het: de 6 verliezers stonden tegen Sebic (levert
+   2 dagen SNELLER dan wij) en Boholifestylestore (even snel); de 4 die
+   hielden tegen Cactula/Bohemian ("1 - 2 weken", wij sneller) —
+   8716522104899/104905 hielden zelfs bij gelijke levertijd én gelijke prijs.
+   Dus: **"net onder de concurrent" werkt alleen als wij sneller leveren;
+   bij even snel of sneller kost het het koopblok.** NL mat hetzelfde (20%
+   behoud bij "even snel"). **GEBOUWD 3/9 (Peters akkoord):** de
+   concurrent-tak in `optimize` verhoogt alleen nog als de concurrent trager
+   levert. `check_all_offers()` leest nu ook de levertijd per verkoper (veld
+   achter "Inclusief verzendkosten" op de prijsoverzichtspagina);
+   `levertijd_naar_dagen()` maakt er een BEREIK van en `vergelijk_levertijd()`
+   in `phase2_repricing.py` oordeelt: `trager` (vroegste dag ná onze laatste)
+   en `later` ("1 - 2 weken" tegen ons "uiterlijk <datum>": niet vroeger,
+   wel later — 22/22 gehouden) → verhogen; `gelijk`, `sneller`, `onbeslist`,
+   `onbekend` → laten staan, geteld als "overgeslagen" per oordeel in de
+   `[DONE]`-regels. Live-check 3/9: kussen vs Cactula → gelijk (niet), vs
+   Bohemian "1 - 2 weken" → later (wel), vs Sebic 8 sept → sneller (niet) —
+   exact de drie uitkomsten van de sync. `optimize-dry [n]` = droogloop
+   zonder upload; droogloop 3/9 15:00: 8 zou verhogen (allemaal €5-stapjes
+   zonder concurrent, €11,07), 96 ongemoeid, 0 overgeslagen, 21 mislukt.
+   **Eerste echte run 4/9 10:45:** 131 bekeken, 8 verhoogd (allemaal
+   €5-stapjes zonder concurrent, +€11,07), 98 ongemoeid, **6 overgeslagen =
+   exact de 6 verliezers van 3/9** (Sebic ×3 en Woonuden → sneller,
+   Boholifestylestore ×2 → gelijk), 19 mislukt. De 6 waren die ochtend om
+   09:00 via de normale dagroute al weer bevroren op hun oude prijs; export
+   4/9: 0 van de 33 €5-stapjes verloren, 19/19 van 1/9 nog steeds goed.
+   Nieuwe levertijdzin gezien en goed gelezen: "Voor 23:59 uur besteld,
+   woensdag in huis" (weekdag-tak). **Sync 4/9 14:15: alle 8 verhoogde
+   hielden**, +2 nieuwe winnaars, 1 gewone dagverliezer (8717266051616,
+   €14,71-artikel dat uit de B-Living-feed is verdwenen; koopblok bij
+   WOHI-BE €13,95, ons aanbod staat niet meer op de overzichtspagina —
+   niets mee te doen). Levertijdzin "Op voorraad" → None → veilige kant.
+   Regel na dag 1: 8/8 (geen concurrent), rem 6/6 correct. Stand 6/9: geen
+   concurrent 15/15, trager 1/1 (8716522110005 tegen Izziet 17 sept vs wij
+   14 sept, +€0,86, gehouden), rem 22/22 correct; 76 verhoogde sinds 1/9
+   allemaal nog bevroren.
 3. **NL bouwt een levertijd-afhankelijke regel** (concurrent trager → omhoog,
    sneller → niets doen). Wij nemen die niet over zolang onze cijfers goed
    blijven; wel het resultaat volgen.

@@ -49,7 +49,13 @@ TASKS = {
     # wait, revert on failure) and the brief step experiment - we can now SEE
     # the competitor instead of guessing, so probe_check has nothing left to
     # do on these and simply reports "no probes in progress".
-    "probe_start": ("probe_recovery.py", ["optimize", "40"]),
+    # Limit raised 40 -> 200 on 3 Sept: optimize sorts on headroom to the
+    # full price, and with 143 frozen articles the same 40 (the dear ones
+    # where we already sit above the competitor, so the rule does nothing)
+    # filled the daily slice every day. The 9 articles the rule COULD raise
+    # sat at ranks 42-92 and were never reached ("0 verhoogd" for days).
+    # 200 covers the whole frozen list; ~2.5 min instead of 44 s.
+    "probe_start": ("probe_recovery.py", ["optimize", "200"]),
     "probe_check": ("probe_recovery.py", ["check"]),
     "sync":        ("sync_buybox.py", []),
 }

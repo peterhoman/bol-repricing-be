@@ -1,0 +1,24 @@
+# Eerste optimize-ronde, 1 september 2026. 19 bevroren artikelen verhoogd naar
+# 2 cent onder de goedkoopste concurrent (+EUR66,26 per verkoopcyclus).
+# MEETVRAAG: is 2 cent genoeg? Verschijnt een van deze EANs in de dagelijkse
+# "geen koopblok"-export, dan was de marge te dun -> UNDERCUT_EUR verhogen.
+# EAN            was      werd     concurrent
+8716522089578  320.08   325.00   Cactula 325.00
+8716522070477  297.02   299.00   Cactula 299.00
+8716522088847  291.56   294.99   Izziet 295.00
+8716522051377  294.08   299.00   Cactula 299.00
+8716522086256  294.08   299.00   Cactula 299.00
+8716522103755  273.28   275.00   Cactula 275.00
+8716522103557  172.85   174.95   Izziet 174.95
+8716522070903  210.05   215.95   Bohemian Living NL 215.95
+8716522090673  134.50   135.95   Izziet 135.95
+8716522094817  134.50   135.95   Izziet 135.95
+8716522090192  124.46   128.00   Izziet 128.00
+8716522103625  124.46   124.95   Bohemian Living NL 124.95
+8716522100921  118.06   119.94   Bohemian Living NL 119.95
+8716522103656  126.02   132.94   Bohemian Living NL 132.95
+8716522100143  112.58   114.94   Bohemian Living NL 114.95
+8716522090772  109.85   114.94   Bohemian Living NL 114.95
+8716522103632   96.51   101.94   Bohemian Living NL 101.95
+8716522102611   76.07    79.95   Bohemian Living NL 79.95
+8716522106558   76.07    79.95   Bohemian Living NL 79.95

@@ -1,0 +1,2501 @@
+{
+  "gemeten_op": "2026-09-02T14:29:23.964431",
+  "rijen": [
+    {
+      "ean": "8716522089288",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 18.28,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 19.95,
+      "goedkoopste_verkoper": "Boholifestylestore",
+      "goedkoopste_leverbereik": [
+        7,
+        7
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 9 september in huis",
+      "goedkoopste_beoordeling": 8.6
+    },
+    {
+      "ean": "8716522090772",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 114.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 114.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522103656",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 132.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 132.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522104899",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 34.99,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 38.95,
+      "goedkoopste_verkoper": "Cactula",
+      "goedkoopste_leverbereik": [
+        7,
+        7
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 9 september in huis",
+      "goedkoopste_beoordeling": 8.4
+    },
+    {
+      "ean": "8716522077254",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 18.02,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 19.95,
+      "goedkoopste_verkoper": "Boholifestylestore",
+      "goedkoopste_leverbereik": [
+        7,
+        7
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 9 september in huis",
+      "goedkoopste_beoordeling": 8.6
+    },
+    {
+      "ean": "8716522092042",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 48.23,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 49.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522107272",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 103.45,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 102.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522104905",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 34.99,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 38.95,
+      "goedkoopste_verkoper": "Cactula",
+      "goedkoopste_leverbereik": [
+        7,
+        7
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 9 september in huis",
+      "goedkoopste_beoordeling": 8.4
+    },
+    {
+      "ean": "8716522092004",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 62.84,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 61.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8014772133868",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 109.38,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717266047824",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 27.27,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717266047831",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 27.27,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717266051821",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 27.27,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717266191091",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 161.72,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "4004947361787",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 34.27,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522074468",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 117.34,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717774825044",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 200.56,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522047349",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 299.83,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717266051982",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 24.39,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522100945",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 81.87,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522090673",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 135.95,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 135.95,
+      "goedkoopste_verkoper": "Izziet",
+      "goedkoopste_leverbereik": [
+        12,
+        12
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 14 september in huis",
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717774825693",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 217.83,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522107319",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 103.45,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 2,
+      "goedkoopste": 102.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522090192",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 128.0,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 128.0,
+      "goedkoopste_verkoper": "Izziet",
+      "goedkoopste_leverbereik": [
+        12,
+        12
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 14 september in huis",
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522103557",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 174.95,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 174.95,
+      "goedkoopste_verkoper": "Izziet",
+      "goedkoopste_leverbereik": [
+        12,
+        12
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 14 september in huis",
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717266011351",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 37.72,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717266395949",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 176.82,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522094817",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 135.95,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 135.95,
+      "goedkoopste_verkoper": "Izziet",
+      "goedkoopste_leverbereik": [
+        12,
+        12
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 14 september in huis",
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522100143",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 114.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 114.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522095418",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 127.19,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522103625",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 124.95,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 124.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8717266395956",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 235.09,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717266373138",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 26.21,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522085686",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 29.4,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "4004947361770",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 47.34,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8718483101924",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 20.38,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717774820148",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 267.46,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717774825877",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 217.83,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717774825068",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 200.56,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717774825990",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 267.46,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717774821015",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 267.46,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717774824092",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 267.46,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717774825846",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 217.83,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717774825792",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 267.46,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717774825976",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 267.46,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717774820667",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 217.83,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522085976",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 35.9,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522085983",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 41.83,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522088700",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 24.75,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522087260",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 82.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522087215",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 82.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522065701",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 86.19,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522087390",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 82.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522065695",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 92.66,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522085068",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 82.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522022834",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 82.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522065244",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 104.52,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522096033",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 82.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522106367",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 82.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522087314",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 82.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522018929",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 82.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522100921",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 119.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 119.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522073966",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 137.98,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522033731",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 26.23,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522074925",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 19.86,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522074994",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 27.97,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522075090",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 14.92,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522078336",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 14.01,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522078350",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 25.27,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522078367",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 15.75,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522079609",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 18.04,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522082272",
+      "koopblok": null,
+      "winnaar": null,
+      "onze_prijs": 24.75,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522082364",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 21.73,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522082494",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 37.67,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522082517",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 37.67,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522082524",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 43.18,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717266046599",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 37.72,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522070163",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 291.56,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 289.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522088847",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 294.99,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 295.0,
+      "goedkoopste_verkoper": "Izziet",
+      "goedkoopste_leverbereik": [
+        12,
+        12
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 14 september in huis",
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522103441",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 282.41,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 281.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522103465",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 255.03,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 254.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522103762",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 273.28,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 2,
+      "goedkoopste": 272.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522103779",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 273.28,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 2,
+      "goedkoopste": 272.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522103649",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 81.43,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 80.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522070903",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 215.95,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 215.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522106756",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 100.72,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 99.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522106763",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 100.72,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 99.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8717266046605",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 42.48,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522051377",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 299.0,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 299.0,
+      "goedkoopste_verkoper": "Cactula",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.4
+    },
+    {
+      "ean": "8716522070477",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 299.0,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 299.0,
+      "goedkoopste_verkoper": "Cactula",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.4
+    },
+    {
+      "ean": "8716522086256",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 299.0,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 299.0,
+      "goedkoopste_verkoper": "Cactula",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.4
+    },
+    {
+      "ean": "8716522089578",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 325.0,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 325.0,
+      "goedkoopste_verkoper": "Cactula",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.4
+    },
+    {
+      "ean": "8716522091397",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 300.66,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 299.0,
+      "goedkoopste_verkoper": "Cactula",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.4
+    },
+    {
+      "ean": "8716522091403",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 300.66,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 299.0,
+      "goedkoopste_verkoper": "Cactula",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.4
+    },
+    {
+      "ean": "8716522103755",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 275.0,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 275.0,
+      "goedkoopste_verkoper": "Cactula",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.4
+    },
+    {
+      "ean": "8716522102611",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 79.95,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 79.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522103632",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 101.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 101.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522106558",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 79.95,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 79.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8717266396465",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 26.96,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8717266342301",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 17.08,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 2,
+      "goedkoopste": 16.65,
+      "goedkoopste_verkoper": "Pertina",
+      "goedkoopste_leverbereik": [
+        9,
+        9
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 11 september in huis",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522106770",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 100.72,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 99.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522089691",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 32.73,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 35.95,
+      "goedkoopste_verkoper": "Cactula",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.4
+    },
+    {
+      "ean": "8716522089677",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 15.75,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522089684",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 25.14,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522062267",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 273.28,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 2,
+      "goedkoopste": 269.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522062021",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 337.19,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 332.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522103458",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 181.97,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 176.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522103359",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 32.0,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 32.95,
+      "goedkoopste_verkoper": "Sebic - CAN-Interiors",
+      "goedkoopste_leverbereik": [
+        5,
+        5
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 7 september in huis",
+      "goedkoopste_beoordeling": 8.6
+    },
+    {
+      "ean": "8716522103342",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 32.0,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 32.95,
+      "goedkoopste_verkoper": "Sebic - CAN-Interiors",
+      "goedkoopste_leverbereik": [
+        5,
+        5
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 7 september in huis",
+      "goedkoopste_beoordeling": 8.6
+    },
+    {
+      "ean": "8716522051384",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 291.56,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 285.0,
+      "goedkoopste_verkoper": "Cactula",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.4
+    },
+    {
+      "ean": "8716522091908",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 62.84,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 60.95,
+      "goedkoopste_verkoper": "Bohemian Living NL",
+      "goedkoopste_leverbereik": [
+        7,
+        14
+      ],
+      "goedkoopste_levertekst": "1 - 2 weken",
+      "goedkoopste_beoordeling": 8.1
+    },
+    {
+      "ean": "8716522094671",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 23.76,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 1,
+      "goedkoopste": 24.5,
+      "goedkoopste_verkoper": "Sebic - CAN-Interiors",
+      "goedkoopste_leverbereik": [
+        5,
+        5
+      ],
+      "goedkoopste_levertekst": "Uiterlijk 7 september in huis",
+      "goedkoopste_beoordeling": 8.6
+    },
+    {
+      "ean": "8717266051616",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 14.71,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522058116",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 41.83,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522074871",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 25.14,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522074932",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 25.14,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522090802",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 28.05,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522093995",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 25.14,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522105995",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 21.4,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522106893",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 19.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522106909",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 25.79,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522107104",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 19.94,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522110227",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 29.87,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522110289",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 37.72,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522110296",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 76.07,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522110388",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 35.9,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    },
+    {
+      "ean": "8716522110395",
+      "koopblok": true,
+      "winnaar": "Dreamhouse&Garden",
+      "onze_prijs": 62.84,
+      "onze_leverbereik": [
+        7,
+        7
+      ],
+      "onze_levertekst": "Uiterlijk 9 september in huis",
+      "onze_beoordeling": 8.9,
+      "aantal_anderen": 0,
+      "goedkoopste": null,
+      "goedkoopste_verkoper": null,
+      "goedkoopste_leverbereik": null,
+      "goedkoopste_levertekst": null,
+      "goedkoopste_beoordeling": null
+    }
+  ],
+  "mislukt": [
+    {
+      "ean": "8014772136517",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "8717774825921",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "4004947361466",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "8717266032264",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "8716522083057",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "8717266385247",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "8716522085266",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "8716522057430",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "4004947361732",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "8717774820438",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "8717774825822",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "8716522079654",
+      "reden": "overzicht status 500"
+    },
+    {
+      "ean": "8717774820193",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "4004947363262",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "8014772133974",
+      "reden": "geen productpagina in zoekresultaat"
+    },
+    {
+      "ean": "8717266342011",
+      "reden": "geen productpagina in zoekresultaat"
+    }
+  ]
+}

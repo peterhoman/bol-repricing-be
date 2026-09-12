@@ -1,0 +1,18 @@
+
+[LOAD] Reading CSV from GitHub...
+   Loaded 177 products
+
+[FEED] Downloading B-Living feed...
+   Loaded 5409 klantprijzen from B-Living
+
+[OPTIMIZE] Reading live offers for 125 frozen article(s) - DROOGLOOP, niets wordt geupload...
+[UP-DRY] 8716522110395: EUR67.86 -> EUR72.69 (+EUR4.83) - concurrent geen op EUR0.00
+[UP-DRY] 4004947361770: EUR52.36 -> EUR54.36 (+EUR2.00) - concurrent geen op EUR0.00
+[UP-DRY] 8716522082524: EUR48.20 -> EUR49.45 (+EUR1.25) - concurrent geen op EUR0.00
+[UP-DRY] 8717266046605: EUR47.50 -> EUR48.64 (+EUR1.14) - concurrent geen op EUR0.00
+[UP-DRY] 8716522085983: EUR46.85 -> EUR47.89 (+EUR1.04) - concurrent geen op EUR0.00
+[UP-DRY] 8717266011351: EUR42.74 -> EUR43.03 (+EUR0.29) - concurrent geen op EUR0.00
+[UP-DRY] 8716522082494: EUR42.69 -> EUR42.95 (+EUR0.26) - concurrent geen op EUR0.00
+[UP-DRY] 8716522082517: EUR42.69 -> EUR42.95 (+EUR0.26) - concurrent geen op EUR0.00
+
+[DONE] DROOGLOOP - zou verhogen: 8 artikelen (+EUR11.07 per verkoopcyclus) | ongemoeid: 96 | overgeslagen (concurrent niet trager): 0 | check mislukt: 21

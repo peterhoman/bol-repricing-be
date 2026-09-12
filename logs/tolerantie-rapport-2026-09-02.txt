@@ -1,0 +1,90 @@
+
+[LOAD] Reading CSV from GitHub...
+   Attempt 1/3 failed (Invalid URL 'bolcom_productinformatie.csv': No scheme supplied. Perhaps you meant https://bolcom_productinformatie.csv?), retrying in 10s...
+   Attempt 2/3 failed (Invalid URL 'bolcom_productinformatie.csv': No scheme supplied. Perhaps you meant https://bolcom_productinformatie.csv?), retrying in 10s...
+   Error: Invalid URL 'bolcom_productinformatie.csv': No scheme supplied. Perhaps you meant https://bolcom_productinformatie.csv?
+Traceback (most recent call last):
+  File "C:\Users\Avantius\OneDrive\OneDriveClaude-Code-Projecten\bol-repricing-be\src\phase2_repricing.py", line 84, in load_products
+    response = self._get_with_retries(self.csv_path)
+  File "C:\Users\Avantius\OneDrive\OneDriveClaude-Code-Projecten\bol-repricing-be\src\phase2_repricing.py", line 76, in _get_with_retries
+    raise last_exception
+  File "C:\Users\Avantius\OneDrive\OneDriveClaude-Code-Projecten\bol-repricing-be\src\phase2_repricing.py", line 70, in _get_with_retries
+    return requests.get(url, timeout=timeout, headers=self._fresh_headers(url))
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Avantius\AppData\Roaming\Python\Python314\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\Avantius\AppData\Roaming\Python\Python314\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Avantius\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\Avantius\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 486, in prepare_request
+    p.prepare(
+    ~~~~~~~~~^
+        method=request.method.upper(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        hooks=merge_hooks(request.hooks, self.hooks),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Avantius\AppData\Roaming\Python\Python314\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_url(url, params)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Avantius\AppData\Roaming\Python\Python314\site-packages\requests\models.py", line 439, in prepare_url
+    raise MissingSchema(
+    ...<2 lines>...
+    )
+requests.exceptions.MissingSchema: Invalid URL 'bolcom_productinformatie.csv': No scheme supplied. Perhaps you meant https://bolcom_productinformatie.csv?
+
+[FEED] Downloading B-Living feed...
+   Loaded 5412 klantprijzen from B-Living
+[MEET] 143 bevroren artikel(en), gestart 14:23:33
+   25/143 ...
+   50/143 ...
+   75/143 ...
+   100/143 ...
+   125/143 ...
+
+====================================================================
+RESULTAAT
+====================================================================
+Gemeten: 127   mislukt: 16
+Koopblok NU van ons: 126 | kwijt: 0 | onbepaald: 1
+Waarvan zonder enige concurrent: 78
+Met minstens een concurrent:     48
+
+>>> KOOPBLOK VAN ONS TERWIJL EEN ANDER GOEDKOPER IS: 20 van 48 (41%)
+    prijsverschil: min EUR0.08 | mediaan EUR0.77 | max EUR6.56
+    als percentage: min 0.03% | mediaan 0.77% | max 3.10%
+    concurrent levert: onbeslist 19 | trager 1
+
+    Grootste marges die we nu laten liggen:
+      8716522051384  wij EUR  291.56 (Uiterlijk 9 september in huis)  vs EUR  285.00 Cactula (1 - 2 weken)  +EUR6.56
+      8716522103458  wij EUR  181.97 (Uiterlijk 9 september in huis)  vs EUR  176.95 Bohemian Living NL (1 - 2 weken)  +EUR5.02
+      8716522062021  wij EUR  337.19 (Uiterlijk 9 september in huis)  vs EUR  332.95 Bohemian Living NL (1 - 2 weken)  +EUR4.24
+      8716522062267  wij EUR  273.28 (Uiterlijk 9 september in huis)  vs EUR  269.95 Bohemian Living NL (1 - 2 weken)  +EUR3.33
+      8716522091908  wij EUR   62.84 (Uiterlijk 9 september in huis)  vs EUR   60.95 Bohemian Living NL (1 - 2 weken)  +EUR1.89
+      8716522091397  wij EUR  300.66 (Uiterlijk 9 september in huis)  vs EUR  299.00 Cactula (1 - 2 weken)  +EUR1.66
+      8716522091403  wij EUR  300.66 (Uiterlijk 9 september in huis)  vs EUR  299.00 Cactula (1 - 2 weken)  +EUR1.66
+      8716522070163  wij EUR  291.56 (Uiterlijk 9 september in huis)  vs EUR  289.95 Bohemian Living NL (1 - 2 weken)  +EUR1.61
+      8716522092004  wij EUR   62.84 (Uiterlijk 9 september in huis)  vs EUR   61.95 Bohemian Living NL (1 - 2 weken)  +EUR0.89
+      8716522106756  wij EUR  100.72 (Uiterlijk 9 september in huis)  vs EUR   99.95 Bohemian Living NL (1 - 2 weken)  +EUR0.77
+      8716522106763  wij EUR  100.72 (Uiterlijk 9 september in huis)  vs EUR   99.95 Bohemian Living NL (1 - 2 weken)  +EUR0.77
+      8716522106770  wij EUR  100.72 (Uiterlijk 9 september in huis)  vs EUR   99.95 Bohemian Living NL (1 - 2 weken)  +EUR0.77
+
+Controle - koopblok KWIJT terwijl een ander goedkoper is: 0 van 0
+
+Mislukte checks (16), eerste 10:
+   8014772136517: geen productpagina in zoekresultaat
+   8717774825921: geen productpagina in zoekresultaat
+   4004947361466: geen productpagina in zoekresultaat
+   8717266032264: geen productpagina in zoekresultaat
+   8716522083057: geen productpagina in zoekresultaat
+   8717266385247: geen productpagina in zoekresultaat
+   8716522085266: geen productpagina in zoekresultaat
+   8716522057430: geen productpagina in zoekresultaat
+   4004947361732: geen productpagina in zoekresultaat
+   8717774820438: geen productpagina in zoekresultaat
+
+[OK] Ruwe data weggeschreven naar logs/tolerantie-2026-09-02.json

@@ -59,7 +59,7 @@ from pathlib import Path
 from datetime import datetime, date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from phase2_repricing import RepricingEngine
+from phase2_repricing import RepricingEngine, vergelijk_levertijd, concurrent_is_trager
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -293,7 +293,7 @@ def phase_start(eans):
     print("  python src/probe_recovery.py check")
 
 
-def phase_optimize(limit):
+def phase_optimize(limit, dry_run=False):
     """
     Set every frozen article to the best price it can hold, using the ACTUAL
     competitor prices from the price-overview page.
@@ -314,6 +314,19 @@ def phase_optimize(limit):
                                        gives away margin for a buybox we
                                        already have.
     Always clamped to [floor, full price].
+
+    Levertijd-regel (3/9): the "cheapest other ABOVE us" branch only raises
+    when that competitor delivers SLOWER than we do. First broad run 3/9:
+    10 raised against a competitor, 6 lost the buybox at the 14:15 sync -
+    all 6 against sellers delivering as fast as us (Boholifestylestore) or
+    faster (Sebic, 2 days); the 4 that held were against "1 - 2 weken"
+    sellers (Cactula, Bohemian). NL measured the same (20% kept at "even
+    snel", 100% at "trager"). Delivery per seller is on the same overview
+    page, parsed by check_all_offers(); see vergelijk_levertijd() in
+    phase2_repricing.py for what counts as slower. Unreadable delivery ->
+    treated as NOT slower (leave alone).
+
+    dry_run=True: read and decide, print what WOULD change, upload nothing.
     """
     engine = RepricingEngine(CSV_URL)
     frozen = fetch_json("frozen.json", {})
@@ -329,7 +342,12 @@ def phase_optimize(limit):
     raised = []
     left_alone = 0
     failed = 0
-    print(f"\n[OPTIMIZE] Reading live offers for {len(todo)} frozen article(s)...")
+    # Overgeslagen omdat de concurrent boven ons NIET trager levert - apart
+    # geteld per reden, zodat "even snel" en "levertijd onleesbaar" niet op
+    # één hoop belanden (die blinde vlek zat bij NL).
+    skipped_lever = {}
+    print(f"\n[OPTIMIZE] Reading live offers for {len(todo)} frozen article(s)"
+          f"{' - DROOGLOOP, niets wordt geupload' if dry_run else ''}...")
 
     for i, ean in enumerate(todo):
         result = engine.check_all_offers(ean, session)
@@ -352,6 +370,16 @@ def phase_optimize(limit):
             # destination within a few days, one step of exposure if wrong.
             target = min(current + 5.00, full)
         elif best_other > current + UNDERCUT_EUR:
+            oordeel = vergelijk_levertijd(result.get("ours_lever"),
+                                          result.get("best_other_lever"))
+            if not concurrent_is_trager(result.get("ours_lever"),
+                                        result.get("best_other_lever")):
+                skipped_lever[oordeel] = skipped_lever.get(oordeel, 0) + 1
+                print(f"[SKIP] {ean}: concurrent {result.get('best_other_seller')} "
+                      f"op EUR{best_other:.2f} levert '{result.get('best_other_levertekst') or '?'}' "
+                      f"tegen ons '{result.get('ours_levertekst') or '?'}' -> {oordeel}, "
+                      f"blijft EUR{current:.2f}")
+                continue
             target = min(best_other - UNDERCUT_EUR, full)
         else:
             left_alone += 1
@@ -369,22 +397,32 @@ def phase_optimize(limit):
         gain = round(engine.calculate_normal_price(new_kp) - current, 2)
         raised.append((ean, current, engine.calculate_normal_price(new_kp), gain,
                        result.get("best_other_seller")))
-        print(f"[UP] {ean}: EUR{current:.2f} -> EUR{engine.calculate_normal_price(new_kp):.2f} "
+        lever_info = ""
+        if best_other is not None:
+            lever_info = (f" levert '{result.get('best_other_levertekst') or '?'}'"
+                          f" tegen ons '{result.get('ours_levertekst') or '?'}'")
+        print(f"[UP{'-DRY' if dry_run else ''}] {ean}: EUR{current:.2f} -> "
+              f"EUR{engine.calculate_normal_price(new_kp):.2f} "
               f"(+EUR{gain:.2f}) - concurrent "
               f"{result.get('best_other_seller') or 'geen'} op "
-              f"EUR{best_other if best_other else 0:.2f}")
+              f"EUR{best_other if best_other else 0:.2f}{lever_info}")
 
         if (i + 1) % 25 == 0:
             print(f"   {i+1}/{len(todo)} bekeken...")
 
-    if raised:
+    if raised and not dry_run:
         upload_json(frozen, "frozen.json",
                     f"Optimize: raised {len(raised)} frozen price(s) to just under the competitor")
         trigger_workflow()
 
     total = round(sum(r[3] for r in raised), 2)
-    print(f"\n[DONE] Verhoogd: {len(raised)} artikelen (+EUR{total:.2f} per verkoopcyclus) | "
-          f"ongemoeid: {left_alone} | check mislukt: {failed}")
+    n_skip = sum(skipped_lever.values())
+    print(f"\n[DONE] {'DROOGLOOP - zou verhogen' if dry_run else 'Verhoogd'}: {len(raised)} artikelen "
+          f"(+EUR{total:.2f} per verkoopcyclus) | ongemoeid: {left_alone} | "
+          f"overgeslagen (concurrent niet trager): {n_skip} | check mislukt: {failed}")
+    if skipped_lever:
+        print("[DONE] Overgeslagen per levertijd-oordeel: " + ", ".join(
+            f"{k} {v}" for k, v in sorted(skipped_lever.items(), key=lambda x: -x[1])))
 
 
 def phase_step(limit):
@@ -543,6 +581,8 @@ if __name__ == "__main__":
         phase_start([c[0] for c in picks])
     elif command == "optimize":
         phase_optimize(int(sys.argv[2]) if len(sys.argv) > 2 else 40)
+    elif command == "optimize-dry":
+        phase_optimize(int(sys.argv[2]) if len(sys.argv) > 2 else 40, dry_run=True)
     elif command == "step":
         phase_step(int(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_BATCH)
     elif command == "start":
