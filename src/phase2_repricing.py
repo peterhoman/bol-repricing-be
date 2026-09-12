@@ -10,7 +10,7 @@ import time
 import base64
 import requests
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, date
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
@@ -18,6 +18,116 @@ sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
 from dotenv import load_dotenv
 
 load_dotenv()
+
+
+# ---------------------------------------------------------------------------
+# Levertijd (toegevoegd 3/9)
+#
+# Waarom dit hier staat en niet alleen in measure_tolerance.py: sinds 3/9
+# gebruikt optimize() in probe_recovery.py de levertijd van de concurrent om
+# te beslissen of "net onder de concurrent" veilig is. Gemeten 3/9 (BE) en
+# 1-3/9 (NL): dat werkt alleen als WIJ sneller leveren. Tegen een even snelle
+# of snellere concurrent kostte het 6 van de 7 keer het koopblok (Sebic levert
+# 2 dagen sneller, Boholifestylestore even snel); tegen "1 - 2 weken"
+# (Cactula, Bohemian, Izziet) hielden we 22 van de 22.
+# ---------------------------------------------------------------------------
+
+_MAANDEN = {
+    "januari": 1, "februari": 2, "maart": 3, "april": 4, "mei": 5, "juni": 6,
+    "juli": 7, "augustus": 8, "september": 9, "oktober": 10, "november": 11,
+    "december": 12,
+}
+_WEEKDAGEN = {
+    "maandag": 0, "dinsdag": 1, "woensdag": 2, "donderdag": 3,
+    "vrijdag": 4, "zaterdag": 5, "zondag": 6,
+}
+
+
+def levertijd_naar_dagen(tekst, vandaag=None):
+    """
+    Zet bol.com's levertijdzin om in een BEREIK (vroegst, laatst) in dagen.
+
+    Een bereik en geen getal, omdat bol.com twee soorten belofte mengt:
+    "Uiterlijk 9 september in huis" is een harde bovengrens -> (7, 7), maar
+    "1 - 2 weken" is een schatting -> (7, 14). Plat op een getal lijken die
+    even snel, en dat is precies het verschil dat het koopblok bepaalt.
+
+    Geeft None als de zin niet te lezen is.
+    """
+    if not tekst:
+        return None
+    vandaag = vandaag or date.today()
+    t = tekst.lower().strip()
+
+    if "vandaag" in t:
+        return (0, 0)
+    if "overmorgen" in t:
+        return (2, 2)
+    if "morgen" in t:
+        return (1, 1)
+
+    m = re.search(r"(\d{1,2})\s+(" + "|".join(_MAANDEN) + r")", t)
+    if m:
+        dag, maand = int(m.group(1)), _MAANDEN[m.group(2)]
+        jaar = vandaag.year + (1 if maand < vandaag.month else 0)
+        try:
+            d = (date(jaar, maand, dag) - vandaag).days
+            return (d, d)
+        except ValueError:
+            return None
+
+    for naam, idx in _WEEKDAGEN.items():
+        if naam in t:
+            delta = (idx - vandaag.weekday()) % 7 or 7
+            return (delta, delta)
+
+    m = re.search(r"(\d+)\s*(?:-|tot)?\s*(\d+)?\s*weken?", t)
+    if m:
+        laag = int(m.group(1))
+        hoog = int(m.group(2)) if m.group(2) else laag
+        return (laag * 7, hoog * 7)
+
+    m = re.search(r"(\d+)\s*(?:-|tot)?\s*(\d+)?\s*(?:werk)?dagen", t)
+    if m:
+        laag = int(m.group(1))
+        hoog = int(m.group(2)) if m.group(2) else laag
+        return (laag, hoog)
+
+    return None
+
+
+def vergelijk_levertijd(onze, hun):
+    """
+    Hoe levert de concurrent ten opzichte van ons?
+
+      'trager'    - zijn vroegste dag valt NA onze laatste: zeker trager
+      'later'     - niet vroeger dan wij op de vroegste dag, maar wel later
+                    op de laatste ("1 - 2 weken" tegen ons "uiterlijk 9
+                    sept"). Gemeten: hier houden we het koopblok (22/22),
+                    dus optimize behandelt dit als trager.
+      'gelijk'    - zelfde bereik
+      'sneller'   - zijn laatste dag valt VOOR onze vroegste
+      'onbeslist' - overlappend, maar niet later op de laatste dag
+      'onbekend'  - een van beide niet te lezen
+
+    Alleen 'trager' en 'later' zijn een reden om de prijs op te trekken; al
+    het andere is de veilige kant: laten staan.
+    """
+    if onze is None or hun is None:
+        return "onbekend"
+    if hun[0] > onze[1]:
+        return "trager"
+    if hun[1] < onze[0]:
+        return "sneller"
+    if hun == onze:
+        return "gelijk"
+    if hun[0] >= onze[0] and hun[1] > onze[1]:
+        return "later"
+    return "onbeslist"
+
+
+def concurrent_is_trager(onze, hun):
+    return vergelijk_levertijd(onze, hun) in ("trager", "later")
 
 class RepricingEngine:
     """Main repricing engine for Bol.com buybox optimization."""
@@ -54,7 +164,7 @@ class RepricingEngine:
             headers["Authorization"] = f"Bearer {token}"
         return headers
 
-    def _get_with_retries(self, url: str, timeout: int = 30, retries: int = 3, backoff: int = 10):
+    def _get_with_retries(self, url: str, timeout: int = 30, retries: int = 6, backoff: int = 10):
         """
         GET a URL with a few retries on connection failures (timeouts,
         DNS hiccups, etc.) before giving up. Ported from the NL project
@@ -63,16 +173,33 @@ class RepricingEngine:
         a real problem with the code - retrying a couple of times with a
         short pause turns most of those transient blips into a silent
         success instead of a failed GitHub Actions run.
+
+        Widened 12 Sept from 3 fixed 10s waits (111 seconds of patience,
+        measured identically on all four failures of 10-12 Sept) to 6 attempts
+        with a doubling wait: 10, 20, 40, 80, 160 seconds. Worst case just
+        under 8 minutes, comfortably inside the ~30 minutes between cron
+        slots, so a run can never still be retrying when the next one starts.
+
+        Reason: B-Living is unreachable for minutes at a time in the early
+        afternoon. Measured over 200 runs: 4 failures, ALL of them between
+        13:00 and 15:00 Amsterdam (4 of 48 runs in that window), 0 of the
+        152 runs outside it. NL sees this far less because their cron slots
+        sit half an hour off ours. A failure itself is harmless - the run
+        aborts before generating the XML, so the feed keeps yesterday's
+        prices and the next slot catches up - this is about not giving up
+        while the server is merely slow.
         """
         last_exception = None
+        wait = backoff
         for attempt in range(1, retries + 1):
             try:
                 return requests.get(url, timeout=timeout, headers=self._fresh_headers(url))
             except requests.exceptions.RequestException as e:
                 last_exception = e
                 if attempt < retries:
-                    print(f"   Attempt {attempt}/{retries} failed ({e}), retrying in {backoff}s...")
-                    time.sleep(backoff)
+                    print(f"   Attempt {attempt}/{retries} failed ({e}), retrying in {wait}s...")
+                    time.sleep(wait)
+                    wait *= 2
         raise last_exception
 
     def load_products(self):
@@ -868,19 +995,34 @@ class RepricingEngine:
                 if not said:
                     continue
                 euro, cent, seller = prijs.group(1), prijs.group(2) or "0", verkoper.group(1)
+                # Levertijd (3/9): staat als los veld direct achter "Inclusief
+                # verzendkosten". Tags worden '|' zodat de veldgrens bewaard
+                # blijft; zonder die grens loopt een regex de opmaak in.
+                pipe = re.sub(r"<[^>]+>", "|", seg)
+                pipe = re.sub(r"[ \t\r\n]+", " ", pipe)
+                pipe = re.sub(r"\|+", "|", pipe)
+                lever = re.search(r"Inclusief verzendkosten\|([^|]{2,60})", pipe)
+                levertekst = lever.group(1).strip() if lever else ""
                 offers.append({"seller": seller.replace("&amp;", "&").strip(),
-                               "price": round(int(euro) + int(cent) / 100, 2)})
+                               "price": round(int(euro) + int(cent) / 100, 2),
+                               "levertekst": levertekst,
+                               "leverbereik": levertijd_naar_dagen(levertekst)})
 
             if not offers:
                 return {"found": False, "error": "no offers parsed from overview page"}
 
-            ours = next((o["price"] for o in offers
+            mine = next((o for o in offers
                          if o["seller"].lower() == seller_name.lower()), None)
+            ours = mine["price"] if mine else None
             others = [o for o in offers if o["seller"].lower() != seller_name.lower()]
             best = min(others, key=lambda o: o["price"]) if others else None
             return {"found": True, "offers": offers, "ours": ours,
+                    "ours_levertekst": mine["levertekst"] if mine else "",
+                    "ours_lever": mine["leverbereik"] if mine else None,
                     "best_other": best["price"] if best else None,
-                    "best_other_seller": best["seller"] if best else None}
+                    "best_other_seller": best["seller"] if best else None,
+                    "best_other_levertekst": best["levertekst"] if best else "",
+                    "best_other_lever": best["leverbereik"] if best else None}
         except Exception as e:
             return {"found": False, "error": str(e)}
 
