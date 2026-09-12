@@ -131,6 +131,41 @@ publiceren. Onze code moet daar exact mee sporen:
   rust gelaten. Geen skip-lijst, geen bodemverlaging, geen nieuwe voorstellen
   hierover.
 
+## Git: wat WEL en NIET vanuit deze map vastgelegd mag worden (12/9)
+
+De map is sinds 12/9 weer netjes aan de tak `main` van
+`peterhoman/bol-repricing-be` gekoppeld (daarvoor stond hij op een lege tak
+`master`, waardoor alles als "nieuw" telde). Werkwijze voortaan:
+
+- **Nooit `git add -A` of `git add .` — altijd bestanden bij naam.**
+- **De databestanden worden door de scripts en de GitHub-robot rechtstreeks
+  op GitHub bijgewerkt (via de API, tot 24× per dag).** De kopie in deze map
+  is daardoor per definitie verouderd, soms met weken. Wie zo'n bestand
+  vanuit deze map commit en pusht, overschrijft de echte data met een oude
+  versie — op 12/9 was de lokale `frozen.json` 3 bytes (`{}`) tegen 3754 op
+  GitHub: één `git add -A` en de hele bevroren-lijst was weg geweest.
+  Dit zijn ze (13 stuks): `frozen.json`, `master_tracked.json`,
+  `big_gap.json`, `state.json`, `no_competitor.json`, `failed_checks.json`,
+  `audit_report.json`, `automation_log.json`, `probe_history.json`,
+  `probe_started.json`, `frozen_probe_backup.json`,
+  `bolcom_productinformatie.csv`, `repricing_current.xml`. Plus Peters
+  handmatige uploads `Export.xlsx` en `bolcom_productinformatie.xlsx`.
+  **Ze staan bewust NIET in `.gitignore`** — de scripts hebben ze juist op
+  GitHub nodig. Ze horen alleen nooit vanuit deze map gecommit te worden.
+- Wél committen: `src/*.py`, `.github/`, `CLAUDE.md`, `README.md`,
+  `requirements.txt`, `taken_aanmaken.ps1`, de `instructie-NL-*.md` /
+  `antwoord-NL-*.md`, en de kleine meetlogs in `logs/` (`optimize-*.txt`,
+  `tolerantie-*`). `*.log` en `output/` staan in `.gitignore`.
+- Lokale kopieën van de databestanden verversen: `git checkout -- <naam>`
+  haalt de GitHub-versie op zonder iets te committen. Bijwerken van de map
+  na cloud-commits: gewoon `git pull` (fast-forward), nooit force.
+- Vóór elke commit: `git status` moet **0 verwijderd** tonen. Staat er iets
+  bij "deleted", stoppen en eerst uitzoeken.
+- Geen pull requests, geen force-push, geen extra takken; alles gaat direct
+  op `main`, buiten de taakvensters (niet 09:00-14:30).
+- Reservekopie van de lokale bestanden van 12/9 staat in
+  `..\_backup-bol-repricing-be-2026-09-12` (mag weg na ~26/9).
+
 ## Concurrentprijzen zijn ZICHTBAAR (1/9) — de probe is hierdoor vervangen
 
 Lange tijd gold de aanname: zolang wij het koopblok hebben toont bol.com alleen
