@@ -116,6 +116,15 @@ STEP_EUR = 0.50
 # the exact list to check against.
 UNDERCUT_EUR = 0.02
 
+# Vakantiepauze voor de VERHOGINGEN (zelfde opzet als NL, 16/9). Peter is
+# 25 sept t/m 2 okt weg; de leverbelofte staat dan op 4-8 dagen in plaats
+# van 3-5 werkdagen. Met dat nadeel verliezen we koopblokken door de
+# levertijd, niet door de prijs - een verhoging in die week zou dat verlies
+# ten onrechte aan de prijs toeschrijven. Verlagen, bevriezen en sync lopen
+# door. Inclusief venster; na 2 okt gaat het vanzelf weer aan.
+VAKANTIE_VAN = date(2026, 9, 25)
+VAKANTIE_TOT = date(2026, 10, 2)
+
 
 def github_headers():
     token = os.getenv("GITHUB_TOKEN")
@@ -328,6 +337,13 @@ def phase_optimize(limit, dry_run=False):
 
     dry_run=True: read and decide, print what WOULD change, upload nothing.
     """
+    vandaag = date.today()
+    if VAKANTIE_VAN <= vandaag <= VAKANTIE_TOT:
+        print(f"[VAKANTIE] {vandaag:%d-%m}: verhogingen gepauzeerd van {VAKANTIE_VAN:%d-%m} t/m "
+              f"{VAKANTIE_TOT:%d-%m} (langere levertijd). Niets verhoogd, niets geladen; "
+              f"verlagen, bevriezen en sync lopen door.")
+        return
+
     engine = RepricingEngine(CSV_URL)
     frozen = fetch_json("frozen.json", {})
     session = requests.Session()

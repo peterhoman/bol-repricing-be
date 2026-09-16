@@ -392,6 +392,32 @@ er nog voor noodgevallen. Instructie voor NL:
     productiecode (`optimize`, beide clamps) doet dit goed via
     `bliving_klantprijzen[ean]`; de valkuil zit in losse analyses.
 
+## Vakantiepauze 25 sept t/m 2 okt 2026 (gebouwd 16/9, zelfde opzet als NL)
+
+Peter is weg van vr 25/9 t/m vr 2/10; de leverbelofte staat dan op 4-8 dagen
+in plaats van 3-5 werkdagen, en **de pc thuis gaat uit**. Daarom:
+- `VAKANTIE_VAN`/`VAKANTIE_TOT` in `probe_recovery.py`; `optimize` stopt in
+  dat venster als eerste stap met een `[VAKANTIE]`-regel, laadt niets en
+  verhoogt niets. Verlagen, bevriezen en sync lopen door (die geven geen
+  marge weg die er niet was). Na 2/10 gaat het vanzelf weer aan; niets
+  terug te draaien. Getest op 24/9, 25/9, 28/9, 2/10, 3/10.
+- `[VAKANTIE]` staat in de prefix-lijst van `scheduled_run.py`, dus de regel
+  komt in `automation_log.json` en is op afstand te zien.
+- Met de pc uit draaien snelstart/optimize/sync sowieso niet; alleen de
+  cloud-cron loopt (reset, €0,50-stappen, bevroren vasthouden, klemmen).
+  Bevroren artikelen die door de levertijd het koopblok verliezen worden
+  NIET ontdooid tot de eerste sync na terugkomst — dat is opruimen, geen
+  verlies van die dag. Verwacht dan tientallen ontdooiingen.
+- **Peters besluit 16/9: tijdens de vakantie GEEN export uploaden.** Met de
+  pc uit leest alleen de cloud zo'n bestand; die zou de bevroren artikelen
+  erin ontdooien en per run €0,50 omlaag zetten. Niet uploaden = alle
+  bevroren prijzen blijven staan; de eerste sync na terugkomst ruimt in één
+  keer op. **Laatste upload vóór de vakantie: do 24/9**; eerste upload weer
+  op de eerste werkdag na terugkomst.
+- Bij terugkomst: pc aan, taken halen zichzelf in. Eerste ochtendcontrole:
+  verliezers per verkoper bekijken — de meeste komen door de levertijd, niet
+  door de prijs. Geen regelwijziging op basis van die week.
+
 ## AUTOMATISCH SINDS 17/8 — eerst lezen vóór je iets draait!
 
 De dagelijkse routine draait sinds 17/8 via de **Windows-taakplanner** (vier
