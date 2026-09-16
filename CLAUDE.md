@@ -77,6 +77,16 @@ publiceren. Onze code moet daar exact mee sporen:
      elkaar falen, of als er níéts van ons tegelijk draaide.
    - Draait ook door zonder CSV-artikelen (verse-start-modus: alleen
      feed-verversing + gevolgde EANs).
+   - **B-Living-feed onbereikbaar vanaf GitHub (sinds ~10/9, bijna dagelijks
+     1-2× 's middags, tot 8 min lang):** de run meldt "Attempt n/6 failed
+     ... www.b-living.eu" en stopt bewust zonder upload; de run erna is
+     groen en Channable houdt de laatste goede feed. Vanaf Peters pc is de
+     feed op hetzelfde moment gewoon bereikbaar → B-Living begrenst of
+     weigert waarschijnlijk datacenter-verkeer op drukke momenten. Retry is
+     op 12/9 al verruimd (3×10s → 6× oplopend); meer wachten helpt niet.
+     NL ziet exact hetzelfde (zelfde feed). Peter heeft Bas (B-Living) op
+     16/9 gemaild. Rode mails met deze fout: negeren zolang de volgende run
+     groen is; ochtendcontrole telt de mislukte cloud-runs.
 2. **Lokaal (alleen vanaf Peters eigen internetverbinding!):** bol.com geeft
    403 op datacenter-IP's, dus alles met live buybox-checks draait op deze
    machine: `match_prices.py`, `sync_buybox.py`, `probe_recovery.py`.
