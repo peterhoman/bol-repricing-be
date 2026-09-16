@@ -1,16 +1,5 @@
 [
   {
-    "task": "sync",
-    "started": "2026-09-01T14:15:02",
-    "duration_s": 443,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] Frozen total now: 129 (+0 new, -0 unfrozen)",
-      "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
-    ]
-  },
-  {
     "task": "morning",
     "started": "2026-09-02T09:00:03",
     "duration_s": 320,
@@ -700,6 +689,17 @@
     "result": "ok",
     "summary": [
       "[DONE] No probes currently in progress"
+    ]
+  },
+  {
+    "task": "sync",
+    "started": "2026-09-16T14:15:01",
+    "duration_s": 497,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] Frozen total now: 158 (+1 new, -2 unfrozen)",
+      "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
     ]
   }
 ]
