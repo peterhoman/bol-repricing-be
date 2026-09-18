@@ -1,15 +1,5 @@
 [
   {
-    "task": "probe_check",
-    "started": "2026-09-03T12:15:02",
-    "duration_s": 1,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] No probes currently in progress"
-    ]
-  },
-  {
     "task": "sync",
     "started": "2026-09-03T14:15:02",
     "duration_s": 421,
@@ -701,6 +691,16 @@
     "result": "ok",
     "summary": [
       "[DONE] Verhoogd: 0 artikelen (+EUR0.00 per verkoopcyclus) | ongemoeid: 0 | overgeslagen (concurrent niet trager): 0 | check mislukt: 155"
+    ]
+  },
+  {
+    "task": "probe_check",
+    "started": "2026-09-18T12:15:01",
+    "duration_s": 1,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] No probes currently in progress"
     ]
   }
 ]
