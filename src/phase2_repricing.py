@@ -126,6 +126,23 @@ def vergelijk_levertijd(onze, hun):
     return "onbeslist"
 
 
+def normalize_ean(raw):
+    """
+    Maak van een EAN uit Peters export weer 13 kale cijfers.
+
+    Waarom (19/9): het 2-koloms bestand van 17/9 kwam uit Excel met de EAN als
+    getal, "3700837155221,00". Geen van de 163 rijen werd herkend (de dag
+    telde als een dag zonder export) en alle 163 kwamen als onzin-EAN in
+    master_tracked.json terecht, die alleen maar groeit. Hier knippen we een
+    staart van ",00" / ".0" weg, plus spaties en aanhalingstekens. Al het
+    andere blijft zoals het is - liever een onbekende EAN overslaan dan er een
+    verzinnen.
+    """
+    s = (raw or "").strip().strip('"').strip("'").replace(" ", "")
+    m = re.fullmatch(r"(\d{8,14})[.,]0+", s)
+    return m.group(1) if m else s
+
+
 def concurrent_is_trager(onze, hun):
     return vergelijk_levertijd(onze, hun) in ("trager", "later")
 
@@ -229,7 +246,7 @@ class RepricingEngine:
 
             for row in reader:
                 try:
-                    ean = (row.get('EAN') or row.get('ean') or '').strip()
+                    ean = normalize_ean(row.get('EAN') or row.get('ean') or '')
                     if not ean:
                         continue
 
@@ -842,7 +859,7 @@ class RepricingEngine:
                 except StopIteration:
                     kept.append(line)
                     continue
-                if len(row) > ean_idx and row[ean_idx].strip() in eans:
+                if len(row) > ean_idx and normalize_ean(row[ean_idx]) in eans:
                     removed += 1
                 else:
                     kept.append(line)

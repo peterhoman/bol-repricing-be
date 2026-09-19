@@ -390,6 +390,18 @@ er nog voor noodgevallen. Instructie voor NL:
     alleen als ze bestaan. `remove_eans_from_csv()` deed dit al goed.
     Instructie voor NL: `instructie-NL-csv-kolomnamen.md`.
 
+13. **EANs uit de export normaliseren (fix 19/9):** Peters 2-koloms bestand
+    van 17/9 kwam uit Excel met de EAN als getal (`3700837155221,00`). Geen
+    van de 163 rijen werd herkend (dag telde als "geen export") en alle 163
+    kwamen als onzin in `master_tracked.json` (405 → 569), die alleen maar
+    groeit. `normalize_ean()` in `phase2_repricing.py` knipt `,00`/`.0`,
+    spaties en quotes weg; gebruikt in `load_products()` én in de vergelijking
+    van `remove_eans_from_csv()` (anders blijft een winnaar in de CSV staan →
+    valkuil 2). Volglijst op 19/9 via de API opgeschoond: 163 weg, alle 406
+    echte EANs behouden. Wetenschappelijke notatie (`8,71652E+12`) is niet te
+    herstellen en wordt overgeslagen. Ochtendcontrole: telt de export
+    opvallend weinig geldige EANs, dan eerst het formaat bekijken.
+
 12. **Volle prijs en bodem ALTIJD uit de VERSE feed-klantprijs berekenen,
     nooit uit `frozen[ean]` (analysefout 2/9, door Peter gevangen):**
     `frozen[ean]` is de klantprijs waarop we het koopblok wonnen, niet de
