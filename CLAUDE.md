@@ -490,7 +490,13 @@ handmatige slaapstanden werden binnen 2 min gewekt. De netwerkkaart
 dus op netwerkverkeer; het moederbord meldt dat als "Power Button".
 Oplossing is een Windows-instelling (Apparaatbeheer → netwerkkaart →
 Energiebeheer → wekken uitzetten of "alleen magic packet"); dat doet Peter
-zelf, Claude wijzigt geen systeeminstellingen. Taken wekken de pc via
+zelf, Claude wijzigt geen systeeminstellingen. **Gedaan door Peter op 19/9
+~19:40:** vinkje "Dit apparaat mag de computer uit de slaapstand halen" uit;
+`powercfg /devicequery wake_armed` toont de Realtek niet meer (alleen muis
+en toetsenbord), netwerk werkt. Terugdraaien = vinkje weer aan. Controle
+vanaf 20/9: slaapt de pc door (Power-Troubleshooter-events, slaapduur
+>> 2 min) én starten alle taken op tijd (starttijd in
+`logs/automation-*.log` binnen ~5 s van het schema). Taken wekken de pc via
 wektimers (staan aan) ~30 s vooraf en houden hem wakker tot ze klaar zijn
 (gezien 5/9: sync 477 s, pc sliep 2 s na afloop weer in).
 
