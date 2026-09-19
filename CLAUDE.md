@@ -459,6 +459,19 @@ rate-limiting. Wat een sessie nog wél doet:
    dus er komt geen venster meer op. Komt de code toch terug: controleren of
    `taken_aanmaken.ps1` opnieuw gedraaid is na die wijziging.
 
+**`getaddrinfo failed` / `NameResolutionError` in een lokale taak (uitgezocht
+19/9):** in heel september 1× bij BE (5/9, sync 14:15, poging 1/3 op
+api.github.com; poging 2 lukte, run normaal af). Oorzaak: de pc viel om
+14:14:54 in slaap, zes seconden vóór de taaktijd; de taak wekte hem, startte
+85 s te laat in dezelfde seconde als het ontwaken, en het netwerk was er nog
+niet. Normaal wekt Windows de pc ~30 s vóór de taak en gaat het goed (5/9
+10:45 en 14/9 09:00). Achtergrond: deze pc (ASUS PRIME B450-PLUS) gaat na
+15 min niets doen slapen en wordt in 673 van de 701 gevallen na ~88 s weer
+gewekt met als bron "Power Button" — een hardwaresignaal, geen taak en geen
+muis/toetsenbord; alleen 9× sliep hij langer dan 10 min. Een taaktijd die in
+zo'n slaapje valt geeft deze fout. Onschuldig (retry vangt het op); geen
+codewijziging nodig. Oorzaak van het wekken nog niet gevonden (19/9).
+
 **Storing 17/8, relevant voor logs van rond die datum:**
 raw.githubusercontent.com gaf 429 op al onze bestanden (Channable kreeg
 dezelfde fout op de feeds van NL én BE). Daarom zit er sinds 17/8 een
