@@ -470,7 +470,17 @@ niet. Normaal wekt Windows de pc ~30 s vóór de taak en gaat het goed (5/9
 gewekt met als bron "Power Button" — een hardwaresignaal, geen taak en geen
 muis/toetsenbord; alleen 9× sliep hij langer dan 10 min. Een taaktijd die in
 zo'n slaapje valt geeft deze fout. Onschuldig (retry vangt het op); geen
-codewijziging nodig. Oorzaak van het wekken nog niet gevonden (19/9).
+codewijziging nodig. **Oorzaak gevonden 19/9 (test met Peter):** met de
+netwerkkabel eruit sliep de pc 125 minuten door (tot Peter hem zelf wekte),
+tegen ~88 s in 673 van 701 eerdere gevallen — ook alle 11 eerdere
+handmatige slaapstanden werden binnen 2 min gewekt. De netwerkkaart
+(Realtek PCIe GbE, staat in `powercfg /devicequery wake_armed`) wekt de pc
+dus op netwerkverkeer; het moederbord meldt dat als "Power Button".
+Oplossing is een Windows-instelling (Apparaatbeheer → netwerkkaart →
+Energiebeheer → wekken uitzetten of "alleen magic packet"); dat doet Peter
+zelf, Claude wijzigt geen systeeminstellingen. Taken wekken de pc via
+wektimers (staan aan) ~30 s vooraf en houden hem wakker tot ze klaar zijn
+(gezien 5/9: sync 477 s, pc sliep 2 s na afloop weer in).
 
 **Storing 17/8, relevant voor logs van rond die datum:**
 raw.githubusercontent.com gaf 429 op al onze bestanden (Channable kreeg
