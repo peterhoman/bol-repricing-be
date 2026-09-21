@@ -1,15 +1,5 @@
 [
   {
-    "task": "probe_check",
-    "started": "2026-09-06T12:15:02",
-    "duration_s": 1,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] No probes currently in progress"
-    ]
-  },
-  {
     "task": "sync",
     "started": "2026-09-06T14:15:01",
     "duration_s": 453,
@@ -702,6 +692,16 @@
     "summary": [
       "[DONE] Verhoogd: 7 artikelen (+EUR35.12 per verkoopcyclus) | ongemoeid: 111 | overgeslagen (concurrent niet trager): 11 | check mislukt: 15",
       "[DONE] Overgeslagen per levertijd-oordeel: sneller 7, onbekend 2, gelijk 2"
+    ]
+  },
+  {
+    "task": "probe_check",
+    "started": "2026-09-21T12:15:01",
+    "duration_s": 1,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] No probes currently in progress"
     ]
   }
 ]
