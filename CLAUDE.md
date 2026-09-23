@@ -414,6 +414,40 @@ er nog voor noodgevallen. Instructie voor NL:
     productiecode (`optimize`, beide clamps) doet dit goed via
     `bliving_klantprijzen[ean]`; de valkuil zit in losse analyses.
 
+## Winkel dicht 23-25 sept + vakantie 25 sept t/m 2 okt 2026
+
+**Beide bol.com-accounts staan sinds 23/9 UIT** (B-Living-bestelling komt
+24/9 binnen; met 4-8 dagen levertijd zou een nieuwe order een onhaalbare
+leverdatum krijgen — Peter is 2/10 ~23:45 pas thuis). Live gecheckt 23/9
+08:30: ons aanbod staat niet op bol.com (0 van 8 bevroren zichtbaar). Dat is
+het gevaarlijkste geval voor dit systeem — drie gevaren:
+1. **Sync** ziet bij ALLE bevroren artikelen "koopblok kwijt" en ontdooit
+   ze in één keer → reset naar vol → stapjes naar de bodem.
+2. **Optimize** verhoogt zonder koopblok (vervuilt de meting).
+3. **Een export gemaakt terwijl de winkel uit staat** bevat álle artikelen;
+   de cloud zou de bevroren artikelen daaruit bij de dagwissel ontdooien.
+   Dus: geen export maken/uploaden zolang de winkel uit staat, en na het
+   aanzetten minstens een dag wachten (bol.com wijst de koopblokken dan pas
+   opnieuw toe). De export van 23/9 07:57 (154 st.) was van vóór het sluiten.
+
+**Gebouwd 23/9 (Peters instructie via NL, `instructie-BE-winkel-dicht-en-
+vakantie.md` in de NL-map):** `WINKEL_DICHT_VAN/TOT` (23-25/9) en
+`WINKEL_DICHT_TAKEN = ("probe_start", "sync")` in `scheduled_run.py`; in
+dat venster schrijft de wrapper `[WINKEL DICHT] <taak> overgeslagen` naar
+het lokale log én `automation_log.json` en start het script niet. De
+snelstart (morning) draait door: die verlaagt alleen en bevriest niets.
+Getest op 22/9 (normaal), 23/9 (probe_start+sync overgeslagen, morning
+normaal), 25/9 (overgeslagen), 26/9 (normaal). Gaat de pc aan terwijl de
+winkel nog uit staat: `WINKEL_DICHT_TOT` verlengen. Reserve zonder code:
+`taken_pauzeren.bat` / `taken_hervatten.bat` in de projectmap zetten de
+vier BE-taken uit/aan (schtasks /DISABLE /ENABLE).
+
+**Planning:** winkels gaan waarschijnlijk in het weekend 26-27/9 op afstand
+weer aan (tip NL: zondagavond i.p.v. zaterdag = een dag extra speling), pc
+blijft uit t/m 2/10, **eerste verse upload za 3/10** als de pc weer aanstaat
+en de winkel al een week aan is. Eerste sync daarna: tientallen
+ontdooiingen = opruimen, geen verlies van die dag.
+
 ## Vakantiepauze 25 sept t/m 2 okt 2026 (gebouwd 16/9, zelfde opzet als NL)
 
 Peter is weg van vr 25/9 t/m vr 2/10; de leverbelofte staat dan op 4-8 dagen
@@ -434,8 +468,8 @@ in plaats van 3-5 werkdagen, en **de pc thuis gaat uit**. Daarom:
   pc uit leest alleen de cloud zo'n bestand; die zou de bevroren artikelen
   erin ontdooien en per run €0,50 omlaag zetten. Niet uploaden = alle
   bevroren prijzen blijven staan; de eerste sync na terugkomst ruimt in één
-  keer op. **Laatste upload vóór de vakantie: do 24/9**; eerste upload weer
-  op de eerste werkdag na terugkomst.
+  keer op. ~~Laatste upload vóór de vakantie: do 24/9~~ → **vervallen (23/9):
+  winkel is al dicht, dus géén upload meer; eerste upload za 3/10.**
 - Bij terugkomst: pc aan, taken halen zichzelf in. Eerste ochtendcontrole:
   verliezers per verkoper bekijken — de meeste komen door de levertijd, niet
   door de prijs. Geen regelwijziging op basis van die week.

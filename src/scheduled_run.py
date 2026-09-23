@@ -26,7 +26,7 @@ import sys
 import json
 import base64
 import subprocess
-from datetime import datetime
+from datetime import datetime, date
 from pathlib import Path
 
 import requests
@@ -150,6 +150,21 @@ def normalize_dated_csv():
         return [f"[CSV] normalize_dated_csv failed: {exc}"]
 
 
+# Winkel-dicht-venster (23/9, zelfde opzet als NL). Beide bol.com-accounts
+# staan sinds 23/9 UIT (B-Living-bestelling komt 24/9 binnen; met 4-8 dagen
+# levertijd zou een nieuwe order een onhaalbare leverdatum krijgen). Ons
+# aanbod staat dan niet op bol.com, dus: de sync zou ALLE bevroren artikelen
+# als "koopblok kwijt" zien en in een keer ontdooien (-> reset naar vol ->
+# stapjes naar de bodem), en optimize zou verhogen zonder koopblok. Beide
+# taken worden in dit venster overgeslagen; de snelstart draait door (die
+# verlaagt alleen en bevriest niets). T/m 25/9 omdat de pc daarna uit is
+# (vakantie t/m 2/10). Gaat de pc toch aan terwijl de winkel nog uit staat:
+# einddatum verlengen.
+WINKEL_DICHT_VAN = date(2026, 9, 23)
+WINKEL_DICHT_TOT = date(2026, 9, 25)
+WINKEL_DICHT_TAKEN = ("probe_start", "sync")
+
+
 def run(task_name):
     if task_name == "selftest":
         entry = {
@@ -175,6 +190,21 @@ def run(task_name):
 
     script, args = TASKS[task_name]
     started = datetime.now()
+
+    if task_name in WINKEL_DICHT_TAKEN and WINKEL_DICHT_VAN <= started.date() <= WINKEL_DICHT_TOT:
+        regel = (f"[WINKEL DICHT] {task_name} overgeslagen: winkel uit van {WINKEL_DICHT_VAN:%d-%m} t/m "
+                 f"{WINKEL_DICHT_TOT:%d-%m} - sync zou alle bevroren artikelen ontdooien, optimize zou "
+                 f"verhogen zonder koopblok. Bevroren prijzen blijven staan.")
+        entry = {"task": task_name, "started": started.isoformat(timespec="seconds"), "duration_s": 0,
+                 "exit_code": 0, "result": "ok", "summary": [regel]}
+        LOG_DIR.mkdir(exist_ok=True)
+        with open(LOG_DIR / f"automation-{started:%Y-%m}.log", "a", encoding="utf-8") as fh:
+            fh.write(chr(10) + "=" * 70 + chr(10) + f"{entry['started']}  {task_name}  exit=0  0s" + chr(10)
+                     + "=" * 70 + chr(10) + regel + chr(10))
+        push_log_entry(entry)
+        print(regel)
+        return 0
+
     cmd = [sys.executable, str(BASE / "src" / script)] + args
 
     try:
@@ -204,7 +234,7 @@ def run(task_name):
     # style result lines - so a fresh session can read the outcome without the
     # progress noise.
     interesting = [ln.strip() for ln in output.splitlines()
-                   if ln.strip().startswith(("[CSV]", "[MATCH]", "[DONE]", "[PROBE]", "[KEPT]", "[VAKANTIE]",
+                   if ln.strip().startswith(("[CSV]", "[MATCH]", "[DONE]", "[PROBE]", "[KEPT]", "[VAKANTIE]", "[WINKEL DICHT]",
                                              "[REVERTED]", "[AUTO]", "[ERROR]", "[STOP]",
                                              "[GEWEIGERD]", "[LET OP]", "[AUDIT]",
                                              "[FLOOR]", "[WARN]", "TIMEOUT", "CRASH"))]
