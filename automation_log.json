@@ -1,16 +1,5 @@
 [
   {
-    "task": "sync",
-    "started": "2026-09-09T14:15:01",
-    "duration_s": 475,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] Frozen total now: 149 (+14 new, -1 unfrozen)",
-      "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
-    ]
-  },
-  {
     "task": "morning",
     "started": "2026-09-10T09:00:03",
     "duration_s": 334,
@@ -702,6 +691,16 @@
     "result": "ok",
     "summary": [
       "[DONE] No probes currently in progress"
+    ]
+  },
+  {
+    "task": "sync",
+    "started": "2026-09-24T14:15:01",
+    "duration_s": 0,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[WINKEL DICHT] sync overgeslagen: winkel uit van 23-09 t/m 25-09 - sync zou alle bevroren artikelen ontdooien, optimize zou verhogen zonder koopblok. Bevroren prijzen blijven staan."
     ]
   }
 ]
