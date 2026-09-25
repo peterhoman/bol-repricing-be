@@ -1,20 +1,5 @@
 [
   {
-    "task": "morning",
-    "started": "2026-09-10T09:00:03",
-    "duration_s": 334,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[MATCH] Checking 236 active EAN(s) for immediate price-matching...",
-      "[MATCH] Matched (undercut competitor): 230",
-      "[MATCH] Already winning (frozen now): 6",
-      "[MATCH] Hit minimum price floor: 184",
-      "[MATCH] Check failed: 34",
-      "[MATCH] No-competitor (exempt from daily reset): 39"
-    ]
-  },
-  {
     "task": "probe_start",
     "started": "2026-09-10T10:45:01",
     "duration_s": 166,
@@ -701,6 +686,22 @@
     "result": "ok",
     "summary": [
       "[WINKEL DICHT] sync overgeslagen: winkel uit van 23-09 t/m 25-09 - sync zou alle bevroren artikelen ontdooien, optimize zou verhogen zonder koopblok. Bevroren prijzen blijven staan."
+    ]
+  },
+  {
+    "task": "morning",
+    "started": "2026-09-25T09:00:05",
+    "duration_s": 329,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[CSV] Dated file 20260920_bolcom_productinformatie.csv is older than the canonical CSV - left alone",
+      "[MATCH] Checking 249 active EAN(s) for immediate price-matching...",
+      "[MATCH] Matched (undercut competitor): 240",
+      "[MATCH] Already winning (frozen now): 9",
+      "[MATCH] Hit minimum price floor: 190",
+      "[MATCH] Check failed: 35",
+      "[MATCH] No-competitor (exempt from daily reset): 41"
     ]
   }
 ]
