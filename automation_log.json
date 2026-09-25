@@ -1,15 +1,5 @@
 [
   {
-    "task": "probe_check",
-    "started": "2026-09-10T12:15:01",
-    "duration_s": 1,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] No probes currently in progress"
-    ]
-  },
-  {
     "task": "sync",
     "started": "2026-09-10T14:15:01",
     "duration_s": 493,
@@ -701,6 +691,16 @@
     "result": "ok",
     "summary": [
       "[WINKEL DICHT] probe_start overgeslagen: winkel uit van 23-09 t/m 25-09 - sync zou alle bevroren artikelen ontdooien, optimize zou verhogen zonder koopblok. Bevroren prijzen blijven staan."
+    ]
+  },
+  {
+    "task": "probe_check",
+    "started": "2026-09-25T12:15:02",
+    "duration_s": 1,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] No probes currently in progress"
     ]
   }
 ]
