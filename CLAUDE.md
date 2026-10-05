@@ -87,6 +87,15 @@ publiceren. Onze code moet daar exact mee sporen:
      NL ziet exact hetzelfde (zelfde feed). Peter heeft Bas (B-Living) op
      16/9 gemaild. Rode mails met deze fout: negeren zolang de volgende run
      groen is; ochtendcontrole telt de mislukte cloud-runs.
+   - **Rode mail zónder log (gezien 5/10 21:43):** de run staat op
+     "failure", de job op "cancelled", er zijn geen stappen en geen
+     logbestanden, en de volgende run blijft op "queued" hangen. Dan heeft
+     GitHub Actions zelf een storing (runner nooit toegewezen, na ~15 min
+     afgebroken). Controle: `https://www.githubstatus.com/api/v2/summary.json`
+     → component "Actions". NL krijgt op hetzelfde moment dezelfde mail.
+     Niets aan te doen en niets verloren: Channable houdt de laatste goede
+     feed, en de lokale taken uploaden hun XML zelf via de API (los van
+     Actions).
 2. **Lokaal (alleen vanaf Peters eigen internetverbinding!):** bol.com geeft
    403 op datacenter-IP's, dus alles met live buybox-checks draait op deze
    machine: `match_prices.py`, `sync_buybox.py`, `probe_recovery.py`.
@@ -447,6 +456,19 @@ weer aan (tip NL: zondagavond i.p.v. zaterdag = een dag extra speling), pc
 blijft uit t/m 2/10, **eerste verse upload za 3/10** als de pc weer aanstaat
 en de winkel al een week aan is. Eerste sync daarna: tientallen
 ontdooiingen = opruimen, geen verlies van die dag.
+
+**Afloop (3-4/10):** Peter zette bol.com op 25/9 's ochtends al weer aan
+(leveren uiterlijk 7/10); live-check 25/9 08:10: 9 van 9 bevroren artikelen
+weer zichtbaar mét koopblok op de oude prijs. Pc uit van 25/9 tot 3/10
+02:21; cloud draaide de hele week zonder één mislukte run. Bij het
+aanzetten haalde de taakplanner **alle vier de taken tegelijk** in
+(02:21:35, drie scrapers parallel — tegen de regel, maar het aantal
+mislukte checks was normaal: 32 tegen 33-34 op gewone dagen; geen schade).
+Opruim-sync: van 155 bevroren **19 verloren**, 7 nieuw; sync 3/10 14:15
+nog 3 verloren, 5 nieuw → **148 bevroren op 4/10**. Optimize 3/10: 17
+verhoogd (+€72,62), alle 17 houden. Het winkel-dicht-venster en de
+vakantiepauze zijn verlopen en doen niets meer; de code mag blijven staan
+(datums in het verleden) en is herbruikbaar door de datums aan te passen.
 
 ## Vakantiepauze 25 sept t/m 2 okt 2026 (gebouwd 16/9, zelfde opzet als NL)
 
