@@ -316,14 +316,14 @@ class RepricingEngine:
     def calculate_normal_price(self, klantprijs: float) -> float:
         """Calculate normal price using Channable formula for this account."""
         if klantprijs < 10:
-            # (klantprijs + 1) × 2.6 + 8.5
-            return round(((klantprijs + 1) * 2.6) + 8.5, 2)
+            # (klantprijs + 1) × 2.4 + 9.25   (Channable-regel sinds 6/10/2026; tot dan × 2.6 + 8.5)
+            return round(((klantprijs + 1) * 2.4) + 9.25, 2)
         else:
-            # klantprijs × 2.6 + 8.5
-            return round((klantprijs * 2.6) + 8.5, 2)
+            # klantprijs × 2.4 + 9.25   (Channable-regel sinds 6/10/2026; tot dan × 2.6 + 8.5)
+            return round((klantprijs * 2.4) + 9.25, 2)
 
     def calculate_minimum_price(self, klantprijs: float) -> float:
-        """Calculate minimum price: (klantprijs +1 onder EUR10) × 2.2 + 8.5.
+        """Calculate minimum price: (klantprijs +1 onder EUR10) × 2.2 + 9.25 (sinds 6/10/2026; tot dan + 8.5).
 
         Higher multiplier than the NL account (1.9): cross-border shipping to
         Belgium costs more and BE customers return more often.
@@ -335,8 +335,8 @@ class RepricingEngine:
         23 July (supersedes the 2.1 from the original 19 July setup brief).
         """
         if klantprijs < 10:
-            return round(((klantprijs + 1) * 2.2) + 8.5, 2)
-        return round((klantprijs * 2.2) + 8.5, 2)
+            return round(((klantprijs + 1) * 2.2) + 9.25, 2)
+        return round((klantprijs * 2.2) + 9.25, 2)
 
     def calculate_klantprijs_for_target_price(self, target_price: float) -> float:
         """
@@ -344,8 +344,8 @@ class RepricingEngine:
         as the selling price.
 
         Channable uses:
-          if klantprijs < 10: price = (klantprijs + 1) * 2.6 + 8.5
-          else: price = klantprijs * 2.6 + 8.5
+          if klantprijs < 10: price = (klantprijs + 1) * 2.4 + 9.25
+          else: price = klantprijs * 2.4 + 9.25
 
         We solve for klantprijs directly from the DESIRED target_price
         (not from a "reduction relative to the original price" - that was
@@ -354,7 +354,7 @@ class RepricingEngine:
 
         Rounds the klantprijs UP to the cent, never down (fix 27 July, found
         by the NL project). klantprijs is published with 2 decimals, and
-        Channable multiplies it by 2.6 - so rounding the klantprijs DOWN by
+        Channable multiplies it by 2.4 - so rounding the klantprijs DOWN by
         up to half a cent lowered the resulting selling price by up to 1.3
         cents. When the caller was clamping to the minimum price, that landed
         the article ONE CENT BELOW the floor - on 28.5% of the catalogue, and
@@ -370,12 +370,12 @@ class RepricingEngine:
             return math.ceil(round(max(value, 0) * 100, 6)) / 100
 
         # Try the >= 10 branch first (most products fall here)
-        candidate = (target_price - 8.5) / 2.6
+        candidate = (target_price - 9.25) / 2.4
         if candidate >= 10:
             return _ceil_cent(candidate)
 
         # Otherwise use the < 10 branch
-        candidate_low = ((target_price - 8.5) / 2.6) - 1
+        candidate_low = ((target_price - 9.25) / 2.4) - 1
         return _ceil_cent(candidate_low)
 
     def generate_reprice_xml(self, output_path: str, adjustments: dict) -> bool:
