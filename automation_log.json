@@ -1,16 +1,5 @@
 [
   {
-    "task": "sync",
-    "started": "2026-09-17T14:15:01",
-    "duration_s": 469,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] Frozen total now: 158 (+0 new, -1 unfrozen)",
-      "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
-    ]
-  },
-  {
     "task": "morning",
     "started": "2026-09-18T09:00:02",
     "duration_s": 131,
@@ -707,6 +696,22 @@
     "summary": [
       "[DONE] Frozen total now: 148 (+3 new, -2 unfrozen)",
       "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
+    ]
+  },
+  {
+    "task": "morning",
+    "started": "2026-10-09T09:00:05",
+    "duration_s": 365,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[CSV] Dated file 20260920_bolcom_productinformatie.csv is older than the canonical CSV - left alone",
+      "[MATCH] Checking 266 active EAN(s) for immediate price-matching...",
+      "[MATCH] Matched (undercut competitor): 262",
+      "[MATCH] Already winning (frozen now): 4",
+      "[MATCH] Hit minimum price floor: 210",
+      "[MATCH] Check failed: 36",
+      "[MATCH] No-competitor (exempt from daily reset): 42"
     ]
   }
 ]
