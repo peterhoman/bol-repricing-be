@@ -1,20 +1,5 @@
 [
   {
-    "task": "morning",
-    "started": "2026-09-18T09:00:02",
-    "duration_s": 131,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[MATCH] Checking 239 active EAN(s) for immediate price-matching...",
-      "[MATCH] Matched (undercut competitor): 239",
-      "[MATCH] Already winning (frozen now): 0",
-      "[MATCH] Hit minimum price floor: 0",
-      "[MATCH] Check failed: 239",
-      "[MATCH] No-competitor (exempt from daily reset): 39"
-    ]
-  },
-  {
     "task": "probe_start",
     "started": "2026-09-18T10:45:01",
     "duration_s": 75,
@@ -712,6 +697,17 @@
       "[MATCH] Hit minimum price floor: 210",
       "[MATCH] Check failed: 36",
       "[MATCH] No-competitor (exempt from daily reset): 42"
+    ]
+  },
+  {
+    "task": "probe_start",
+    "started": "2026-10-09T10:45:01",
+    "duration_s": 156,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] Verhoogd: 7 artikelen (+EUR8.60 per verkoopcyclus) | ongemoeid: 124 | overgeslagen (concurrent niet trager): 12 | check mislukt: 5",
+      "[DONE] Overgeslagen per levertijd-oordeel: sneller 6, onbekend 3, gelijk 3"
     ]
   }
 ]
