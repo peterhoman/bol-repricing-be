@@ -43,10 +43,35 @@ oppakt.
 Channable berekent de verkoopprijs uit de `klantprijs` die wij in de XML
 publiceren. Onze code moet daar exact mee sporen:
 
-- **Normale verkoopprijs:** klantprijs < 10 → `(klantprijs + 1) × 2.6 + 8.5`;
-  anders → `klantprijs × 2.6 + 8.5`
+- **Normale verkoopprijs (sinds 6/10/2026):** klantprijs < 10 →
+  `(klantprijs + 1) × 2.4 + 9.25`; anders → `klantprijs × 2.4 + 9.25`
+  (9,25 = verzendkosten). Tot 6/10 was dit `× 2.6 + 8.5`; Peter heeft de
+  Channable-regel "Verkoopprijs" op 6/10 aangepast en de code is dezelfde
+  ochtend meegegaan (`calculate_normal_price`, `calculate_minimum_price`,
+  `calculate_klantprijs_for_target_price`). Documentatie die 2,6/8,5 noemt
+  is verouderd.
 - **Bodemprijs (absoluut minimum, NOOIT eronder):** klantprijs < 10 →
-  `(klantprijs + 1) × 2.2 + 8.5`; anders → `klantprijs × 2.2 + 8.5`
+  `(klantprijs + 1) × 2.2 + 8.5`; anders → `klantprijs × 2.2 + 8.5`.
+  Van 6/10 t/m 10/10 stond hij kort op `+ 9.25` (Peters keuze 6/10, zelfde
+  verzendkosten als de verkoopprijs); **op 10/10 door Peter teruggezet naar
+  `+ 8.5`** nadat bleek dat de hogere bodem ~20 artikelen net boven hun
+  concurrent zette (steekproef 10/10: 1 van 10 artikelen zonder koopblok
+  zat precies in dat strookje van €0,75; de andere 9 hadden een concurrent
+  ver onder beide bodems). De 28 bevroren artikelen die op 6/10 naar de
+  hogere bodem waren opgetild zijn op 10/10 teruggezet op hun prijs van
+  vóór 6/10 (snapshot `logs/frozen_voor_omschakeling_2026-10-06.json`).
+- **Omschakeling 6/10 11:09:** `frozen.json` is via de API omgerekend zodat
+  de live verkoopprijzen gelijk bleven (oude formule → verkoopprijs →
+  inverse nieuwe formule), daarna geklemd op de nieuwe band: 151 bevroren,
+  19 exact gelijk, **100 omlaag naar de nieuwe volle prijs** (die ligt
+  ~6,6% lager — de bedoeling van de wijziging), **28 omhoog naar de nieuwe
+  bodem** (+€0,75 door de hogere verzendkosten; kan een enkel koopblok
+  kosten), 4 niet in de feed. Totaal −4,0% op de bevroren omzetprijs. Cloud
+  direct via `workflow_dispatch` gestart; XML 09:10Z bevatte de nieuwe
+  klantprijzen, audit 0 issues. Volgorde was: code pushen → frozen
+  omrekenen → cloud-run → dán Channable "Uitvoeren" (de regel stond al
+  opgeslagen, dus elke tussentijdse Channable-run was hooguit te láág =
+  veilige kant).
   - LET OP: tot 23 juli stond hier fout `× 2.1` zonder +1-regel — daardoor is
     één artikel te goedkoop verkocht (€17,05 i.p.v. bodem €19,65). Peter heeft
     ×2,2 mét +1-regel expliciet bevestigd. Documentatie die ×2,1 noemt is
@@ -87,6 +112,14 @@ publiceren. Onze code moet daar exact mee sporen:
      NL ziet exact hetzelfde (zelfde feed). Peter heeft Bas (B-Living) op
      16/9 gemaild. Rode mails met deze fout: negeren zolang de volgende run
      groen is; ochtendcontrole telt de mislukte cloud-runs.
+   - **Cron stil na de Actions-storing (6/10):** na de laatste geslaagde
+     run van 02:51 kwam er tot 11:09 géén geplande run meer (geen rode
+     mails, gewoon niets), terwijl GitHub "operational" meldde. Een
+     `workflow_dispatch` (POST `actions/workflows/reprice.yml/dispatches`,
+     `{"ref":"main"}`) startte wél binnen een minuut. Ochtendcontrole:
+     staat de laatste cloud-run meer dan ~1 uur terug binnen de sloten
+     07:45-21:15, dan is de cron stil → handmatig dispatchen en opletten of
+     hij vanzelf terugkomt.
    - **Rode mail zónder log (gezien 5/10 21:43):** de run staat op
      "failure", de job op "cancelled", er zijn geen stappen en geen
      logbestanden, en de volgende run blijft op "queued" hangen. Dan heeft
@@ -101,6 +134,19 @@ publiceren. Onze code moet daar exact mee sporen:
    machine: `match_prices.py`, `sync_buybox.py`, `probe_recovery.py`.
    Tussen checks zit 0,3s pauze; draai NOOIT twee scrape-scripts tegelijk
    (ook niet NL+BE parallel — geeft rate-limiting, ~26% mislukte checks).
+   - **bol.com blokkeert het thuis-IP soms een hele dag (gezien 18/9 één
+     run, 6/10 vanaf vóór 09:00 tot zeker 13:50):** elke zoekopdracht geeft
+     403 met een bol-opgemaakte blokkadepagina, ook met een browser-UA.
+     Herkenbaar aan `Check failed: <alles>` in de ochtendrun en
+     `check mislukt: <alles>` bij optimize, allebei met een korte looptijd.
+     **Schade: geen.** Gecontroleerd in de code: de ochtendrun houdt bij een
+     mislukte check de laatst gepubliceerde klantprijs vast (valkuil 4),
+     optimize verhoogt niets, en de sync ontdooit alleen bij
+     `found and not has_buybox` — een mislukte check ontdooit dus nooit.
+     Wat te doen: NIETS extra scrapen (elke poging verlengt de blokkade),
+     geen handmatige runs, de taken gewoon laten draaien; de dag erna is
+     het meestal over. Wel melden aan Peter dat de dag "verloren" is voor
+     verhogingen en nieuwe winnaars.
 
 ## Databestanden op GitHub (vaste namen, nooit hernoemen)
 

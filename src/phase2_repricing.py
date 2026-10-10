@@ -323,7 +323,7 @@ class RepricingEngine:
             return round((klantprijs * 2.4) + 9.25, 2)
 
     def calculate_minimum_price(self, klantprijs: float) -> float:
-        """Calculate minimum price: (klantprijs +1 onder EUR10) × 2.2 + 9.25 (sinds 6/10/2026; tot dan + 8.5).
+        """Calculate minimum price: (klantprijs +1 onder EUR10) × 2.2 + 8.5 (6-10/10/2026 kort + 9.25; Peter zette hem op 10/10 terug).
 
         Higher multiplier than the NL account (1.9): cross-border shipping to
         Belgium costs more and BE customers return more often.
@@ -335,8 +335,8 @@ class RepricingEngine:
         23 July (supersedes the 2.1 from the original 19 July setup brief).
         """
         if klantprijs < 10:
-            return round(((klantprijs + 1) * 2.2) + 9.25, 2)
-        return round((klantprijs * 2.2) + 9.25, 2)
+            return round(((klantprijs + 1) * 2.2) + 8.5, 2)
+        return round((klantprijs * 2.2) + 8.5, 2)
 
     def calculate_klantprijs_for_target_price(self, target_price: float) -> float:
         """
