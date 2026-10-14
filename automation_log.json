@@ -1,15 +1,5 @@
 [
   {
-    "task": "probe_start",
-    "started": "2026-09-23T10:45:01",
-    "duration_s": 0,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[WINKEL DICHT] probe_start overgeslagen: winkel uit van 23-09 t/m 25-09 - sync zou alle bevroren artikelen ontdooien, optimize zou verhogen zonder koopblok. Bevroren prijzen blijven staan."
-    ]
-  },
-  {
     "task": "probe_check",
     "started": "2026-09-23T12:15:02",
     "duration_s": 1,
@@ -711,6 +701,16 @@
     "summary": [
       "[DONE] Verhoogd: 1 artikelen (+EUR5.02 per verkoopcyclus) | ongemoeid: 135 | overgeslagen (concurrent niet trager): 13 | check mislukt: 10",
       "[DONE] Overgeslagen per levertijd-oordeel: sneller 9, gelijk 4"
+    ]
+  },
+  {
+    "task": "probe_check",
+    "started": "2026-10-14T12:15:01",
+    "duration_s": 1,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] No probes currently in progress"
     ]
   }
 ]
