@@ -1,21 +1,5 @@
 [
   {
-    "task": "morning",
-    "started": "2026-09-24T09:00:05",
-    "duration_s": 322,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[CSV] Dated file 20260920_bolcom_productinformatie.csv is older than the canonical CSV - left alone",
-      "[MATCH] Checking 249 active EAN(s) for immediate price-matching...",
-      "[MATCH] Matched (undercut competitor): 249",
-      "[MATCH] Already winning (frozen now): 0",
-      "[MATCH] Hit minimum price floor: 200",
-      "[MATCH] Check failed: 34",
-      "[MATCH] No-competitor (exempt from daily reset): 40"
-    ]
-  },
-  {
     "task": "probe_start",
     "started": "2026-09-24T10:45:01",
     "duration_s": 0,
@@ -718,6 +702,17 @@
       "[MATCH] Hit minimum price floor: 160",
       "[MATCH] Check failed: 2",
       "[MATCH] No-competitor (exempt from daily reset): 42"
+    ]
+  },
+  {
+    "task": "probe_start",
+    "started": "2026-10-15T10:45:02",
+    "duration_s": 160,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] Verhoogd: 0 artikelen (+EUR0.00 per verkoopcyclus) | ongemoeid: 125 | overgeslagen (concurrent niet trager): 14 | check mislukt: 8",
+      "[DONE] Overgeslagen per levertijd-oordeel: sneller 10, gelijk 4"
     ]
   }
 ]
