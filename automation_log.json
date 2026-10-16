@@ -1,16 +1,6 @@
 [
   {
     "task": "probe_check",
-    "started": "2026-09-25T12:15:02",
-    "duration_s": 1,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] No probes currently in progress"
-    ]
-  },
-  {
-    "task": "probe_check",
     "started": "2026-10-03T02:21:35",
     "duration_s": 6,
     "exit_code": 0,
@@ -716,5 +706,13 @@
     "summary": [
       "[DONE] No probes currently in progress"
     ]
+  },
+  {
+    "task": "sync",
+    "started": "2026-10-16T14:15:02",
+    "duration_s": 107,
+    "exit_code": 1,
+    "result": "FAILED",
+    "summary": []
   }
 ]
