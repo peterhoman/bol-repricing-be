@@ -1,15 +1,5 @@
 [
   {
-    "task": "probe_check",
-    "started": "2026-10-03T02:21:35",
-    "duration_s": 6,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] No probes currently in progress"
-    ]
-  },
-  {
     "task": "probe_start",
     "started": "2026-10-03T02:21:35",
     "duration_s": 143,
@@ -714,5 +704,21 @@
     "exit_code": 1,
     "result": "FAILED",
     "summary": []
+  },
+  {
+    "task": "morning",
+    "started": "2026-10-17T09:00:05",
+    "duration_s": 276,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[CSV] Dated file 20260920_bolcom_productinformatie.csv is older than the canonical CSV - left alone",
+      "[MATCH] Checking 196 active EAN(s) for immediate price-matching...",
+      "[MATCH] Matched (undercut competitor): 195",
+      "[MATCH] Already winning (frozen now): 1",
+      "[MATCH] Hit minimum price floor: 169",
+      "[MATCH] Check failed: 3",
+      "[MATCH] No-competitor (exempt from daily reset): 35"
+    ]
   }
 ]
