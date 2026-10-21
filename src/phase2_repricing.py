@@ -10,7 +10,7 @@ import time
 import base64
 import requests
 import xml.etree.ElementTree as ET
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
@@ -206,17 +206,33 @@ class RepricingEngine:
         prices and the next slot catches up - this is about not giving up
         while the server is merely slow.
         """
+        # 21 Oct: also retry on 429/5xx. B-Living answered HTTP 503 ("urgent
+        # maintenance") for ~2.5 hours; such a response is not an exception,
+        # so the old loop returned it immediately and the run stopped without
+        # waiting even once. A 5xx is the same kind of outage as a connection
+        # failure, just with a different answer. Other status codes (200, but
+        # also 404) are returned at once - a 404 is not an outage. Instruction
+        # from the NL chat: instructie-BE-retry-op-503.md.
+        RETRY_STATUSES = {429, 500, 502, 503, 504}
         last_exception = None
+        last_response = None
         wait = backoff
         for attempt in range(1, retries + 1):
             try:
-                return requests.get(url, timeout=timeout, headers=self._fresh_headers(url))
+                response = requests.get(url, timeout=timeout, headers=self._fresh_headers(url))
+                if response.status_code not in RETRY_STATUSES:
+                    return response
+                last_response = response
+                reden = f"HTTP {response.status_code}"
             except requests.exceptions.RequestException as e:
                 last_exception = e
-                if attempt < retries:
-                    print(f"   Attempt {attempt}/{retries} failed ({e}), retrying in {wait}s...")
-                    time.sleep(wait)
-                    wait *= 2
+                reden = str(e)
+            if attempt < retries:
+                print(f"   Attempt {attempt}/{retries} failed ({reden}), retrying in {wait}s...")
+                time.sleep(wait)
+                wait *= 2
+        if last_response is not None:
+            return last_response      # caller sees status != 200 and stops cleanly
         raise last_exception
 
     def load_products(self):
@@ -280,7 +296,7 @@ class RepricingEngine:
             response = self._get_with_retries(feed_url)
             if response.status_code != 200:
                 print(f"   Error: {response.status_code}")
-                return False
+                return self._load_bliving_cache(f"HTTP {response.status_code}")
 
             root = ET.fromstring(response.content)
 
@@ -295,11 +311,95 @@ class RepricingEngine:
                 except:
                     pass
 
+            if not self.bliving_klantprijzen:
+                print("   Error: feed bevat geen klantprijzen")
+                return self._load_bliving_cache("lege feed")
+
             print(f"   Loaded {len(self.bliving_klantprijzen)} klantprijzen from B-Living")
+            self._save_bliving_cache()
             return True
         except Exception as e:
             print(f"   Error: {e}")
+            return self._load_bliving_cache(str(e))
+
+    # ------------------------------------------------------------------
+    # Bewaarde kopie van de B-Living-feed (21 Oct, overgenomen van NL:
+    # instructie-BE-bewaarde-feed.md).
+    #
+    # Why: on 21 Oct B-Living was offline for ~2.5 hours (HTTP 503, "urgent
+    # maintenance"). Every cloud run and every local task starts by loading
+    # the feed, so the whole system stood still (6 failed runs, 6 red mails).
+    # While B-Living's site is down their purchase prices cannot change
+    # either, so a recent copy is exactly as good as the live feed. The copy
+    # lives on GitHub (bliving_cache.json) so the stateless cloud runs can
+    # read it too. It is written at most every CACHE_MIN_UREN hours (to spare
+    # commits) and used only when younger than CACHE_MAX_UREN hours.
+    # The first copy only appears after the first successful load; never
+    # fill it by hand - the real purchase prices exist nowhere else.
+    # ------------------------------------------------------------------
+    BLIVING_CACHE_FILE = "bliving_cache.json"
+    CACHE_MIN_UREN = 6
+    CACHE_MAX_UREN = 72
+
+    def _bliving_cache_url(self) -> str:
+        repo = os.getenv("GITHUB_REPO", "peterhoman/bol-repricing-be")
+        return f"https://api.github.com/repos/{repo}/contents/{self.BLIVING_CACHE_FILE}"
+
+    def _read_bliving_cache(self):
+        """Read the saved copy via the Contents API (always fresh). None if absent/unreadable."""
+        try:
+            url = self._bliving_cache_url()
+            r = requests.get(url, headers=self._fresh_headers(url), timeout=30)
+            if r.status_code != 200:
+                return None
+            data = json.loads(r.text)
+            if not isinstance(data, dict) or "bewaard" not in data or "klantprijzen" not in data:
+                return None
+            return data
+        except Exception as e:
+            print(f"   [CACHE] Bewaarde feed niet leesbaar: {e}")
+            return None
+
+    def _save_bliving_cache(self):
+        """After a successful feed load: store a copy on GitHub, at most every CACHE_MIN_UREN hours."""
+        try:
+            bestaand = self._read_bliving_cache()
+            if bestaand:
+                leeftijd = datetime.now() - datetime.fromisoformat(bestaand["bewaard"])
+                if leeftijd < timedelta(hours=self.CACHE_MIN_UREN):
+                    return False
+            data = {
+                "bewaard": datetime.now().isoformat(timespec="seconds"),
+                "aantal": len(self.bliving_klantprijzen),
+                "klantprijzen": self.bliving_klantprijzen,
+                "titels": self.bliving_titels,
+            }
+            ok = self.upload_json_to_github(data, self.BLIVING_CACHE_FILE)
+            print(f"   [CACHE] Kopie van de feed bewaard op GitHub ({data['aantal']} klantprijzen): {'ok' if ok else 'MISLUKT'}")
+            return ok
+        except Exception as e:
+            print(f"   [CACHE] Bewaren van de feed mislukt: {e}")
             return False
+
+    def _load_bliving_cache(self, reden: str) -> bool:
+        """Feed unavailable: fall back to the saved copy if it is younger than CACHE_MAX_UREN hours."""
+        data = self._read_bliving_cache()
+        if not data:
+            print(f"   [FEED] B-Living onbereikbaar ({reden}) - geen bewaarde feed, stoppen")
+            return False
+        try:
+            bewaard = datetime.fromisoformat(data["bewaard"])
+        except Exception:
+            print(f"   [FEED] B-Living onbereikbaar ({reden}) - bewaarde feed heeft geen leesbare datum, stoppen")
+            return False
+        uren = (datetime.now() - bewaard).total_seconds() / 3600
+        if uren > self.CACHE_MAX_UREN:
+            print(f"   [FEED] B-Living onbereikbaar ({reden}) - bewaarde feed van {bewaard:%d-%m %H:%M} is te oud ({uren:.0f} uur), stoppen")
+            return False
+        self.bliving_klantprijzen = {str(k): float(v) for k, v in data["klantprijzen"].items()}
+        self.bliving_titels = {str(k): str(v) for k, v in data.get("titels", {}).items()}
+        print(f"   [FEED] B-Living onbereikbaar ({reden}) - bewaarde feed van {bewaard:%d-%m %H:%M} gebruikt ({uren:.0f} uur oud, {len(self.bliving_klantprijzen)} klantprijzen)")
+        return True
 
     def is_excluded_from_big_steps(self, ean: str) -> bool:
         """

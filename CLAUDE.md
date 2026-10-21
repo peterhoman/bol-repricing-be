@@ -112,6 +112,27 @@ publiceren. Onze code moet daar exact mee sporen:
      NL ziet exact hetzelfde (zelfde feed). Peter heeft Bas (B-Living) op
      16/9 gemaild. Rode mails met deze fout: negeren zolang de volgende run
      groen is; ochtendcontrole telt de mislukte cloud-runs.
+   - **B-Living helemaal plat (21/10, ~14:45-16:45, HTTP 503 "urgent
+     maintenance", ook vanaf Peters pc):** 6 cloud-runs mislukt met
+     `Error: 503` + `No klantprijzen loaded`; NL identiek. Geen schade
+     (Channable hield de feed van 14:22). Twee dingen gebouwd die middag
+     (NL-instructies `instructie-BE-retry-op-503.md` en
+     `instructie-BE-bewaarde-feed.md` in de NL-map):
+     (1) `_get_with_retries` probeert nu ook bij HTTP 429/500/502/503/504
+     opnieuw (zelfde wachttijden als bij een verbindingsfout; 404 e.d. komt
+     direct terug); (2) **bewaarde feed:** na elke geslaagde feed-download
+     schrijft `_save_bliving_cache()` hooguit elke 6 uur `bliving_cache.json`
+     op GitHub (`{"bewaard", "aantal", "klantprijzen", "titels"}`); is de
+     feed onbereikbaar (status != 200, exception of lege feed), dan gebruikt
+     `_load_bliving_cache()` die kopie als hij jonger is dan 72 uur, met
+     logregel `[FEED] B-Living onbereikbaar (...) - bewaarde feed van ...
+     gebruikt`. Veilig omdat B-Living's inkoopprijzen niet kunnen veranderen
+     terwijl hun site plat ligt. Geen kopie of te oud → stoppen zoals
+     voorheen. **Nooit handmatig vullen** (de echte inkoopprijzen staan
+     nergens anders; frozen/XML bevatten omgerekende doelprijzen). Getest
+     zonder netwerk op 21/10: 4 retry-reeksen + 6 cache-gevallen allemaal
+     goed. `[FEED]`/`[CACHE]` staan in de prefix-lijst van
+     `scheduled_run.py`, dus de regel is in `automation_log.json` te zien.
    - **Geplande cloud-runs komen structureel 2,5-5 uur te laat (gemeten
      20/10 over 8/9 t/m 19/10):** GitHub start de cron van 08:05 pas rond
      13:00-15:00 en de laatste van 21:20 rond middernacht; alle ~24 runs
@@ -216,10 +237,10 @@ De map is sinds 12/9 weer netjes aan de tak `main` van
   vanuit deze map commit en pusht, overschrijft de echte data met een oude
   versie — op 12/9 was de lokale `frozen.json` 3 bytes (`{}`) tegen 3754 op
   GitHub: één `git add -A` en de hele bevroren-lijst was weg geweest.
-  Dit zijn ze (13 stuks): `frozen.json`, `master_tracked.json`,
+  Dit zijn ze (14 stuks): `frozen.json`, `master_tracked.json`,
   `big_gap.json`, `state.json`, `no_competitor.json`, `failed_checks.json`,
   `audit_report.json`, `automation_log.json`, `probe_history.json`,
-  `probe_started.json`, `frozen_probe_backup.json`,
+  `probe_started.json`, `frozen_probe_backup.json`, `bliving_cache.json` (sinds 21/10),
   `bolcom_productinformatie.csv`, `repricing_current.xml`. Plus Peters
   handmatige uploads `Export.xlsx` en `bolcom_productinformatie.xlsx`.
   **Ze staan bewust NIET in `.gitignore`** — de scripts hebben ze juist op

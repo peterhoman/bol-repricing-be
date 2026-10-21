@@ -234,7 +234,7 @@ def run(task_name):
     # style result lines - so a fresh session can read the outcome without the
     # progress noise.
     interesting = [ln.strip() for ln in output.splitlines()
-                   if ln.strip().startswith(("[CSV]", "[MATCH]", "[DONE]", "[PROBE]", "[KEPT]", "[VAKANTIE]", "[WINKEL DICHT]",
+                   if ln.strip().startswith(("[CSV]", "[MATCH]", "[DONE]", "[PROBE]", "[KEPT]", "[VAKANTIE]", "[WINKEL DICHT]", "[FEED]", "[CACHE]",
                                              "[REVERTED]", "[AUTO]", "[ERROR]", "[STOP]",
                                              "[GEWEIGERD]", "[LET OP]", "[AUDIT]",
                                              "[FLOOR]", "[WARN]", "TIMEOUT", "CRASH"))]
