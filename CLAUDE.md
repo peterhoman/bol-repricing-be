@@ -112,14 +112,21 @@ publiceren. Onze code moet daar exact mee sporen:
      NL ziet exact hetzelfde (zelfde feed). Peter heeft Bas (B-Living) op
      16/9 gemaild. Rode mails met deze fout: negeren zolang de volgende run
      groen is; ochtendcontrole telt de mislukte cloud-runs.
-   - **Cron stil na de Actions-storing (6/10):** na de laatste geslaagde
-     run van 02:51 kwam er tot 11:09 géén geplande run meer (geen rode
-     mails, gewoon niets), terwijl GitHub "operational" meldde. Een
-     `workflow_dispatch` (POST `actions/workflows/reprice.yml/dispatches`,
-     `{"ref":"main"}`) startte wél binnen een minuut. Ochtendcontrole:
-     staat de laatste cloud-run meer dan ~1 uur terug binnen de sloten
-     07:45-21:15, dan is de cron stil → handmatig dispatchen en opletten of
-     hij vanzelf terugkomt.
+   - **Geplande cloud-runs komen structureel 2,5-5 uur te laat (gemeten
+     20/10 over 8/9 t/m 19/10):** GitHub start de cron van 08:05 pas rond
+     13:00-15:00 en de laatste van 21:20 rond middernacht; alle ~24 runs
+     komen wél, alleen verschoven. De "cron stil"-melding van 6/10 (niets
+     tussen 02:51 en 11:09) was dus géén storing maar deze normale
+     vertraging. Gevolg is klein: de ochtendrun op Peters pc zet en uploadt
+     de prijzen zelf, optimize (10:47) en sync (14:22) dispatchen elk een
+     cloud-run, en de €0,50-stappen gebeuren 's middags/'s avonds. Artikelen
+     die 's ochtends uit de export ontdooid worden staan daardoor tot ~13:00
+     op volle prijs. **Niet dispatchen omdat er 's ochtends geen geplande
+     run is** — dat is normaal. Wel dispatchen (POST
+     `actions/workflows/reprice.yml/dispatches`, `{"ref":"main"}`) als er
+     ook ná 15:00 niets komt. Idee (nog niet gedaan, Peters keuze): bij de
+     wintertijd-aanpassing de minuten :05/:35 verschuiven naar minder
+     drukke minuten en meten of de vertraging kleiner wordt.
    - **Rode mail zónder log (gezien 5/10 21:43):** de run staat op
      "failure", de job op "cancelled", er zijn geen stappen en geen
      logbestanden, en de volgende run blijft op "queued" hangen. Dan heeft
