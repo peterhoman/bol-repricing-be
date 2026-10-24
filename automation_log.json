@@ -1,21 +1,5 @@
 [
   {
-    "task": "morning",
-    "started": "2026-10-09T09:00:05",
-    "duration_s": 365,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[CSV] Dated file 20260920_bolcom_productinformatie.csv is older than the canonical CSV - left alone",
-      "[MATCH] Checking 266 active EAN(s) for immediate price-matching...",
-      "[MATCH] Matched (undercut competitor): 262",
-      "[MATCH] Already winning (frozen now): 4",
-      "[MATCH] Hit minimum price floor: 210",
-      "[MATCH] Check failed: 36",
-      "[MATCH] No-competitor (exempt from daily reset): 42"
-    ]
-  },
-  {
     "task": "probe_start",
     "started": "2026-10-09T10:45:01",
     "duration_s": 156,
@@ -722,6 +706,24 @@
       "[FEED] Downloading B-Living feed...",
       "[DONE] Frozen total now: 167 (+3 new, -0 unfrozen)",
       "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
+    ]
+  },
+  {
+    "task": "morning",
+    "started": "2026-10-24T09:00:05",
+    "duration_s": 266,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[CSV] Dated file 20260920_bolcom_productinformatie.csv is older than the canonical CSV - left alone",
+      "[FEED] Downloading B-Living feed...",
+      "[CACHE] Kopie van de feed bewaard op GitHub (5381 klantprijzen): ok",
+      "[MATCH] Checking 194 active EAN(s) for immediate price-matching...",
+      "[MATCH] Matched (undercut competitor): 193",
+      "[MATCH] Already winning (frozen now): 1",
+      "[MATCH] Hit minimum price floor: 167",
+      "[MATCH] Check failed: 4",
+      "[MATCH] No-competitor (exempt from daily reset): 36"
     ]
   }
 ]
