@@ -7,33 +7,36 @@ on:
     # Matches Channable's 24 daily import slots (07:45-21:15 Amsterdam time,
     # skipping the night when nobody buys anyway), each run ~5 min after its
     # matching Channable slot so fresh prices are ready before the NEXT slot.
-    # NOTE: times below are in UTC, converted assuming Amsterdam = CEST
-    # (UTC+2, summer time). Shift by -1 hour (i.e. subtract 1 more from the
-    # UTC hour) once the Netherlands switches back to CET in autumn.
-    - cron: '5 6 * * *'    # 08:05 Amsterdam
-    - cron: '35 6 * * *'   # 08:35
-    - cron: '5 7 * * *'    # 09:05
-    - cron: '35 7 * * *'   # 09:35
-    - cron: '5 8 * * *'    # 10:05
-    - cron: '35 8 * * *'   # 10:35
-    - cron: '5 9 * * *'    # 11:05
-    - cron: '35 9 * * *'   # 11:35
-    - cron: '5 10 * * *'   # 12:05
-    - cron: '35 10 * * *'  # 12:35
-    - cron: '5 11 * * *'   # 13:05
-    - cron: '35 11 * * *'  # 13:35
-    - cron: '5 12 * * *'   # 14:05
-    - cron: '5 13 * * *'   # 15:05
-    - cron: '35 13 * * *'  # 15:35
-    - cron: '5 14 * * *'   # 16:05
-    - cron: '5 15 * * *'   # 17:05
-    - cron: '35 15 * * *'  # 17:35
-    - cron: '35 16 * * *'  # 18:35
-    - cron: '5 17 * * *'   # 19:05
-    - cron: '35 17 * * *'  # 19:35
-    - cron: '20 18 * * *'  # 20:20
-    - cron: '50 18 * * *'  # 20:50
-    - cron: '20 19 * * *'  # 21:20
+    # NOTE: times below are in UTC. Amsterdam = UTC + offset (summer 2,
+    # winter 1). Since 26 Oct 2026 converted for WINTER time (CET = UTC+1).
+    # Rule: to winter time every UTC hour +1, to summer time every UTC hour
+    # -1. Next switch: summer time on Sunday 28 March 2027 -> every hour -1.
+    # (Until 26 Oct this note said "-1 in autumn" - that was the wrong way
+    # round.) The Amsterdam labels never change.
+    - cron: '5 7 * * *'    # 08:05 Amsterdam
+    - cron: '35 7 * * *'   # 08:35
+    - cron: '5 8 * * *'    # 09:05
+    - cron: '35 8 * * *'   # 09:35
+    - cron: '5 9 * * *'    # 10:05
+    - cron: '35 9 * * *'   # 10:35
+    - cron: '5 10 * * *'    # 11:05
+    - cron: '35 10 * * *'   # 11:35
+    - cron: '5 11 * * *'   # 12:05
+    - cron: '35 11 * * *'  # 12:35
+    - cron: '5 12 * * *'   # 13:05
+    - cron: '35 12 * * *'  # 13:35
+    - cron: '5 13 * * *'   # 14:05
+    - cron: '5 14 * * *'   # 15:05
+    - cron: '35 14 * * *'  # 15:35
+    - cron: '5 15 * * *'   # 16:05
+    - cron: '5 16 * * *'   # 17:05
+    - cron: '35 16 * * *'  # 17:35
+    - cron: '35 17 * * *'  # 18:35
+    - cron: '5 18 * * *'   # 19:05
+    - cron: '35 18 * * *'  # 19:35
+    - cron: '20 19 * * *'  # 20:20
+    - cron: '50 19 * * *'  # 20:50
+    - cron: '20 20 * * *'  # 21:20
   workflow_dispatch: {}
 
 permissions:

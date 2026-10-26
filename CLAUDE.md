@@ -89,8 +89,15 @@ publiceren. Onze code moet daar exact mee sporen:
    identiek aan het NL-project). Leest CSV/state/frozen van GitHub, doet één
    verlaagstap van €0,50 (of €10 bij big-gap), klemt op de bodem, genereert en
    uploadt `repricing_current.xml`.
-   - Cron staat in UTC voor ZOMERTIJD (CEST=UTC+2). **In de herfst (klok naar
-     CET) alle cron-uren 1 verlagen!**
+   - Cron staat in UTC. **Sinds 26/10/2026 omgezet naar WINTERTIJD
+     (CET = UTC+1).** Regel: Amsterdam = UTC + offset (zomer 2, winter 1),
+     dus naar de wintertijd elk UTC-uur +1, naar de zomertijd elk UTC-uur
+     −1. **Volgende omzetting: zondag 28 maart 2027 → elk UTC-uur −1.** De
+     Amsterdamse labels achter de regels veranderen nooit; controle per
+     regel: `(UTC-uur + offset) % 24 == uur in het label`, minuut gelijk.
+     (Tot 26/10 stond hier "in de herfst 1 verlagen" — dat was verkeerd om;
+     NL had dezelfde fout.) De taakplanner op de pc draait in lokale tijd
+     en schuift vanzelf mee.
    - `concurrency: group: reprice` voorkomt botsende cloud-runs onderling,
      maar weet niets van de lokale scripts. Valt `match_prices.py` samen met
      een cron-slot, dan uploadt de lokale run de XML eerst en faalt de
@@ -785,7 +792,10 @@ workflow-mails tijdens zo'n storing zijn dus bewust en veilig.
 4. Klein gat: de `last_published`-prijs die na een mislukte check wordt
    vastgehouden, wordt niet actief tegen de bodem geklemd. Audit-controle 3
    signaleert het en de eerstvolgende cloud-run corrigeert het.
-5. **In de herfst het cron-schema 1 uur schuiven** (van zomer- naar wintertijd).
+5. ~~In de herfst het cron-schema 1 uur schuiven~~ **GEDAAN 26/10** (elk
+   UTC-uur +1, 24/24 gecontroleerd tegen de labels; NL-instructie
+   `instructie-BE-wintertijd.md`). Volgende keer: 28 maart 2027, elk
+   UTC-uur −1.
 
 ### Samenwerking NL/BE
 
