@@ -1,4 +1,4 @@
-# Maakt de vier dagelijkse taken aan voor de Bol.com BE-automatisering.
+﻿# Maakt de vier dagelijkse taken aan voor de Bol.com BE-automatisering.
 # Eenmalig uitvoeren: rechtsklik op dit bestand > "Uitvoeren met PowerShell"
 # (of vanuit PowerShell: .\taken_aanmaken.ps1)
 
@@ -26,7 +26,21 @@ foreach ($t in $taken) {
     $actie = New-ScheduledTaskAction -Execute $py `
         -Argument "`"$base\src\scheduled_run.py`" $($t.Arg)" `
         -WorkingDirectory $base
-    $trigger = New-ScheduledTaskTrigger -Daily -At $t.Tijd
+    $trigger = @(New-ScheduledTaskTrigger -Daily -At $t.Tijd)
+    # Starttijd ZONDER tijdzone opslaan (fix 26/10, na de eerste wintertijd).
+    # New-ScheduledTaskTrigger -At slaat de tijd op met tijdzone, op deze pc
+    # zelfs als wereldtijd ("...T08:00:00Z"). Windows houdt zo'n trigger op
+    # hetzelfde wereldtijd-moment vast, dus sinds 25/10 liepen alle vier de
+    # taken een uur te vroeg (08:00/09:45/11:15/13:15). Zonder tijdzone is het
+    # "gewone kloktijd" en volgt hij zomer- en wintertijd vanzelf.
+    # Ligt de tijd van vandaag al achter ons, dan pas morgen beginnen: anders
+    # start -StartWhenAvailable de "gemiste" run meteen na het registreren.
+    # (Overgenomen van NL, instructie-BE-taakplanner-wintertijd.md.)
+    foreach ($tr in $trigger) {
+        $start = [datetime]$tr.StartBoundary
+        if ($start -lt (Get-Date)) { $start = $start.AddDays(1) }
+        $tr.StartBoundary = $start.ToString("yyyy-MM-dd'T'HH:mm:ss")
+    }
     # -WakeToRun: haalt de pc uit de slaapstand voor deze taak
     # -StartWhenAvailable: draait alsnog als het tijdstip gemist werd (pc was uit)
     $instellingen = New-ScheduledTaskSettingsSet -WakeToRun `
@@ -39,7 +53,9 @@ foreach ($t in $taken) {
 
 Write-Host ""
 Write-Host "Klaar. Controle:"
-Get-ScheduledTask -TaskName "Bol BE*" | Select-Object TaskName, State | Format-Table -AutoSize
+Get-ScheduledTask -TaskName "Bol BE*" | Select-Object TaskName, State,
+    @{N="Starttijd"; E={$_.Triggers[0].StartBoundary}} | Format-Table -AutoSize
+Write-Host "Goed = starttijd ZONDER +01:00, +02:00 of Z erachter."
 
 # Geen automatische teststart meer (weggehaald 18/8, aanbeveling NL): bij een
 # her-registratie vuurde die elke keer een extra snelstart af - onnodige

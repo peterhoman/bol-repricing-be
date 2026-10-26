@@ -600,7 +600,24 @@ rate-limiting. Wat een sessie nog wél doet:
    het schema maar meldt normaal "No probes currently in progress" — dat is
    correct, niet een gemiste run.
 3. `taken_aanmaken.ps1` (projectmap) maakt de taken opnieuw aan als dat ooit
-   nodig is — Peter moet dat zelf uitvoeren (permissieblokkade voor Claude).
+   nodig is — Peter moet dat zelf uitvoeren (permissieblokkade voor Claude,
+   ook op 26/10 weer geweigerd). **Laat Peter `taken_aanmaken.bat`
+   dubbelklikken** (sinds 26/10): rechtsklik "Uitvoeren met PowerShell"
+   werkt op deze pc niet (venster gaat direct dicht). De controle onderaan
+   toont per taak de starttijd.
+   **Wintertijd-fout in de taakplanner (gevonden 26/10, via NL):**
+   `New-ScheduledTaskTrigger -At` sloeg de starttijd op MET tijdzone
+   (`2026-08-21T08:00:00+01:00`); Windows houdt die op hetzelfde
+   wereldtijd-moment vast, dus sinds 25/10 liepen alle vier de taken een
+   uur te vroeg (08:00/09:45/11:15/13:15, gezien in
+   `logs/automation-2026-10.log`). Fix in het script: StartBoundary zonder
+   tijdzone opslaan, en een tijd die vandaag al voorbij is pas morgen laten
+   beginnen (anders start `-StartWhenAvailable` meteen een inhaalrun).
+   Peter draaide het op 26/10 ~16:30; gecontroleerd: starttijden
+   `2026-10-27T09:00:00` enz. zonder tijdzone, WakeToRun en
+   StartWhenAvailable aan, geen extra run gestart. Bij zomer/wintertijd
+   hoeft er aan de taakplanner nu niets meer te gebeuren (wel aan de
+   cloud-cron).
 4. **Ontbreekt een taak in `automation_log.json` maar staat hij lokaal in
    `logs/` met exitcode 3221225786 (0xC000013A)?** Dan is het consolevenster
    gesloten (gezien 20/8, probe-start 10:45: Peter klikte het zwarte venster
