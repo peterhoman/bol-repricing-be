@@ -1,12 +1,9 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "failed": {
-    "3700837161949": "no product url in search results",
-    "8716522094657": "no product url in search results",
-    "8716522082210": "no product url in search results",
-    "8717774820193": "no product url in search results",
-    "8717266317873": "ean not found in JSON-LD",
+    "3700837100283": "no product url in search results",
     "8716522074796": "ean not found in JSON-LD",
-    "3700837100283": "no product url in search results"
+    "8717266317873": "ean not found in JSON-LD",
+    "8717774820193": "no product url in search results"
   }
 }
