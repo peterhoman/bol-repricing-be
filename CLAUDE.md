@@ -35,6 +35,16 @@ oppakt.
   voorraad 6"; **sinds 10/9 11:27 op 4 gezet** (Bas), gelijk aan Peters
   Channable-regel. Artikelen met voorraad 4-5 komen nu vanzelf terug in de
   feed en in onze XML. Ons systeem is niet aangepast.
+- **Channable-runs NIET verminderen (27/10):** Peter wilde de
+  Channable-kosten omlaag (bedrijfsaccount 24262, pakket Core Pro, tot 24
+  runs/dag). Op vraag van de Google-campagne-chat uitgelegd waarom BE het
+  huidige ritme nodig heeft: prijsstappen bereiken bol alleen via een
+  import, de sync van 14:15 meet live en bevriest op de feedprijs (loopt
+  bol uren achter → verkeerde metingen), en voorraad < 4 blijft anders tot
+  de volgende import staan (oververkoop). 1 run/dag werkt niet, 3/dag
+  alleen traag. Besluit: pakket en runs blijven; ook de module
+  "Marketplaces Standard" blijft (of BE hem nodig heeft is onbekend).
+  Alles loopt via Channable, niets via de bol-API.
 - `.env` in deze map: `GITHUB_TOKEN` (fine-grained PAT, alleen deze repo,
   Contents/Workflows/Actions R&W, geen vervaldatum) + `GITHUB_REPO`
 
