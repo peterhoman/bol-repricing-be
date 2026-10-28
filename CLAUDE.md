@@ -45,6 +45,13 @@ oppakt.
   alleen traag. Besluit: pakket en runs blijven; ook de module
   "Marketplaces Standard" blijft (of BE hem nodig heeft is onbekend).
   Alles loopt via Channable, niets via de bol-API.
+- **Inkoopprijzen zichtbaar in de openbare feed — bewust zo gelaten
+  (Peter, 27/10):** `repricing_current.xml` staat op de openbare GitHub-repo
+  (Channable leest hem daar), en het veld `klantprijs` is voor de meeste
+  artikelen gewoon B-Livings inkoopprijs. NL signaleerde dit en zette
+  "omrekenen naar verkoopprijzen" op de lijst voor later. Voor de werking is
+  het niet nodig. **Peters besluit: we laten het zo.** Niet opnieuw
+  voorstellen tenzij Peter er zelf over begint.
 - `.env` in deze map: `GITHUB_TOKEN` (fine-grained PAT, alleen deze repo,
   Contents/Workflows/Actions R&W, geen vervaldatum) + `GITHUB_REPO`
 
