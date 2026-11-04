@@ -1,16 +1,5 @@
 [
   {
-    "task": "sync",
-    "started": "2026-10-20T14:15:02",
-    "duration_s": 447,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] Frozen total now: 157 (+1 new, -0 unfrozen)",
-      "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
-    ]
-  },
-  {
     "task": "morning",
     "started": "2026-10-21T09:00:05",
     "duration_s": 328,
@@ -771,6 +760,18 @@
     "result": "ok",
     "summary": [
       "[DONE] No probes currently in progress"
+    ]
+  },
+  {
+    "task": "sync",
+    "started": "2026-11-04T14:15:01",
+    "duration_s": 510,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[FEED] Downloading B-Living feed...",
+      "[DONE] Frozen total now: 156 (+2 new, -5 unfrozen)",
+      "[DONE] Big-gap total now: 0 (+0 new, -0 cleared)"
     ]
   }
 ]
