@@ -1,16 +1,5 @@
 [
   {
-    "task": "probe_start",
-    "started": "2026-11-12T10:45:01",
-    "duration_s": 59,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[FEED] Downloading B-Living feed...",
-      "[DONE] Verhoogd: 0 artikelen (+EUR0.00 per verkoopcyclus) | ongemoeid: 0 | overgeslagen (concurrent niet trager): 0 | check mislukt: 131"
-    ]
-  },
-  {
     "task": "probe_check",
     "started": "2026-11-12T12:15:01",
     "duration_s": 1,
@@ -776,6 +765,18 @@
       "[MATCH] Hit minimum price floor: 195",
       "[MATCH] Check failed: 11",
       "[MATCH] No-competitor (exempt from daily reset): 32"
+    ]
+  },
+  {
+    "task": "probe_start",
+    "started": "2026-11-27T10:45:01",
+    "duration_s": 158,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[FEED] Downloading B-Living feed...",
+      "[DONE] Verhoogd: 1 artikelen (+EUR1.73 per verkoopcyclus) | ongemoeid: 104 | overgeslagen (concurrent niet trager): 28 | check mislukt: 14",
+      "[DONE] Overgeslagen per levertijd-oordeel: sneller 17, gelijk 11"
     ]
   }
 ]
