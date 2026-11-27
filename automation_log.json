@@ -1,15 +1,5 @@
 [
   {
-    "task": "probe_check",
-    "started": "2026-11-12T12:15:01",
-    "duration_s": 1,
-    "exit_code": 0,
-    "result": "ok",
-    "summary": [
-      "[DONE] No probes currently in progress"
-    ]
-  },
-  {
     "task": "sync",
     "started": "2026-11-12T14:15:01",
     "duration_s": 485,
@@ -777,6 +767,16 @@
       "[FEED] Downloading B-Living feed...",
       "[DONE] Verhoogd: 1 artikelen (+EUR1.73 per verkoopcyclus) | ongemoeid: 104 | overgeslagen (concurrent niet trager): 28 | check mislukt: 14",
       "[DONE] Overgeslagen per levertijd-oordeel: sneller 17, gelijk 11"
+    ]
+  },
+  {
+    "task": "probe_check",
+    "started": "2026-11-27T12:15:01",
+    "duration_s": 1,
+    "exit_code": 0,
+    "result": "ok",
+    "summary": [
+      "[DONE] No probes currently in progress"
     ]
   }
 ]
