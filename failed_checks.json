@@ -1,16 +1,18 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "failed": {
-    "3700837100283": "search status 404",
-    "3700837161345": "search status 404",
-    "8717266342301": "search status 404",
-    "8716522074796": "ean not found in JSON-LD",
-    "8717266051555": "search status 404",
     "3700837155283": "search status 404",
-    "8717266317873": "ean not found in JSON-LD",
     "8717266373107": "search status 404",
-    "8717774825846": "search status 404",
+    "3700837161598": "search status 404",
+    "3700837157577": "search status 404",
+    "8716522074796": "ean not found in JSON-LD",
+    "3700837165299": "search status 404",
+    "8717266342301": "search status 404",
     "8717266342141": "search status 404",
-    "3700837157577": "search status 404"
+    "3700837100283": "search status 404",
+    "8717266051555": "search status 404",
+    "8717774825846": "search status 404",
+    "8717266317873": "ean not found in JSON-LD",
+    "3700837161345": "search status 404"
   }
 }
